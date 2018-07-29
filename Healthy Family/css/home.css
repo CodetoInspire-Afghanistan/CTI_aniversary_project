@@ -1,0 +1,490 @@
+body{
+	margin:0;
+	padding:0;
+	background-image:url(../img/again.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+.no-padding{
+	padding: 0px;
+}
+.no-margin{
+	margin: 0px;
+}
+.content{
+	
+	background-color:rgba(231,240,112,0.1);
+	margin-top: 10px;
+	margin-bottom: 42px;
+}
+h1{
+margin-left:9%;
+margin-top:1%;
+color:white;
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 20em;
+  -webkit-animation: type 5s steps(60, end);
+  font-family: Imprint MT Shadow; 
+}
+
+h1:nth-child(2){
+ -webkit-animation: type2 3s steps(60, end);
+}
+@-webkit-keyframes type{ 
+  from { width: 0; } 
+} 
+
+@-webkit-keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@-webkit-keyframes blink{
+  to{opacity: .0;}
+}
+.active{
+	background-color:rgba(231,240,112,0.5);
+	color:red;
+}
+.active:hover{
+	background-color:rgba(231,240,112,0.6);
+}
+.drop:hover{
+color: green;
+display: block;
+}
+.navbar{
+	background-image:url(../img/reagain.jpg);
+}
+.navbar ul li a{
+	color: white;
+}
+.navbar ul li a:hover{
+	color: green;
+	background-color:rgba(231,240,112,0.5);
+	font-size: 20px;
+} 
+.navbar ul li ul li a{
+color: green;	
+}
+.navbar ul li ul li a:hover{
+	color:green;
+}
+.navbar ul li ul li:hover{
+	color: green;
+	background-color:rgba(231,240,112,0.6);
+}
+ul li:hover ul{
+display:block;
+color: green;
+background-color:rgba(231,240,112,0.6);
+}
+
+#firstimg{
+	margin-right: 52px;
+	border:5px groove rgb(181, 230, 29);
+}
+input[type="text"]{
+	width:200px;
+	background-image:url(../img/search-2-xxl.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	background-size:40px;
+	padding:10px 10px;
+	position:absolute;
+	top:32%;
+	left:20%;	
+	border-radius: 50px;
+	outline: none;
+}	
+#Home, #About, #Test{
+	color:rgb(181, 230, 29);
+}
+
+.anim{
+	background-color:gray;
+	height:16%;
+	width:9%;
+	border-radius:100%;
+	margin-top:20%;
+			
+		}
+.imgfamily1{
+	border:4px solid gray;
+	height: 100px;
+ 	width: 100px;
+}
+.imgfamily2{
+	border:4px solid gray;
+	height: 100px;
+	width: 100px;
+	
+}
+.imgfamily3{
+	border:4px solid gray;
+	height: 100px;
+	width: 100px;
+	
+}
+.imgfamily4{
+	border:4px solid gray;
+	height: 100px;
+	width: 100px;
+	
+}
+.imgfamily5{
+	border:4px solid gray;
+	height: 100px;
+	width: 100px;
+	
+}
+.father,.mother,.boy ,.girl{
+	background-color:rgba(255 ,210 ,105,0.5);
+	margin-top: 10px;
+	margin-bottom: 3px;
+}
+.father p,.mother p,.boy p,.girl p{
+	color: green;
+	font-size: 17px;
+}
+.father h2,.mother h2,.boy h2,.girl h2{
+	color:white;
+	font-family: Imprint MT Shadow;
+	text-shadow:10px 16px 35px green;
+	font-style: italic;
+	font-size: 35px;
+}
+.img-father, .img-mother, .img-girl, .img-boy{
+	border-radius: 15px;
+	width: 150px;
+	height: 120px;
+	margin-top: 5px;
+}
+.div-content{
+	background-color:rgba(255 ,210 ,105,0.6);
+	width:300px;
+	height: 1769px;
+	float: right;
+	margin-right: 50px;
+	margin-top: 10px;
+}
+.img-div{
+	width: 200px;
+	height: 200px;
+	border-radius: 15px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+}
+.imge-div{
+	width: 200px;
+	height: 200px;
+	border-radius: 15px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+.role{
+	color:brown;
+	font-family: Imprint MT Shadow;
+	border:box:green 15px groove; 
+	font-style: italic;
+	
+}
+#ul-element{	
+	list-style-type:none;
+	margin-top:2%;
+	padding:3%;
+
+	}
+#ul-element li{
+	padding:1px;
+	margin: 2px;
+	width:100%;
+	border:3px groove brown;
+	background-color:rgba(174, 206, 244, 0.5);
+	}
+#ul-element li img{
+	padding:1px;
+	height:60px;
+	width:70px;
+	transform:rotate(70deg);
+	-webkit-transform:rotate(70deg);
+	animation:myfirstanimation 10s linear infinite;
+	-webkit-animation:myfirstanimation 10s linear infinite;
+	}
+	@-webkit-keyframes myfirstanimation{
+	from{background:white;-webkit-transform:rotate(70deg);}
+	to{background:brown;-webkit-transform:rotate(500deg);}
+	}
+	#space{
+		margin-left: 60px;
+		margin-bottom:15px;
+	}
+.sitebar-footer{
+	background-image:url(../img/reagain.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.bottom-footer{
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #b2b2b2;
+	color: white;
+}
+.footimg{
+	margin-top: 2%;
+	height: 200px;
+	width: 450px;
+}
+
+.address{
+	color: white;
+}
+.ul{
+	margin-top: 2%;
+	color: white;
+}
+.ul ul li a{
+	text-decoration: none;
+	color: white;
+}
+.right a{
+	color:red;
+}
+.social-header{
+	width:86%;
+	padding:13px;
+	position:absolute;
+	left:43%;
+}
+.social-header ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.social-header ul li{
+	display:inline-block;
+	width:30px;
+	
+}
+.social-header ul li a{
+	color:transparent;
+	display:block;
+}
+.social-header ul li a.facebook{
+	background-image:url(../img/faacebook.jpg);
+	background-repeat:no-repeat;
+	background-size:30px 30px;
+	height:30px;
+	border-radius: 15px;
+}
+.social-header ul li a.twitter{
+	background-image:url(../img/twitt.png);
+	background-repeat:no-repeat;
+	background-size:30px 30px;
+	height:30px;
+	border-radius: 15px;
+}
+.social-header ul li a.youtupe{
+	background-image:url(../img/youu.jpg);
+	background-repeat:no-repeat;
+	background-size:30px 30px;
+	height:30px;
+	border-radius: 15px;
+}
+#img-a{
+	height: 25px;
+	width: 25px;
+	margin-left: 3px;
+	padding:2px;
+	border-radius: 12px;
+}
+#img-b{
+	height: 25px;
+	width: 25px;
+	margin-left: 3px;
+	border-radius: 12px;
+	padding:2px;
+}
+#img-c{
+	height: 25px;
+	width: 25px;
+	padding:2px;
+	border-radius: 12px;
+}
+#img-d{
+	height: 25px;
+	width: 25px;
+	padding:2px;
+	border-radius: 12px;
+	
+}
+.carousel-caption{
+	background-color:rgba(181, 230, 29, 0.5);
+	max-width: 100%;
+	width: 100%;
+	left: 0px;
+}
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:white;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+.start{
+	color: white;
+	font-size: 20px;
+	font-style: italic;
+	font-family: Imprint MT Shadow;
+	text-shadow:10px 16px 35px green;
+	padding:15px;
+}
+#start{
+	color: green;
+	font-family: Imprint MT Shadow;
+	text-shadow:10px 16px 35px green;
+	padding:20px;
+}
+.img-content{
+	border:2px groove brown;
+	height:200px;
+	width:400px;
+}
+.box{	
+	overflow:hidden;
+}
+.caption{
+	background:rgba(0,0,0,0.5);
+	display:block;
+	position:absolute;
+	color:transparent;
+	padding:2px;
+}
+#box1 .caption{
+	width:180px;
+	height:70px;
+	top:10px;
+	transition:top 1s, height 0.5s, color 1s;
+}
+#box1:hover .caption{
+	top:100px;
+	height:130px;
+	color:white;
+	font-family:default;
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:black;
+}
+#scroll:hover {
+   background-color:rgba(255 ,210 ,105,0.8);
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+.video{
+	margin-top:9px;
+	margin-left: 20px;
+	height:200px; 
+	width:225px;
+}
+
+	@media screen and (max-width:400px){
+		.gol{
+		display: hidden;
+	}
+	}
+	@media screen and (max-width:600px){
+	.gol{
+		display: hidden;
+	}
+	}
+	@media screen and (max-width:700px){
+	.gol{
+		display: hidden;
+	}
+	}
+
+	
+	@media screen and (max-width:800px){
+		.gol{
+		display: hidden;
+	}
+	}
+	@media screen and (max-width:900px){
+	.gol{
+		display: hidden;
+	}
+	}
+	@media screen and (max-width:1300px){
+	.imgfamily1{
+	border:4px solid gray;
+	height: 100px;
+ 	width: 100px;
+ 	position: absolute;
+ 	right:90px;
+	}
+	.imgfamily2{
+	border:4px solid gray;
+	height: 100px;
+ 	width: 100px;
+ 	position: absolute;
+ 	right:345px;
+	}
+	.imgfamily3{
+	border:4px solid gray;
+	height: 100px;
+ 	width: 100px;
+ 	position: absolute;
+ 	right:610px;
+	}
+	.imgfamily4{
+	border:4px solid gray;
+	height: 100px;
+ 	width: 100px;
+ 	position: absolute;
+ 	right:480px;
+	}
+	.imgfamily5{
+	border:4px solid gray;
+	height: 100px;
+ 	width: 100px;
+ 	position: absolute;
+ 	right:480px;
+ 	top: 2px;
+	}
+	}
+	
+	@media screen and (max-width:800px){
+	.div-tree{
+		display: none;
+	}
+	.imgfamily1,.imgfamily2,.imgfamily3,.imgfamily4,.imgfamily5{
+		display: none;
+	}
+	.div-con{
+		margin-top: 600px;
+	}
+	}
+
+	

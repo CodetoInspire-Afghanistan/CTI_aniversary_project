@@ -1,0 +1,583 @@
+
+	.gol{
+		width:px;
+		height:px;
+	}
+.baloon{
+	
+	position:fixed;
+	top:1%;
+	right:2%;
+	animation-name: baloon; 
+	animation-duration: 30s; 
+	animation-timing-function: linear;  
+	animation-iteration-count: infinite;  
+	animation-play-state: running;
+	animation-filing-mode:forwards;
+	-webkit-filter: drop-shadow(5px 5px 10px black);
+	-moz-filter: drop-shadow(5px 5px 10px black);
+	-o-filter: drop-shadow(5px 5px 10px black);
+} 
+@keyframes baloon{ 
+	from{top:1%;}
+	to{top:70%;}
+}
+
+.baloon2{
+	
+	position:fixed;
+	top:5%;
+	left:2%;
+	animation-name: baloon; 
+	animation-duration: 30s; 
+	animation-timing-function: linear;  
+	animation-iteration-count: infinite;  
+	animation-play-state: running;
+	animation-fil-mode:forwards;
+	-webkit-filter: drop-shadow(5px 5px 10px black);
+	-moz-filter: drop-shadow(5px 5px 10px black);
+	-o-filter: drop-shadow(5px 5px 10px black);
+} 
+@keyframes baloon{ 
+	from{top:1%;}
+	to{top:70%;}
+}
+
+	#social{
+	position:fixed;
+	top:50%;
+	left:1%;
+}
+.tree{
+	position:fixed;
+	bottom:1.3%;
+	right:2%;
+}
+
+.aa{
+	position:fixed;
+	bottom:4%;
+	left:5%;
+}
+
+.bb{
+	position:fixed;
+	bottom:1.3%;
+	left:20%;
+}
+
+.cc{
+	position:fixed;
+	bottom:1.3%;
+	left:55%;
+}
+
+.dd{
+	position:fixed;
+	bottom:4%;
+	right:4%;
+}
+
+.a{position:fixed;
+	top:3%; 
+	left:7%;
+	width:8%;
+	height:10%;
+}
+
+.b{position:fixed;
+	top:1%; 
+	left:20%;
+	width:15%;
+	height:13%;
+}
+
+.c{position:fixed;
+	top:3%;
+	right:31%;
+	width:12%;
+	height:12%;
+}
+
+.d{position:fixed;
+	top:10%;
+	right:45%;
+	width:10%;
+	height:11%;
+}
+
+.e{position:fixed;
+	top:9%; 
+	right:17%;
+	width:9%;
+	height:10%;
+}
+
+.f{position:fixed;
+	top:7%; 
+	right:2%;
+	width:8%;
+	height:10%;
+}
+
+
+.plane{
+	position:fixed;
+	top:6%;
+	right:1%;
+	opacity:0;
+	animation-name: plane; 
+	animation-duration: 15s; 
+	animation-timing-function: linear;  
+	animation-iteration-count: 3;  
+	animation-play-state: running;
+	animation-filing-mode:forwards;
+} 
+@keyframes plane{ 
+	from{right:0%;
+	opacity:1;}
+	to{right:90%;
+	opacity:1;}
+}
+
+h1{
+font-family:'Comic Sans MS';
+font-size:3em;
+text-align:center;
+}
+
+h2{
+font-family:'Comic Sans MS';
+font-size:2.5em;
+text-align:center;
+}
+p{
+font-family:'Comic Sans MS';
+font-size:1.4em;
+text-indent:6%;
+padding:3%;
+}
+.a1{
+	color:pink;
+	position:fixed;
+	top:5%; 
+	left:10%;
+	text-decoration:none;
+	z-index:1;
+	font-family:'Comic Sans MS';
+	font-size:1.5em;
+	}
+.b2{
+	color:yellow;
+	position:fixed;
+	top:6.7%; 
+	left:23%;
+	text-decoration:none;
+	z-index:1;
+	font-family:'Comic Sans MS';
+	font-size:1.5em;
+}
+.c3{
+	color:orange;
+	position:fixed;
+	top:8%;
+	right:32%;
+	text-decoration:none;
+	z-index:1;
+	font-family:'Comic Sans MS';
+	font-size:1.5em;
+}
+.d4{position:fixed;
+	top:15%;
+	right:38%;
+	width:13.5%;
+	height:12%;
+	color:blue;
+	text-decoration:none;
+	z-index:1;
+	font-family:'Comic Sans MS';
+	font-size:1.5em;
+}
+.e5{position:fixed;
+	top:13%; 
+	right:16%;
+	width:8%;
+	height:10%;
+	color:green;
+	text-decoration:none;
+	z-index:1;
+	font-family:'Comic Sans MS';
+	font-size:1.5em;
+}
+
+.f6{position:fixed;
+	top:11%; 
+	right:0.2%;
+	width:8%;
+	height:10%;
+	color:brown;
+	text-decoration:none;
+	z-index:1;
+	font-family:'Comic Sans MS';
+	font-size:1.5em;
+}
+
+#save{
+	position:absolute;
+	top:100%;
+	left:60%;
+	width:18%;
+	height:18%;
+	background-color:green;
+	box-shadow:0px 0px 30px white;
+	color:white;
+}
+
+#clear{
+	position:absolute;
+	left:40%;
+	width:18%;
+	height:18%;
+	background-color:green;
+	box-shadow:0px 0px 30px white;
+	color:white;
+}
+
+.divread{
+	background-color:white;
+	height:auto;
+	width:80%;
+	opacity:0.7;
+	position:absolute;
+	top:50%;
+	left:10%;
+	border-radius:5%;
+	z-index:1;
+}
+
+.img{
+	position:absolute;
+	top:30%;
+	height:25%;
+	width:20%;
+	transition-proprety:all;
+	transition-duration:1s;
+	transition-timing-function:linear;
+	transition-delay:1s;
+	margin:3%;
+}
+
+.img:hover{
+	transform:translate(200px,200px) skew(190deg) scale(1.6,1.6) rotatez(360deg);
+}
+
+.im{
+	position:absolute;
+	top:30%;
+	left:30%;
+	height:25%;
+	width:20%;
+	transition-proprety:all;
+	transition-duration:1s;
+	transition-timing-function:linear;
+	transition-delay:1s;
+	margin:3%;
+}
+
+.im:hover{
+	transform:translate(200px,200px) skew(190deg) scale(1.6,1.6) rotatez(360deg);
+}
+
+.i{
+	position:absolute;
+	top:30%;
+	left:60%;
+	height:25%;
+	width:20%;
+	transition-proprety:all;
+	transition-duration:1s;
+	transition-timing-function:linear;
+	transition-delay:1s;
+	margin:3%;
+}
+
+.i:hover{
+	transform:translate(200px,200px) skew(190deg) scale(1.6,1.6) rotatez(360deg);
+}
+
+.log{
+	position:absolute;
+	top:35%;
+	left:30%;
+}
+form{
+position:absolute;
+top:50%;
+margin-left:43%;
+}
+
+::-webkit-input-placeholder { color: purple; font-family:'Comic Sans MS'; font-size:1em;}
+::-moz-placeholder { color: purple; font-family:'Comic Sans MS'; font-size:1em;} 
+::-ms-input-placeholder { color:purple; font-family:'Comic Sans MS'; font-size:1em;}
+
+	input[type=text], input[type=password]:focus{
+		outline:none;
+	}
+	.search{
+		margin-right:2%;
+		margin-top:2%;
+		background-image:url(../images/search.jpg);
+		background-position:right;
+		background-repeat:no-repeat;
+		width:10%;
+		height:3.5%;
+		border-radius:10px;
+		transition:width 1s linear;
+		-webkit-transition:all 1s linear;
+	}
+
+	.search:hover{
+	width:15%;
+	}
+	
+	header{
+	height:30%;
+	width:100%;
+	background-image:url(images/123.jpg);
+	background-repeat:repeat-x;
+}
+
+* {
+margin:0;
+padding:0;
+}
+#nav {
+list-style:none;
+height:2em;
+}
+#nav li {
+position:relative;
+float:left;
+width:192px;
+background:rgb(7, 172, 252);
+text-align:center;
+}
+#nav li:hover {
+background:rgb(62, 191, 253);
+}
+#nav a {
+display:block;
+color:white;
+text-decoration:none;
+line-height:2em;
+}
+/* --------- Drop Down -------- */
+#nav ul {
+position:absolute;
+left:-999em;
+top:2em;
+list-style:none;
+}
+#nav li:hover ul {
+left:0;
+top:auto;
+}
+
+
+ul li a .span{
+opacity:0;
+}
+
+ul li a:hover .span{
+opacity:1;}
+
+
+ul li a .spa{
+opacity:1;
+}
+
+ul li a:hover .spa{
+opacity:0;}
+
+
+.rubberBand{position:relative;
+top:3%;}
+
+nav{
+	position:absolute;
+	top:25%;
+}
+
+#b2{
+	margin-left:2%;
+	margin-top:2%;
+}
+
+#a1{
+	margin-top:2%;
+}
+
+	@media only screen and (max-width:480px){
+	
+	
+	.plane{
+		width:150px;
+		height:120px;
+	}
+	
+	.a1{
+	color:rgb(255, 51, 153);
+	position:fixed;
+	top:5%; 
+	left:10%;
+	text-decoration:none;
+	z-index:1;
+	font-family:'Freestyle Script';
+	font-size:1.3em;
+	}
+.b2{
+	color:rgb(230, 230, 0);
+	position:fixed;
+	top:6.7%; 
+	left:23%;
+	text-decoration:none;
+	z-index:1;
+	font-family:'Freestyle Script';
+	font-size:1.3em;
+}
+.c3{
+	color:orange;
+	position:fixed;
+	top:6.3%;
+	right:26.3%;
+	text-decoration:none;
+	z-index:1;
+	font-family:'Freestyle Script';
+	font-size:1.3em;
+}
+.d4{position:fixed;
+	top:15%;
+	right:42%;
+	width:13.5%;
+	height:12%;
+	color:blue;
+	text-decoration:none;
+	z-index:1;
+	font-family:'Freestyle Script';
+	font-size:1.3em;
+}
+.e5{position:fixed;
+	top:10%; 
+	right:9%;
+	width:8%;
+	height:10%;
+	color:rgb(19, 77, 0);
+	text-decoration:none;
+	z-index:1;
+	font-family:'Freestyle Script';
+	font-size:1.3em;
+}
+	.baloon{
+		width:95px;
+		height:120px;
+	}
+	
+	.baloon2{
+		width:65px;
+		height:85px;
+	}
+	
+	.hom{
+		width:230px;
+		height:150px;
+	}
+	
+	.anim{
+		width:85px;
+		height:55px;
+	}
+	
+	.ani{
+		width:85px;
+		height:55px;
+	}
+	
+	.an{
+		width:85px;
+		height:55px;
+	}
+	
+	.gol{
+		width:25px;
+		height:25px;
+	}
+	
+	.search{
+		
+		width:95px;
+	}
+	
+	.search:hover{
+		width:130px;
+	}
+	
+	p{
+		font-size:1em;
+	}
+	
+	h1{
+		font-size:2em;
+	}
+	
+	.blogs{
+		width:50%;
+		height:25%;
+	}
+	
+	h2{
+		font-size:1.5em;
+	}
+	
+	.log{
+	position:absolute;
+	left:1%;
+	width:355px;
+	height:300px;
+	visibility:hidden;
+}
+
+form{
+position:absolute;
+top:40%;
+margin-left:20%;
+}
+
+.input{
+	width:43%;
+	margin-left:0;
+}
+
+
+}
+
+
+.bicycle{
+	position:fixed;
+	bottom:5px;
+	right:3%;
+	opacity:0;
+	animation-name: bicycle; 
+	animation-duration: 30s; 
+	animation-timing-function: linear;  
+	animation-iteration-count: 1;  
+	animation-play-state: running;
+	animation-filing-mode:forwards;
+}
+
+@keyframes bicycle { 
+	from{right:3%;
+	opacity:1;}
+	to{right:90%;
+	opacity:1;}
+	
+}

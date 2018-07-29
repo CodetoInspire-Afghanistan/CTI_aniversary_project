@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Mother</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/mother test.css">
+		<link rel="shortcut icon" type="image/png" href="img/mother2.jpg">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript">
+		var question, chA, chB, chC, chD, chE, score=0, num=0, choices, answer;
+		var questions = [
+		
+
+
+		["What is your defination for understanding your children?",
+			 "Sympathy whit her/his in difficult,laborious and happy situations", "Ask about her/his from other",
+			 "Ready her/his needed", "A", "C"],
+			["Do you get idea from your children when you want to get decision for them?",
+			 "I don't know", "Somewhat","Usually", "Yes", "No", "D", "C", "B", "A"],
+			["Do you solve your children heart needed?",
+			 "I don't know", "Somewhat", "Usually", "Yes", "No", "D", "C", "B", "A"],
+			["Do you talk whit your husband about materialistic and virtual things about your children?",
+			 "I don't know", "Somewhat", "Usually", "Yes", "No", "D", "C", "B", "A"],
+			["Which one of your children is in your premieriship,for handicap,predilection,<br>understanding, and solving her/his materialistic and virtual needed?",
+			"Both of them,equally", "Your daughters", "Your sons", "A"],
+			["How much do you trust on your family?",
+			 "I don't have trust to them", "I don't know", "Somewhat",
+			 "A little bit", "perfectly", "E", "D", "C", "B"],
+			 ["Do you have a healthy contact whit your children?",
+			  "I don't know", "Somewhat","Usually", "Yes", "No", "D", "C", "B", "A"],
+			 ["Do you know who your children’s friends are,and what type of person they are?",
+			 "I don't know", "Somewhat","Usually", "Yes", "No", "D", "C", "B", "A"],
+			 ["What is your defination of having a perfect plan for your children's future?",
+			 "Having a plan about their future in knowledge and education sides","Having a plan about their marriage and its qualification",
+			   "Born and grow up them", "A", "B"],
+			  ["What is your expectation from your children?",
+			   "progress in scientific,virtual,andworldly sides", "Obey from you", "Go to school", 
+			  "A", "C"]
+
+
+
+
+
+		];
+		function _(x){
+			return document.getElementById(x);
+		}
+		function renderQuestion(){
+			if (num >= questions.length) {
+				
+				_("test-status").innerHTML = "You got " + score + " of 50 Scores!";
+				if (score >=40) {
+					_("test").innerHTML ="congratulation!You got perfect number of your test that you done,for sure you are a perfect Mother in your family!:)";
+				}
+				else if(score >=25 && score< 40){
+					_("test").innerHTML ="congratulation!You got a good number of your test that you done, for sure you are a perfect Mother in your family but if you want your family accept you try more!find out your family members what things they want from you and what things they desire from you to done for them and follow these advices:1-Compromise is the most valuable tool you have 2-Don't put everything down to hormones3- If your teenager feels reluctant to talk to you, he or she may be upset about something or being bullied. Ask if everything is okay and win over their trust. 4-When someone ask you to do his/her work try to do it at that time. Don't postpone it.5-If the work is really important then try to make them understand and promise about next time.6-Always learn to forgive when you get into a fight with your parents. Just tell them sorry, kiss them, hug them, and make the know how much you love them.7-Don't upset them by telling them you don't belong in the family or no one loves you. Apologize to them no matter how bad the scolding gets and hug or kiss them. They will calm down.8-Do not get upset when your mum/dad is telling you something and you think they are shouting at you because they are trying to teach you something important.9-Try to be supportive and encouraging!.10-Be good to your family.Warnings:1-If your family hates each other, try to put them in a situation where giving and receiving help is important.2-Never beat or raise your hand to anyone.3-Family members are never entitled to be abusive. If they are, don't waste your time. They can't always be won over with patience and kindness. Stay out of toxic situations when you can.steps:1-Understand your family well.2-Respect your family.3-Give time.4-Treat everyone as equal.5-Never scream or shout at any one.6-Never discriminate.7-Learn to compromise.8-Help each other.9-Organizing surprise birthday parties and celebrating any individual's achievements can really help.10-Avoid using offensive and abusive words against each other or your family will get cross and start shouting at you.11-Sometimes teenagers can feel sad or lonely.12-Never ever break any promise.13-Learn to forgive.14-Don't scold too much.15-Make them realize in an essay way.";
+				}
+				else{
+					_("test").innerHTML ="you take less 25, in this cause you should work hard to be a perfect one,please if you want to be a perfect Mother follow these advises:1-Compromise is the most valuable tool you have 2-Don't put everything down to hormones3- If your teenager feels reluctant to talk to you, he or she may be upset about something or being bullied. Ask if everything is okay and win over their trust. 4-When someone ask you to do his/her work try to do it at that time. Don't postpone it.5-If the work is really important then try to make them understand and promise about next time.6-Always learn to forgive when you get into a fight with your parents. Just tell them sorry, kiss them, hug them, and make the know how much you love them.7-Don't upset them by telling them you don't belong in the family or no one loves you. Apologize to them no matter how bad the scolding gets and hug or kiss them. They will calm down.8-Do not get upset when your mum/dad is telling you something and you think they are shouting at you because they are trying to teach you something important.9-Try to be supportive and encouraging!.10-Be good to your family.Warnings:1-If your family hates each other, try to put them in a situation where giving and receiving help is important.2-Never beat or raise your hand to anyone.3-Family members are never entitled to be abusive. If they are, don't waste your time. They can't always be won over with patience and kindness. Stay out of toxic situations when you can.steps:1-Understand your family well.2-Respect your family.3-Give time.4-Treat everyone as equal.5-Never scream or shout at any one.6-Never discriminate.7-Learn to compromise.8-Help each other.9-Organizing surprise birthday parties and celebrating any individual's achievements can really help.10-Avoid using offensive and abusive words against each other or your family will get cross and start shouting at you.11-Sometimes teenagers can feel sad or lonely.12-Never ever break any promise.13-Learn to forgive.14-Don't scold too much.15-Make them realize in an essay way.";
+				}
+				num = 0;
+				score = 0;
+				return false;
+			}
+			answer = "";
+			_("test-status").innerHTML = "Question" + (num+1) + " of " + questions.length;
+			question = questions[num][0];
+			if(num==1 || num==2 || num==3 || num==6 || num==7 || num==5){
+				chA =questions[num][1];
+				chB = questions[num][2];
+				chC = questions[num][3];
+				chD = questions[num][4];
+				chE = questions[num][5];
+			}
+			else{
+				chA =questions[num][1];
+				chB = questions[num][2];
+				chC = questions[num][3];
+			}
+			
+
+			_("test").innerHTML = "<h3>"+ question + "</h3>";
+
+				if(num==1 || num==2 || num==3 || num==6 || num==7 || num==5){
+					_("test").innerHTML += "<input type='radio' name='choices' value='A'>"+chA + "<br>"
+					_("test").innerHTML += "<input type='radio' name='choices' value='B'>"+chB + "<br>"
+					_("test").innerHTML += "<input type='radio' name='choices' value='C'>"+chC + "<br>"
+					_("test").innerHTML += "<input type='radio' name='choices' value='D'>"+chD + "<br>"
+					_("test").innerHTML += "<input type='radio' name='choices' value='E'>"+chE + "<br>"
+				}
+				else{
+					_("test").innerHTML += "<input type='radio' name='choices' value='A'>"+chA + "<br>"
+					_("test").innerHTML += "<input type='radio' name='choices' value='B'>"+chB + "<br>"
+					_("test").innerHTML += "<input type='radio' name='choices' value='C'>"+chC + "<br>"
+				}
+			
+			 _("test").innerHTML += "<input type='image' src='img/submit.png' onclick='checkAnswer()'>";
+
+		}
+
+		function checkAnswer(){
+			choices = document.getElementsByName("choices");
+			for (var i = 0; i < choices.length; i++) {
+				if(choices[i].checked){
+
+					answer = choices[i].value;
+
+				}
+			}
+			if(num==1 || num==2 || num==3 || num==6 || num==7 || num==5){
+				if (answer == questions[num][6]) {
+					score +=6;
+				}
+				else if(answer == questions[num][7]){
+					score +=4;
+				}
+				else if(answer == questions[num][8]){
+					score +=3;
+				}
+				else if(answer == questions[num][9]){
+					score +=2;
+				}
+			}
+			else if(num==0){
+				if (answer == questions[num][4]) {
+					score +=4;
+				}
+				else if(answer == questions[num][5]){
+					score +=3;
+				}
+			}
+			else if(num==8){
+				if (answer == questions[num][4]) {
+					score +=4;
+				}
+				else if(answer == questions[num][5]){
+					score +=2;
+				}
+			}
+			else if(num==9){
+				if (answer == questions[num][4]) {
+					score +=3;
+				}
+				else if(answer == questions[num][5]){
+					score +=2;
+				}
+			}
+			else if(num==4){
+				if (answer == questions[num][4]) {
+					score +=3;
+				}
+			}
+			
+			num++;
+			renderQuestion();
+		}
+		window.addEventListener("load", renderQuestion, false);
+	</script>
+</head>
+<body lang="en">
+<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+	<script type='text/javascript'>
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+<!-- start of header webpage -->
+	
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<h1>Healthy family</h1>
+			</div>
+		</div>
+		<div class="container">
+		<div class="row content no-padding" >
+			
+<!-- start of slider webpage -->
+		<div class="carousel slide" id="mySlider" data-ride="carousel">
+			<!-- wrapper section -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="img/family-banner.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption animated slideInUp">
+						<h2>Enjoy your time with your family</h2>
+						<p>If your family hates each other, try to put them in a situation where giving and receiving help is important</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/head.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption animated slideInUp">
+						<h2>Love your children</h2>
+						<p>Have a good behavior with your childen when they are child or adult</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/happy-family1.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption animated slideInUp">
+						<h2>Laugh is against sadness</h2>
+						<p>Compromise is the most valuable tool you have</p>
+						</div>
+				</div>
+
+				<div class="item">
+					<img src="img/maxresdefault.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption animated slideInUp">
+						<h2>Go sometimes with your family outside</h2>
+						<p>Always learn to forgive when you get into a fight with your parents. Just tell them sorry, kiss them, hug them, and make the know how much you love them</p>
+						</div>
+				</div>
+
+				<div class="item">
+					<img src="img/footimg.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption animated slideInUp">
+						<h2>Be synpathetic of each other </h2>
+						<p>Do not get upset when your mum/dad is telling you something and you think they are shouting at you because they are trying to teach you something importan</p>
+						</div>
+				</div>
+			</div>
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-slide-to="0" data-target="#mySlider" class="active"></li>
+				<li data-slide-to="1" data-target="#mySlider"></li>
+				<li data-slide-to="2" data-target="#mySlider"></li>
+				<li data-slide-to="3" data-target="#mySlider"></li>
+				<li data-slide-to="4" data-target="#mySlider"></li>
+			</ol>
+			<!-- left and right controls -->
+			<a href="#mySlider" class="left carousel-control"  data-slide="prev" role="button">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a href="#mySlider" class="right carousel-control"  data-slide="next" role="button">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+<!-- end of slider webpage -->
+
+<!-- start of navigationbar -->
+	<nav class="navbar navbar-static-top no-margin">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-target="#myNav" data-toggle="collapse">
+					<span class="glyphicon glyphicon-align-justify"
+					style="color:white; font-size: 30px;" title="Tap to links"></span>
+				</button>
+				
+			</div>
+			<div class="collapse navbar-collapse" id="myNav">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="dropdown active">
+			        <a class="dropdown-toggle drop" data-toggle="dropdown" href="Test.html">Test
+			        <span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			         <li><a href="father test.html">Test for Father</a></li>
+			          <li><a href="mother test.html">Test for Mother</a></li>
+			          <li><a href="boy test.html">Test for Son</a></li>
+			          <li><a href="girl test.html">Test for Dughter</a></li>  
+			        </ul>
+	      			</li>
+	      			<li><a href="infor.html">Personality Test</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+<!-- end of navigationbar -->
+			<div class="container">
+		<div class="row">
+					<div class="col-md-10 col-md-offset-1 back">
+					<div class="row f">
+							<div class="col-xs-6 col-xsoffset-6" >
+							<img src="img/lab.jpg" class="img-responsive animated fadeIn  h2-img">
+							</div>
+
+						<div class="col-xs-6 animated bounceInRight" >
+							<h2 id="test-status"></h2>
+						</div>
+						
+					</div>
+
+					<div class="row">
+						<div class="col-md-12 s" id="test">
+							
+						</div>
+					</div>
+				</div>
+		</div>	
+		</div>
+		<!-- start of footer webpage -->
+	<div class="sitebar-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 address">
+					<h2>
+						Contact Address
+					</h2>
+					<address>
+						Afghanistan,<br>
+						Herat,<br>
+						Code To Inspire
+					</address>
+				</div>
+<div class="col-md-2 ul">
+				<div class="social-header">
+			<ul>
+				<li><a href="https://www.facebook.com/" class="facebook" title="contact with facebook" target="_blank"></a></li>
+				<li><a href="https://twitter.com/" class="twitter" title="follow by twitter" target="_blank"></a></li>
+				<li><a href="https://www.youtube.com" class="youtupe" target="_blank" title="youtube"></a></li>
+			</ul>
+			</div>
+
+			</div>
+
+					<div class="col-md-2 ul">
+						<b><ul style="direction:rtl; list-style-type:none;">
+						<div class="item item-icon-right">
+						<li><a href="about.html" title="About us"><img src="img/aboutus.png" id="img-a">
+						About us</a></li>
+						</div>
+						<li><a href="#" title="survey about other people,who use form this website information"><img src="img/good.jpg" id="img-c">
+						survey</a></li>
+						<li><a href="#" title="Sources"><img src="img/phon.jpg" id="img-d">
+						Sources</a></li></ul></b>
+					</div>
+					
+				<div class="col-md-5 box" id="box1">
+					<img src="img/foot.jpg" class="img-responsive no-margin footimg">
+					<div class="caption">This website is about healthy family,you can use frome this information and the result of your test,then share your idea about website and the good points that helped you to solve your problem to be useful for other people who use from this Website after in <b>Survey </b>link.</div>
+				</div>
+
+				
+
+			</div>
+			<div class="bottom-footer">
+				<div class="col-md-7 address">
+				<p><small>copyright @CTI in 2016, Prepared by <a href="https://twitter.com/hayedehRasouly"
+				target="_blank">Hayedeh Rasouly</a>& 
+				<a href="https://twitter.com/boshrarasoly1"
+				target="_blank">Boshra Rasouly</a>&
+				<a href="https://twitter.com/morsal_sediqi"
+				target="_blank">Morsal Saddiqi</a>
+				</small></p>
+			</div>
+			</div>
+		</div>
+	</div>
+<!-- end of footer webpage -->
+
+				
+			</div>
+		</div>
+
+</body>
+</html>

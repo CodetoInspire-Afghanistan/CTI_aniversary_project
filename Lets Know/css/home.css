@@ -1,0 +1,46 @@
+.backi{
+background-image:url("../image/xc.jpg");
+background-attachment: fixed;
+box-shadow: 5px 5px 70px black;
+margin-top: 25px;
+margin-bottom: 25px;
+background-repeat: repeat-y;
+background-size: 100%;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width:80%;
+      height: 50%;
+      margin: auto;
+  }
+  .navbar navbar-inverse{
+margin:30px;
+  }
+.li{
+color:rgb(120,135,149);
+border-right:2px solid white;
+}
+.img{
+  box-shadow: 5px 5px 40px rgb(240,231,183);
+}
+.sgs{
+  float:right;
+}
+.check_content{
+	background-color:rgb(120,74,50); 
+	border-radius:50px 0px 50px 0px;
+	color:rgb(240,231,185);
+}
+.asl{
+
+
+  color:rgb(91,61,19);
+  font-size: 20px;
+  font-weight: bold;
+
+}
+#p1_footer{
+background-color:#A0522D;
+color:rgb(225,178,136);
+font-weight: bold;
+}

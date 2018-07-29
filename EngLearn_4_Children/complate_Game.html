@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Game</title>
+	<link rel="icon" type="image/gif/png" href="images/baloon.png">
+		<title></title>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+		
+		<script src="js/jquery.countdown360.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/new.css"/>
+		<link rel="stylesheet" type="text/css" href="css/generalStyle.css"/>
+		<style>
+			#countdown{
+			position:absolute;
+			right:5%;
+			bottom:5%;
+			
+			}
+				#anim{
+			position:absolute;
+			bottom:0px;
+			left:20%;
+			animation:example1 40s 1 alternate;
+		}
+			@keyframes example1 {
+			from {bottom:0px; opacity:1;}
+			50% {bottom:50%; opacity:1;
+			}
+			100% {top:-10px; opacity:0;
+			
+			}
+		}
+		
+			
+			
+		</style>
+</head>
+<body>
+	<div id="countdown"></div>
+		<script type="text/javascript" charset="utf-8">
+			function on(){
+				window.location='complate_Game.html';
+			}
+		 	var countdown =  $("#countdown").countdown360({
+       	 	radius      : 60,
+         	seconds     : 130,
+         	fontColor   : 'rgb(103,203,6)',
+         	autostart   : false,
+         	onComplete  : function () { alert('try again')
+			on();
+
+			}
+		   });
+			countdown.start();
+			console.log('countdown360 ',countdown);
+		 	$(document).on("click","button",function(e){
+		 		e.preventDefault();
+		 	
+		 	});
+		  </script>
+		</div>
+		
+	<div id="container">
+			<a href="Index.html" class=""><img src="home/home1.png" height="80" width="80"id="home"></a>
+			<a href="games.html" ><img src="images/clear.png" height="50" width="50"  style="position:absolute; left:5%; top:17%;"id="home"></a>
+			<div id="bubble1" class="bubble"></div>
+			<div id="bubble2" class="bubble"></div>
+			<div id="bubble3" class="bubble"></div>
+		<div id="div1">
+			<div id="word1"  class="word" >
+				<div id="letter1" name="a" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div>
+				<div id="letter2" name="p"  class="empty" >p</div>
+				<div id="letter3"  name="2p" class="empty">p</div>
+				<div id="letter4"  name="l"  class="empty">l</div>
+				<div id="letter5" name="e"  class="empty">e</div>
+			</div>
+			<div id="paragraf1" class="paragraf">
+				<div class="p">
+					<p id="i"  name="i" draggable="true" style="color:red;" >I</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/A2.png" id="a"  name="a" draggable="true" ondragstart="drag(event)"  height="30" width="30"></p>
+				</div>
+				<div class="p">
+					<p id="e"  name="e"  draggable="true" style="color:purple;">E</p>
+				</div>
+			</div>
+			<button disabled="true" class="next " id="next" >NEXT</button>
+			<img src="gamePic/a.png" id="img">
+		</div>
+		<div id="div3" hidden>
+			<div id="word3" class="word" >
+				<div id="letter1" name="c" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="l"  class="empty" >l</div>
+				<div id="letter3"  name="o" class="empty">o</div>
+				<div id="letter4"  name="c"  class="empty">c</div>
+				<div id="letter5" name="k"  class="empty">k</div>
+			</div>
+			<div id="paragraf3" class="paragraf" >
+				<div class="p">
+					<p id="k"  name="i"  draggable="true" style="color:purple;">K</p>
+				</div>
+				<div class="p">
+					<p id="l"  name="a"  draggable="true"  style="color:green;">L</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/c.png" id="c"  name="e"  draggable="true" ondragstart="drag(event)" height="30" width="30" ></p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next3" >NEXT</button>
+			<img src="gamePic/c.png" id="img">
+		</div>
+		<div id="div6" hidden>
+			<div id="word6" class="word">
+				<div id="letter1" name="f" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="i"  class="empty" >i</div>
+				<div id="letter3"  name="s" class="empty">s</div>
+				<div id="letter4"  name="h"  class="empty">h</div>
+				
+			</div>
+			<div id="paragraf6" class="paragraf">
+				<div class="p">
+					<p><img src="pic/f.png" id="k"  name="f"  draggable="true" ondragstart="drag(event)" height="30" width="30"  ></p>
+				</div>
+				<div class="p">
+					<p id="l"  name="g"  draggable="true" style="color:blue; font-family:Elephant;">J</p>
+				</div>
+				<div class="p">
+					<p id="c"  name="p" draggable="true"style="color:purple; font-family:Elephant;" >P</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next6" >NEXT</button>
+			<img src="gamePic/f.png" id="img">
+		</div>
+		<div id="div12" hidden>
+			<div id="word12" class="word">
+				<div id="letter1" name="l" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="e"  class="empty" >e</div>
+				<div id="letter3"  name="m" class="empty">m</div>
+				<div id="letter4"  name="o"  class="empty">o</div>
+				<div id="letter5"  name="n"  class="empty">n</div>
+			</div>
+			<div id="paragraf12" class="paragraf">
+				<div class="p">
+				<p><img src="pic/l.png" id="a"  name="a" draggable="true" ondragstart="drag(event)" height="30" width="30" ></p>
+				</div>
+				<div class="p">
+					<p id="l"  name="I"  draggable="true"  style="color:green; font-family:Elephant;" >I</p>
+				</div>
+				<div class="p">
+					<p id="c"  name="T" draggable="true" style="color:gray; font-family:Elephant;"  >T</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next12" >NEXT</button>
+			<img src="gamePic/l.png" id="img">
+		</div>
+		<div id="div24" hidden>
+			<div id="word24" class="word">
+				<div id="letter1" name="m" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="o"  class="empty" >o</div>
+				<div id="letter3"  name="u" class="empty">u</div>
+				<div id="letter4"  name="s"  class="empty">s</div>
+				<div id="letter5"  name="e"  class="empty">e</div>
+			</div>
+			<div id="paragraf24" class="paragraf">
+				<div class="p">
+					<p id="k"  name="v"  draggable="true" style="color:blue;"  >V</p>
+				</div>
+				<div class="p">
+					<p id="l"  name="N"  draggable="true"  style="color:purple;" >N</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/m.png" id="c"  name="w"  draggable="true" ondragstart="drag(event)" height="30" width="30"  ></p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next24" >NEXT</button>
+			<img src="gamePic/m.png" id="img">
+		</div>
+		
+		
+		<div id="div2" hidden>
+			<div id="word2" class="word"  >
+				<div id="letter1" name="a" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="p"  class="empty" >a</div>
+				<div id="letter3"  name="2p" class="empty">l</div>
+				<div id="letter4"  name="l"  class="empty">l</div>
+			</div>
+			<div id="paragraf2" class="paragraf" >
+				<div class="p">
+					<p id="i"  name="D"  draggable="true"  style="color:red;" >D</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/b.png" id="a"  name="B" draggable="true" ondragstart="drag(event)" height="30" width="30" ></p>
+				</div>
+				<div class="p">
+					<p id="e"  name="C"  draggable="true"  style="color:green;" >C</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next2" >NEXT</button>
+			<img src="gamePic/b.png" id="img">
+		</div>
+		
+		
+		<div id="div4" hidden>
+			<div id="word4" class="word">
+				<div id="letter1" name="d" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="o"  class="empty" >o</div>
+				<div id="letter3"  name="n" class="empty">n</div>
+				<div id="letter4"  name="k"  class="empty">k</div>
+				<div id="letter5"  name="e"  class="empty">e</div>
+				<div id="letter6" name="y"  class="empty">y</div>		
+			</div>
+			<div id="paragraf4" class="paragraf" >
+				<div class="p">
+					<p><img src="pic/d.png" id="k"  name="d" draggable="true" ondragstart="drag(event)" height="30" width="30" ></p>
+				</div>
+				<div class="p">
+					<p id="l"  name="b"  draggable="true"  style="color:brown;" >B</p>
+				</div>
+				<div class="p">
+					<p id="c"  name="p"  draggable="true"   style="color:blue;">P</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next4" >NEXT</button>
+			<img src="gamePic/d.png" id="img">
+		</div>
+		
+		<div id="div8" hidden>
+			<div id="word8" class="word">
+				<div id="letter1" name="h" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="e"  class="empty" >e</div>
+				<div id="letter3"  name="n" class="empty">n</div>
+						
+			</div>
+			<div id="paragraf8" class="paragraf">
+				<div class="p">
+					<p><img src="pic/h.png" id="k"  name="h"  draggable="true" ondragstart="drag(event)" height="30" width="30"  ></p>
+				</div>
+				<div class="p">
+					<p id="l"  name="A"  draggable="true"   style="color:purple;">A</p>
+				</div>
+				<div class="p">
+					<p id="c"  name="U"  draggable="true"  style="color:red;">U</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next8" >NEXT</button>
+			<img src="gamePic/h.png" id="img">
+		</div>
+		
+		<div id="div16" hidden>
+			<div id="word16" class="word">
+				<div id="letter1" name="q" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="u"  class="empty" >u</div>
+				<div id="letter3"  name="e" class="empty">e</div>
+				<div id="letter4"  name="e"  class="empty">e</div>
+				<div id="letter5"  name="n"  class="empty">n</div>
+			</div>
+			<div id="paragraf16" class="paragraf">
+				<div class="p">
+					<p id="k"  name="o"  draggable="true"  style="color:yellow;" >O</p>
+				</div>
+				<div class="p">
+					<p id="l"  name="G"  draggable="true"  style="color:red;">G</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/q.png" id="c"  name="Q"  draggable="true"  ondragstart="drag(event)" height="40" width="40" ></p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next16" >NEXT</button>
+			<img src="gamePic/q.png" id="img">
+		</div>
+		
+			<div id="div22" hidden>
+			<div id="word22" class="word">
+				<div id="letter1" name="w" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+					<div id="letter2" name="a"  class="empty" >a</div>
+					<div id="letter3"  name="l" class="empty">l</div>
+					<div id="letter4"  name="l"  class="empty">l</div>
+				</div>
+			<div id="paragraf22" class="paragraf">
+				<div class="p">
+					<p id="k"  name="v"  draggable="true"  style="color:purple;" >V</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/w.png" id="l"  name="w"  draggable="true" ondragstart="drag(event)" height="40" width="40" ></p>
+				</div>
+				<div class="p">
+					<p id="c"  name="o"  draggable="true"  style="color:blue;"  >O</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next22" >NEXT</button>
+			<img src="gamePic/w.png" id="img">
+		</div>
+		
+		<div id="div5" hidden>
+			<div id="word5" class="word">
+				<div id="letter1" name="e" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="l"  class="empty" >l</div>
+				<div id="letter3"  name="e" class="empty">e</div>
+				<div id="letter4"  name="p"  class="empty">p</div>
+				<div id="letter5"  name="h"  class="empty">h</div>
+				<div id="letter6" name="a"  class="empty">a</div>
+				<div id="letter7" name="n"  class="empty">n</div>
+				<div id="letter8" name="t"  class="empty">t</div>		
+			</div>
+			<div id="paragraf5" class="paragraf">
+				<div class="p">
+					<p id="k"  name="A"  draggable="true"  style="color:brown;" >A</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/e.png" id="l"  name="E" draggable="true" ondragstart="drag(event)" height="30" width="30"  ></p>
+				</div>
+				<div class="p">
+					<p id="c"  name="I"  draggable="true"  style="color:green;" >I</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next5" >Next</button>
+			<img src="gamePic/e.png" id="img">
+		</div>
+		
+		
+		
+		<div id="div7" hidden>
+			<div id="word7" class="word">
+				<div id="letter1" name="g" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="i"  class="empty" >i</div>
+				<div id="letter3"  name="r" class="empty">r</div>
+				<div id="letter4"  name="l"  class="empty">l</div>
+			</div>
+			<div id="paragraf7" class="paragraf">
+				<div class="p">
+					<p id="k"  name="Q" draggable="true"  style="color:yellow;" >Q</p>
+				</div>
+				<div class="p">
+					<p id="l"  name="O"  draggable="true"  style="color:blue;" >O</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/g.png"id="c"  name="G" draggable="true" ondragstart="drag(event)" height="30" width="30" ></p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next7" >NEXT</button>
+			<img src="gamePic/g.png" id="img">
+		</div>
+		<div id="div14" hidden>
+			<div id="word14" class="word">
+				<div id="letter1" name="o" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="r"  class="empty" >r</div>
+				<div id="letter3" name="a"  class="empty" >a</div>
+				<div id="letter4"  name="n" class="empty">n</div>
+				<div id="letter5"  name="g"  class="empty">g</div>
+				<div id="letter6"  name="e"  class="empty">e</div>
+			</div>
+			<div id="paragraf14" class="paragraf">
+				<div class="p">
+					<p id="k"  name="Q"  draggable="true"  style="color:red;" >Q</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/o.png" id="l"  name="O"  draggable="true"   ondragstart="drag(event)" height="30" width="30"  ></p>
+				</div>
+				<div class="p">
+					<p id="c"  name="C"  draggable="true"  style="color:purple;" >C</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next14" >NEXT</button>
+			<img src="gamePic/o.png" id="img">
+		</div>
+		
+		
+		
+		<div id="div9" hidden>
+			<div id="word9" class="word">
+				<div id="letter1" name="i" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="c"  class="empty" >c</div>
+				<div id="letter3"  name="e" class="empty">e</div>
+				<div id="letter4"  name="c"  class="empty">c</div>
+				<div id="letter5"  name="r"  class="empty">r</div>
+				<div id="letter6" name="e"  class="empty">e</div>
+				<div id="letter7" name="a"  class="empty">a</div>
+				<div id="letter8" name="m"  class="empty">m</div>
+			</div>
+			<div id="paragraf9" class="paragraf">
+				<div class="p">
+					<p id="k"  name="a"  draggable="true"  style="color:blue;" >A</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/i.png" id="l"  name="i"  draggable="true" ondragstart="drag(event)" height="30" width="30"  ></p>
+				</div>
+				<div class="p">
+					<p id="c"  name="e" draggable="true"   style="color:red;">E</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next9" >NEXT</button>
+			<img src="gamePic/i.png" id="img">
+		</div>
+		
+		<div id="div11" hidden>
+			<div id="word11" class="word">
+				<div id="letter1" name="k" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="i"  class="empty" >i</div>
+				<div id="letter3"  name="d" class="empty">d</div>
+			</div>
+			<div id="paragraf11" class="paragraf">
+				<div class="p">
+					<p id="k"  name="Y"  draggable="true"  style="color:red;" >Y</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/k.png" id="l"  name="K"  draggable="true"  ondragstart="drag(event)" height="30" width="30" ></p>
+				</div>
+				<div class="p">
+					<p id="c"  name="C"  draggable="true"   style="color:yellow;" >C</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next11" >NEXT</button>
+			<img src="gamePic/k.png" id="img">
+		</div>
+		
+		<div id="div18" hidden>
+			<div id="word18" class="word">
+				<div id="letter1" name="s" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="u"  class="empty" >u</div>
+				<div id="letter3"  name="n" class="empty">n</div>
+			</div>
+			<div id="paragraf18" class="paragraf">
+				<div class="p">
+					<p id="k"  name="c"  draggable="true"  style="color:blue;" >C</p>
+				</div>
+				<div class="p">
+					<p id="l"  name="x"  draggable="true"  style="color:green;"  >X</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/s.png" id="c"  name="s" draggable="true"   ondragstart="drag(event)" height="35" width="35"  ></p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next18" >NEXT</button>
+			<img src="gamePic/s.png" id="img">
+		</div>
+		
+		
+		<div id="div10" hidden>
+			<div  id="word10" class="word">
+				<div id="letter1" name="j" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="u"  class="empty" >u</div>
+				<div id="letter3"  name="g" class="empty">g</div>
+						
+			</div>
+			<div id="paragraf10" class="paragraf">
+				<div class="p">
+					<p id="k"  name="p"  draggable="true"  style="color:red; font-family:Elephant;" >P</p>
+				</div>
+				<div class="p">
+					<p id="l"  name="y"  draggable="true"  style=" color:blue; font-family:Elephant;" >Y</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/j.png" id="c"  name="j"  draggable="true"  ondragstart="drag(event)" height="30" width="30"  ></p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next10" >NEXT</button>
+			<img src="gamePic/j.png" id="img">
+		</div>
+		
+		<div id="div15" hidden>
+			<div id="word15" class="word">
+				<div id="letter1" name="p" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="i"  class="empty" >i</div>
+				<div id="letter3"  name="l" class="empty">l</div>
+				<div id="letter4"  name="o"  class="empty">o</div>
+				<div id="letter5"  name="t"  class="empty">t</div>
+			</div>
+			<div id="paragraf15" class="paragraf">
+				<div class="p">
+					<p><img src="pic/p.png" id="k"  name="P"  draggable="true"  ondragstart="drag(event)" height="30" width="30" ></p>
+				</div>
+				<div class="p">
+					<p id="l"  name="b"  draggable="true"    style="color:blue;" >B</p>
+				</div>
+				<div class="p">
+					<p id="c"  name="d" draggable="true"   style="color:purple;">D</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next15" >NEXT</button>
+			<img src="gamePic/p.png" id="img">
+		</div>
+		
+		
+		
+		<div id="div13" hidden>
+			<div id="word13" class="word">
+				<div id="letter1" name="N" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="e"  class="empty" >e</div>
+				<div id="letter3"  name="s" class="empty">s</div>
+				<div id="letter4"  name="t"  class="empty">t</div>
+			</div>
+			<div id="paragraf13" class="paragraf">
+				<div class="p">
+					<p id="k"  name="M" draggable="true"  style="color:blue;" >M</p>
+				</div>
+				<div class="p">
+					<p id="l"  name="u"  draggable="true"    style="color:brown;" >U</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/n.png" id="c"  name="N"  draggable="true"    ondragstart="drag(event)" height="30" width="30"></p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next13" >NEXT</button>
+			<img src="gamePic/n.png" id="img">
+		</div>
+		<div id="div21" hidden>
+			<div id="word21" class="word">
+				<div id="letter1" name="v" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="i"  class="empty" >i</div>
+				<div id="letter3"  name="o" class="empty">o</div>
+				<div id="letter4"  name="l"  class="empty">l</div>
+				<div id="letter5"  name="i"  class="empty">i</div>
+				<div id="letter6"  name="n"  class="empty">n</div>
+			</div>
+			<div id="paragraf21" class="paragraf">
+				<div class="p">
+					<p id="k"  name="u"  draggable="true"   style="color:yellow;" >U</p>
+				</div>
+				<div class="p">
+					<p id="l"  name="w" draggable="true"  style="color:green;" >W</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/v.png" id="c"  name="v"  draggable="true" ondragstart="drag(event)" height="30" width="35" height="35" width="30" ></p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next21" >NEXT</button>
+			<img src="gamePic/v.png" id="img">
+			</div>
+			
+		
+		
+		
+		
+		<div id="div17" hidden>
+			<div id="word17" class="word">
+				<div id="letter1" name="r" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="a"  class="empty" >a</div>
+				<div id="letter3"  name="d" class="empty">d</div>
+				<div id="letter4"  name="i"  class="empty">i</div>
+				<div id="letter5"  name="o"  class="empty">o</div>
+			</div>
+			<div id="paragraf17" class="paragraf">
+				<div class="p">
+					<p id="k"  name="Y"  draggable="true"  style="color:blue;" >Y</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/r.png" id="l"  name="R"  draggable="true" ondragstart="drag(event)" height="30" width="30" ></p>
+				</div>
+				<div class="p">
+					<p id="c"  name="T"  draggable="true"   style="color:gray;" >T</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next17" >NEXT</button>
+			<img src="gamePic/r.png" id="img">
+		</div>
+		
+		<div id="div25" hidden>
+			<div id="word25" class="word">
+				<div id="letter1" name="y" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="o"  class="empty" >o</div>
+				<div id="letter3"  name="u" class="empty">y</div>
+				<div id="letter4"  name="n"  class="empty">o</div>		
+			</div>
+			<div id="paragraf25" class="paragraf">
+				<div class="p">
+					<p id="i"  name="u"  draggable="true"  style="color:blue;" >U</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/y.png" id="a"  name="Y"  draggable="true" ondragstart="drag(event)" height="30" width="30"></p>
+				</div>
+				<div class="p">
+					<p id="e"  name="e"  draggable="true"   style="color:green;">E</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next25" >NEXT</button>
+			<img src="gamePic/y.png" id="img">
+		</div>
+		
+		<div id="div20" hidden>
+			<div id="word20" class="word">
+				<div id="letter1" name="u" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="n"  class="empty" >m</div>
+				<div id="letter3"  name="c" class="empty">b</div>
+				<div id="letter4"  name="l"  class="empty">e</div>
+				<div id="letter5"  name="e"  class="empty">r</div>
+				<div id="letter6"  name="e"  class="empty">e</div>
+				<div id="letter7"  name="e"  class="empty">l</div>
+				<div id="letter8"  name="e"  class="empty">l</div>
+				<div id="letter9"  name="e"  class="empty">a</div>
+			</div>
+			<div id="paragraf20" class="paragraf">
+				<div class="p">
+					<p id="k"  name="n"  draggable="true" style="color:blue; font-family:Elephant;"  >N</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/u.png" id="l"  name="u"  draggable="true" ondragstart="drag(event)" height="30" width="30" ></p>
+				</div>
+				<div class="p">
+					<p id="c"  name="v" draggable="true"   style="color:yellow; font-family:Elephant;">V</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next20" >NEXT</button>
+			<img src="gamePic/u.png" id="img">
+		</div>
+		
+		<div id="div23" hidden>
+			<div id="word23" class="word">
+				<div id="letter1" name="x" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="-"  class="empty" >-</div>
+				<div id="letter3"  name="r" class="empty">r</div>
+				<div id="letter4"  name="a"  class="empty">a</div>
+				<div id="letter5"  name="y"  class="empty">y</div>
+			</div>
+			<div id="paragraf23" class="paragraf">
+				<div class="p">
+					<p><img src="pic/x.png" id="k"  name="x"  draggable="true" ondragstart="drag(event)" height="30" width="30"   ></p>
+				</div>
+				<div class="p">
+					<p id="l"  name="s"  draggable="true"  style="color:gray;" >S</p>
+				</div>
+				<div class="p">
+					<p id="c"  name="C"  draggable="true"  style="color:brown;" >C</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next23" >NEXT</button>
+			<img src="gamePic/x.png" id="img">
+		</div>
+		<div id="div19" hidden>
+			<div id="word19" class="word">
+				<div id="letter1" name="t" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="e"  class="empty" >e</div>
+				<div id="letter3"  name="l" class="empty">l</div>
+				<div id="letter4"  name="e"  class="empty">e</div>
+				<div id="letter5"  name="p"  class="empty">p</div>
+				<div id="letter6" name="h"  class="empty">h</div>
+				<div id="letter7" name="o"  class="empty">o</div>
+				<div id="letter8" name="n"  class="empty">n</div>
+				<div id="letter9" name="e"  class="empty">e</div>
+			</div>
+			<div id="paragraf19" class="paragraf">
+				<div class="p">
+					<p id="k"  name="L"  draggable="true"  style="color:blue;" >L</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/t.png" id="l"  name="T"  draggable="true" ondragstart="drag(event)"  height="30" width="30" ></p>
+				</div>
+				<div class="p">
+					<p id="c"  name="I"  draggable="true"   style="color:red;" >I</p>
+				</div>
+			</div>
+			<button disabled="true" class="next"id="next19" >NEXT</button>
+			<img src="gamePic/t.png" id="img">
+		</div>
+		<div id="div26" hidden>
+			<div id="word26" class="word">
+				<div id="letter1" name="z" class="empty" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+				<div id="letter2" name="e"  class="empty" >e</div>
+				<div id="letter3"  name="b" class="empty">b</div>
+				<div id="letter4"  name="r"  class="empty">r</div>
+				<div id="letter5" name="a"  class="empty">a</div>		
+			</div>
+			<div id="paragraf26" class="paragraf">
+				<div class="p">
+					<p id="i"  name="x"  draggable="true"  style="color:gray;" >X</p>
+				</div>
+				<div class="p">
+					<p id="a"  name="c"  draggable="true"  style="color:green;" >C</p>
+				</div>
+				<div class="p">
+					<p><img src="pic/z.png" id="e"  name="z"draggable="true"ondragstart="drag(event)"  height="30" width="30"></p>
+				</div>
+			</div>
+			<button class="next" disabled="true" id="finished" >Finished</button>
+			<img src="gamePic/z.png" id="img">
+		</div>
+		<div id="finest" hidden>
+				<img src="cracker/crack4.gif" height="200" width="300"> 		
+				<img src="cracker/crack3.gif" height="200" width="300"> 
+				<img src="cracker/crack5.gif" height="200" width="300"> 
+				<img src="images/84.gif" height="200" width="300" id="anim"> 
+				
+				
+				
+		</div>
+		
+
+
+		
+		
+	</div>
+		
+		<script type="text/javascript" src="js/javascript.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.js"></script>
+		<script type="text/javascript" src="js/word.js"></script>
+		<script>
+				var aud1 = new Audio();
+		aud1.src='sounds/clash.mp3';
+		$(document).ready(function(){
+		$("#finished").click(function(){
+		
+		$("#div26").remove();
+		$("#h1").remove();
+		$(".bubble").remove();
+		$("#finest").show();
+		aud1.play();
+		});
+		});
+		</script>
+		
+		
+
+		 
+</body>
+</html>

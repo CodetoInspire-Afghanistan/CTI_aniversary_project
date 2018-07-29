@@ -1,0 +1,245 @@
+
+		body{
+		background-image:url("../img/dfgys.jpg");
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		text-align: center;
+
+}
+.con{
+	margin-top:0px;
+	margin-right:0px;
+	
+}
+.div{
+	margin-left:230px;
+}
+.color{
+	background-color: 993333;
+	height: 11%;
+	width: 13%;
+	margin-top: 2px;
+	margin-left:2px;
+height: 100px;
+border-radius:50% ;
+}
+
+
+.corect1{
+	background-color: #FA5858;
+}
+.div1{
+	background-color: #DF0101;
+	
+}
+.timein{
+	margin-left:620px;
+	width: 550px;
+	height: 15%;
+}
+
+.timee{
+background-color:yellow;
+	height: 16%;
+	width: 13%;
+	text-align: center;
+	color: white;
+font-size: 6em;
+padding-top: 1.5%;
+}
+
+
+.truee{
+	background-color:green;
+	height: 16%;
+	width: 13%;
+	text-align: center;
+	padding-top: 3.5%;
+	color: white;
+	font-size: 3em;
+}
+
+.falsee{
+	background-color: red;
+	height: 16%;
+	width: 13%;
+	text-align: center;
+	color: white;
+	font-size: 3em;
+	padding-top: 3.5%;
+}
+.div2{
+	background-color: 336600;
+}
+#div-30{
+background-color:rgb(51, 153, 51);
+
+}
+.div3{
+	background-color: rgb(34, 2, 114);
+}
+#divs20{
+background-color:rgb(55, 3, 185);
+
+}
+
+.div4{
+	background-color: 660033;
+}
+#diva36{
+background-color:rgb(107, 35, 71);
+
+}
+
+.div5{
+	background-color:rgb(0, 170, 210);
+}
+#divb4{
+background-color:  33ccff;
+
+}
+
+.div6{
+	background-color: ffff66;
+}
+#divc41{
+background-color:rgb(255, 255, 147);
+
+}
+
+.div7{
+	background-color: 303030;
+}
+#divd1{
+background-color: 404040;
+
+}
+
+.div8{
+	background-color: 	#D2B48C;
+}
+#dive6{
+background-color: F5DEB3;
+
+}
+
+.div9{
+	background-color: 	8B4513;
+}
+#divf18{
+background-color: A0522D;
+
+}
+
+.div10{
+	background-color: 	#004c4d;
+}
+#divg28{
+background-color: #006666;
+
+}
+
+.div11{
+	background-color:rgb(14, 79, 112);
+}
+#divh4{
+background-color:	rgb(17, 92, 129);
+
+}
+
+
+.div12{
+	background-color:rgb(153, 51, 102);
+}
+#divi14{
+background-color:rgb(173, 57, 115);
+
+}
+
+.div13{
+	background-color: rgb(165, 0, 33);
+}
+#divj28{
+background-color:rgb(192, 0, 37);
+
+}
+
+.div14{
+	background-color: 		rgb(28, 28, 28);
+}
+#divk37{
+background-color:	rgb(41, 41, 41);
+
+}
+
+
+.div15{
+	background-color: #200000 ;
+}
+#divl40{
+background-color:#180000 ;
+
+}
+#failed{
+	
+	height: 100%;
+	width: 100%;
+	
+	margin-right:0px;
+
+}
+#p1{
+	font-size: 3em;
+	background-color:;
+	
+	
+}
+#hh1{
+	font-size: 5em;
+	}
+.btn{
+font-size: 2em;
+background-color:0CA0EF;
+z-index: 1;
+	
+	width: 180px;
+}
+
+#divend1{
+	
+	
+	height: 74%;
+	width: 68%;
+	margin-left:150px;
+	text-align: center;
+
+}
+
+#divend2{
+	
+	
+	height: 74%;
+	width: 68%;
+	margin-left:150px;
+	text-align: center;
+
+}
+
+#divend3{
+	
+	
+	height: 74%;
+	width: 68%;
+	margin-left:150px;
+	text-align: center;
+
+}
+#btne{
+
+font-size: 2em;
+background-color:0CA0EF;
+
+	
+	width: 200px;
+
+}

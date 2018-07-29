@@ -1,0 +1,53 @@
+#form{
+	position:absolute;
+	left:35%;
+	top:20%;
+	
+	height:300px;
+	width:300px;
+	
+	
+	
+	
+}
+button{
+	border:none;
+	background-color:rgb(92,211,233);
+	border-radius:20%;
+	height:40px;
+	margin-left:35%;
+	font-family:'Comic Sons Ms';
+}
+ button:hover{
+	background-color:rgb(50,150,150);
+}
+
+.error_msg{
+	color:red;
+	height:15%;
+	width:30%;
+	border:1px soid #5E6E66;
+}
+.val-error{
+	color:red;
+	
+}
+
+		input{
+		
+		margin:5px;
+		border:none;
+		height:30px;
+		border-radius:20%;
+	
+		-webkit-box-shadow:inset 1px 1px 1px 1px rgb(92,211,233);
+		background-color:transparent;
+		text-align:center;
+		
+		}
+		
+
+input:hover {
+	
+	background-color:rgb(92,211,233);
+}

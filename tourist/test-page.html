@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kabul Province</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/light.css">
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.test{
+		background-color:rgba(224, 224, 235,0.5);
+		color:black; 
+		padding:5px;
+		font-family:"Cooper Black";
+		margin-bottom: 20%;
+	}
+    .answer{
+    	background-color:#006bb3;
+    	color:black;
+        padding-bottom:35%; 
+	} 
+	#answer{
+		
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+
+	}
+	</style>
+	<script type="text/javascript">
+		var question, chA, chB, chC, chD,keyAnswer,   score=0, num=0, choices, answer;
+		var questions = [
+			["Where is located Budhas of Bamyan?", "Nangrhar", "herat " ,"bamian", "Laqman", "c"],
+			[" where is National Museum?", "logar", "kabul" ,,"herat","Gazni", "B"],
+			["when was introduced Afghan curpit for worlden?" ,"1967", "1987","1929","1995", "A"],
+			["In your idea Amir cluse is Healing?", "Yes" ,"No" ,"Maybe","Idont know" ,"B"],
+			["Does you eating Manto until now?", "Yes", "No","Maybe","Idont know", "A"],
+			["when was the new currency introduced?", "1339", "1393","1234","1985", "B"],
+			["Do you like teast Haft-miva?", "Yes" , "No" , "Maybe","Idont know", "A"],
+			["Which map is from Afghanistan?" , "A"],
+			["Which flag is not from Afghanistan?"  , "B"],
+			["What is the name of Afghanistan?", "Afghanistan" , "Andia" , "US","England","A"]
+		];
+		function _(x){
+			return document.getElementById(x);
+		}
+		function renderQuestion(){
+			if (num >= questions.length) {
+				
+				_("test-status").innerHTML = "You can got " + score*2 + " of " + questions.length*2 + " Scores ";
+				_("test").innerHTML = " We are very happy becase you can pass the test and <br>Test Completed :)";
+				num = 0;                               
+				score = 0;
+				return false;
+			}
+			answer = "";
+			if(num == 0){
+					document.getElementById("answer").style.backgroundImage = "url('img/bamian.jpg')";
+			}
+			if(num == 1){
+					document.getElementById("answer").style.backgroundImage = "url('img/moziam.jpg')";
+			}
+			if(num == 2){
+					document.getElementById("answer").style.backgroundImage = "url('img/qalin.jpg')";
+			}
+			if(num == 3){
+					document.getElementById("answer").style.backgroundImage = "url('img/Amirclause.jpg')";
+			}
+			if(num == 4){
+					document.getElementById("answer").style.backgroundImage = "url('img/manto.jpg')";
+			}
+			if(num == 5){
+					document.getElementById("answer").style.backgroundImage = "url('img/currency.jpg')";
+			}
+			if(num == 6){
+					document.getElementById("answer").style.backgroundImage = "url('img/haftmiva.jpg')";
+			}
+			if(num == 7){
+					document.getElementById("answer").style.background = "black";
+			}
+			if(num == 8){
+					document.getElementById("answer").style.backgroundImage = "url('img/haftmiva.jpg')";
+			}
+			if(num == 9){
+					document.getElementById("answer").style.backgroundImage = "url('img/b.jpg')";
+			}
+			_("test-status").innerHTML = "Question" + (num+1) + " of " + questions.length;
+			question = questions[num][0];
+			chA = questions[num][1];
+			chB = questions[num][2];
+			chC = questions[num][3];
+			chD = questions[num][4];
+
+			_("test").innerHTML = "<h3>"+ question + "</h3>";
+			if (num == 7) {
+				_("test").innerHTML += "<input type='radio' name='choices' value='A'><img src='img/afghan.jpg' style='widht:150px; height:150px;'><br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'><img src='img/iranmap.jpg' style='widht:150px; height:150px;'><br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'><img src='img/nepal.png' style='widht:170px; height:150px;'><br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'><img src='img/kanada.jpg' style='widht:170px; height:150px;'><br>"
+			}
+			else if (num == 8) {
+				_("test").innerHTML += "<input type='radio' name='choices' value='A'><img src='img/afg.jpg' style='widht:120px; height:150px;'><br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'><img src='img/iran.jpg' style='widht:170px; height:150px;'><br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'><img src='img/Chinflag.jpg' style='widht:170px; height:150px;'><br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'><img src='img/kanadaflag.jpg' style='widht:170px; height:150px;'><br>"
+			}
+			else{
+				_("test").innerHTML += "<input type='radio' name='choices' value='A'>"+chA + "<br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'>"+chB + "<br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='C'>"+chC + "<br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='D'>"+chD + "<br>"
+			}
+			
+			_("test").innerHTML += "<button onclick='keyAnswer()'>Submit </button>";
+			_("test").innerHTML += "<button onclick='checkAnswer()'>Next  </button>";
+
+		}
+		function keyAnswer() {
+			keyAnswer = _("keyAnswer");
+			choices = document.getElementsByName("choices");
+			for (var i = 0; i < choices.length; i++) {
+				if(choices[i].checked){
+
+					answer = choices[i].value;
+				}
+			}
+			if (num==0) {
+				if (answer == questions[num][5]) {
+					alert(questions[num][5]);
+					keyAnswer.innerHTML = "<p>correct</p>";
+				}
+				else{
+					alert(questions[num][5]);
+					keyAnswer.innerHTML = "<p>incorrect</p>";
+				}
+				alert(keyAnswer);
+			}
+		}
+		function checkAnswer(){
+			choices = document.getElementsByName("choices");
+			for (var i = 0; i < choices.length; i++) {
+				if(choices[i].checked){
+
+					answer = choices[i].value;
+				}
+			}
+			if (answer == questions[num][5]) {
+				score ++;
+			}
+			num++;
+			renderQuestion();
+		}
+		window.addEventListener("load", renderQuestion, false);
+	</script>
+</head>
+
+<body lang="en">
+	<div class="page-header no-margin"  style="margin:0px;">
+			<h1 id="h1"><img src="img/map.png" class="img-responsive"></h1>
+		</div>       
+    <!-- navigation-->
+    <nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-target="#myNav" data-toggle="collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">My Country AFGHANISTAN</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNav">
+				<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="test.html">Test</a></li>
+				 <li><a href="#">Customs</a></li>
+				 <li><a href="#">Resourse</a></li>
+				 <li><a href="#">Historical</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					 <li><a href="#"><span class="glyphicon glyphicon-user"></span>About</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+   <!-- close navigation-->
+
+  <!-- Open slider tag -->
+   <!-- <div class="container">
+		<div class="carousel slide" id="mySlider" data-ride="carousel">
+			<!-- wrapper section 
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="img/Arg.jpg" style="width:100%; height:300px; ">
+					<div class="carousel-caption">
+						<h4>afg</h4>
+						<p>islamic country</p>
+					
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/jahad.jpg" style="width:100%; height:300px; ">
+					<div class="carousel-caption animated slideInUp">
+						<h4>afghanistan</h4>
+						<p>islamic country</p>
+					
+						<a href="#" class="animated a_flash">Read more</a>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/Manara.jpg" style="width:100%; height:300px; ">
+					<div class="carousel-caption">
+						<h4>afghanistan</h4>
+						<p>islamic country</p>
+				
+					</div>
+				</div>
+			</div>
+			<!-- Indicators 
+			<ol class="carousel-indicators">
+				<li data-slide-to="0" data-target="#mySlider" class="active"></li>
+				<li data-slide-to="1" data-target="#mySlider"></li>
+				<li data-slide-to="2" data-target="#mySlider"></li>
+			</ol>
+			<!-- left and right controls 
+			<a href="#mySlider" class="left carousel-control"  data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a href="#mySlider" class="right carousel-control"  data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+	</div> -->
+   <!-- close slider tag-->
+
+
+<br><br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 test">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 id="test-status"></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 answer" id="answer"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-12" id="test">
+						</div>
+						<div class="col-md-12" id="test">
+							<span id="keyAnswer"></span>
+						</div>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+
+    <!-- bigining footer-->
+    <div class="footer" style="bottom:0px;">
+		<div class="row">
+			<div class="col-md-2 col-md-offset-2">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Marghoba</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<img src="img/cti.png" style="width:150px;" class="img-responsive">
+					</div>
+				</div>
+
+					<div class="col-sm-4">
+				 <div class="social-footer">
+				    <ul>
+						<li><a href="https://www.facebook.com/" class="facebook" title="contact with facebok">F</a></li>
+						<li><a href="https://twitter.com/" class="twitter" title="follow by twitter">T</a></li>
+					</ul>
+				</div>
+			</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<p>jjd ksdfsk fs fdsjfd fdf dd f  fs fsfksfk <a href="">read more</a></p>
+					</div>
+				</div>
+				
+			</div>
+
+
+			<div class="col-md-2">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Freshteh</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<img src="img/cti.png" style="width:150px;" class="img-responsive">
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+				 <div class="social-footer">
+				    <ul>
+						<li><a href="https://www.facebook.com/" class="facebook" title="contact with facebok">F</a></li>
+						<li><a href="https://twitter.com/" class="twitter" title="follow by twitter">T</a></li>
+					</ul>
+				</div>
+			</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p>jjd ksdfsk fs fdsjfd fdf dd f  fs fsfksfksd fkjfs d <a href="">read more</a></p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-md-2">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Arezo</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<img src="img/cti.png" style="width:150px;" class="img-responsive">
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+				 <div class="social-footer">
+				    <ul>
+						<li><a href="https://www.facebook.com/" class="facebook" title="contact with facebok">F</a></li>
+						<li><a href="https://twitter.com/" class="twitter" title="follow by twitter">T</a></li>
+					</ul>
+				</div>
+			</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<p>jjd ksdfsk fs fdsjfd fdf dd f  fs fsfksfksd fkjfs d <a href="">read more</a></p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-md-2 col-md-offset-">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Fardina</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<img src="img/cti.png" style="width:150px;" class="img-responsive">
+					</div>
+				</div>
+                    
+                    <div class="col-sm-4">
+				 <div class="social-footer">
+				    <ul>
+						<li><a href="https://www.facebook.com/" class="facebook" title="contact with facebok">F</a></li>
+						<li><a href="https://twitter.com/" class="twitter" title="follow by twitter">T</a></li>
+					</ul>
+				</div>
+			</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<p>jjd ksdfsk fs fdsjfd fdf dd f  fs fsfksfksd fkjfs d <a href="">read more</a></p>
+					</div>
+				</div>
+				
+			</div>
+		</div>		
+	</div>	 
+	<!--close footer-->   
+
+<!-- for map -->
+  <script src='js/Three.js'></script>
+  <script src='js/tween.min.js'></script>
+  <script src='js/trackballControls.js'></script>
+  <script src='js/CSS3Renderer.js'></script>
+  <script src="js/index.js"></script>  
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script> 
+
+</body>
+</html>

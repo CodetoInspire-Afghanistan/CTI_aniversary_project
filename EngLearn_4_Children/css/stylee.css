@@ -1,0 +1,69 @@
+		.word{
+		height:300px;
+		width:400px;
+		border:solid red 2px;
+		}
+		.empty{
+		text-align:center;
+		font-size:2em;
+		font-style:bold;
+		border:solid red 2px;
+		height:60px;
+		width:80px;
+		border-radius:100%;
+		}
+		#letter1{
+		position:absolute;
+		left:11px;
+		text-align:center;
+		
+		}
+		
+		#letter2{
+		position:absolute;
+		left:91px;
+		
+		}
+		
+		#letter3{
+		position:absolute;
+		left:170px;
+		
+		}
+		#letter4{
+		position:absolute;
+		left:250px;
+		
+		}
+		
+		#letter5{
+		position:absolute;
+		left:330px;
+		
+		}
+			#letter6{
+		position:absolute;
+		left:410px;
+		
+		}
+		
+						#letter7{
+		position:absolute;
+		left:490px;
+		
+		}
+		
+				#letter8{
+		position:absolute;
+		left:574px;
+		
+		}
+		
+		#letter9{
+		position:absolute;
+		left:660px;
+		
+		}
+		
+
+	

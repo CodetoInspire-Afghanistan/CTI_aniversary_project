@@ -1,0 +1,70 @@
+	td{
+			height:40px;
+			width:60px;
+			text-align:center;
+		
+		}
+	
+			#countdown{
+			position:absolute;
+			left:5%;
+			bottom:1%;
+			
+			}
+
+			
+			
+			
+		
+			
+			
+		.column{
+			height:80px;
+			width:80px;
+		}
+		.inputs{
+			height:80px;
+			width:80px;
+			text-align:center
+		}
+		.column{
+		font-size:2.5em;
+		color:blue;
+		font-style:bold;
+		text-align:center;
+		background-color:none;
+	-moz-box-shadow: inset 0 0 5px #888;
+-webkit-box-shadow: inset 0 0 5px#888;
+box-shadow: inner 0 0 5px #888;
+		border:none;
+		}
+		#container{
+		width:550px;
+		height:470;
+		margin-left:35%;
+		margin-top:9%;
+		}
+		.inputs{
+		font-size:1em;
+		text-align:center;
+		color:white;
+		text-transform:Uppercase;
+		background-color:transparent;
+		border:none;
+		-moz-box-shadow: inset 0 0 5px #888;
+		-webkit-box-shadow: inset 0 0 5px#888;
+		box-shadow: inner 0 0 5px #888;
+
+		}
+		
+		#table{
+			border:none;
+		
+		}
+		a{
+			text-decoration:none;
+			font-family:'Freestyle Script';
+			font-size:2em;
+			color:white;
+		}
+		

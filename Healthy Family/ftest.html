@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>father</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/ftest.css">
+		<link rel="shortcut icon" type="image/png" href="img/home.jpg">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript">
+		var question, chA, chB, chC, chD, chE, score=0, num=0, choices, answer;
+		var questions = [
+			["What is your defination for understanding your children?",
+			 "Sympathy whit her/his in difficult,laborious and happy situations", "Ask about her/his from other",
+			 "Ready her/his needed", "A", "C"],
+			["Do you get idea from your children when you want to get decision for them?",
+			 "I don't know", "Somewhat","Usually", "Yes", "No", "D", "C", "B", "A"],
+			["Do you solve your children heart needed?",
+			 "I don't know", "Somewhat", "Usually", "Yes", "No", "D", "C", "B", "A"],
+			["Do you ready your children materialistic needed,that they became acquiescent?",
+			 "I don't know", "Somewhat", "Usually", "Yes", "No", "D", "C", "B", "A"],
+			["Which one of your children is in your premieriship,for handicap,predilection,understanding, and solving her/his materialistic and virtual needed?",
+			"Both of them,equally", "Your daughters", "Your sons", "A"],
+			["How much do you trust on your family?",
+			 "I don't have trust to them", "I don't know", "Somewhat",
+			 "A little bit", "perfectly", "E", "D", "C", "B"],
+			 ["Do you have a healthy contact whit your children?",
+			  "I don't know", "Somewhat","Usually", "Yes", "No", "D", "C", "B", "A"],
+			 ["Do you know who your children’s friends are,and what type of person they are?",
+			 "I don't know", "Somewhat","Usually", "Yes", "No", "D", "C", "B", "A"],
+			 ["What is your defination of having a perfect plan for your children's future?",
+			 "Having a plan about their future in knowledge and education sides","Having a plan about their marriage and its qualification",
+			   "Born and grow up them", "A", "B"],
+			  ["What is your expectation from your children?",
+			   "progress in scientific,virtual,andworldly sides", "Obey from you", "Go to school", 
+			  "A", "C"]
+
+
+
+		];
+		function _(x){
+			return document.getElementById(x);
+		}
+		function renderQuestion(){
+			if (num >= questions.length) {
+				
+				_("test-status").innerHTML = "You got " + score + " of 34 Scores";
+				_("test").innerHTML = "Test Completed";
+				num = 0;
+				score = 0;
+				return false;
+			}
+			_("test-status").innerHTML = "Question" + (num+1) + " of " + questions.length;
+			question = questions[num][0];
+			if(num==1 || num==2 || num==3 || num==6 || num==7 || num==5){
+				chA =questions[num][1];
+				chB = questions[num][2];
+				chC = questions[num][3];
+				chD = questions[num][4];
+				chE = questions[num][5];
+			}
+			else{
+				chA =questions[num][1];
+				chB = questions[num][2];
+				chC = questions[num][3];
+			}
+			
+
+			_("test").innerHTML = "<h3>"+ question + "</h3>";
+
+				if(num==1 || num==2 || num==3 || num==6 || num==7 || num==5){
+					_("test").innerHTML += "<input type='radio' name='choices' value='A'>"+chA + "<br>"
+					_("test").innerHTML += "<input type='radio' name='choices' value='B'>"+chB + "<br>"
+					_("test").innerHTML += "<input type='radio' name='choices' value='C'>"+chC + "<br>"
+					_("test").innerHTML += "<input type='radio' name='choices' value='D'>"+chD + "<br>"
+					_("test").innerHTML += "<input type='radio' name='choices' value='E'>"+chE + "<br>"
+				}
+				else{
+					_("test").innerHTML += "<input type='radio' name='choices' value='A'>"+chA + "<br>"
+					_("test").innerHTML += "<input type='radio' name='choices' value='B'>"+chB + "<br>"
+					_("test").innerHTML += "<input type='radio' name='choices' value='C'>"+chC + "<br>"
+				}
+			
+			_("test").innerHTML += "<button onclick='checkAnswer()'>Submit Answer </button>";
+
+		}
+
+		function checkAnswer(){
+			choices = document.getElementsByName("choices");
+			for (var i = 0; i < choices.length; i++) {
+				if(choices[i].checked){
+
+					answer = choices[i].value;
+				}
+			}
+			if(num==1 || num==2 || num==3 || num==6 || num==7 || num==5){
+				if (answer == questions[num][6]) {
+					score +=4;
+				}
+				else if(answer == questions[num][7]){
+					score +=3;
+				}
+				else if(answer == questions[num][8]){
+					score +=2;
+				}
+				else if(answer == questions[num][9]){
+					score +=1;
+				}
+			}
+			else if(num==0){
+				if (answer == questions[num][4]) {
+					score +=3;
+				}
+				else if(answer == questions[num][5]){
+					score +=2;
+				}
+			}
+			else if(num==8){
+				if (answer == questions[num][4]) {
+					score +=3;
+				}
+				else if(answer == questions[num][5]){
+					score +=1;
+				}
+			}
+			else if(num==9){
+				if (answer == questions[num][4]) {
+					score +=2;
+				}
+				else if(answer == questions[num][5]){
+					score +=1;
+				}
+			}
+			else if(num==4){
+				if (answer == questions[num][4]) {
+					score +=2;
+				}
+			}
+			
+			num++;
+			renderQuestion();
+		}
+		window.addEventListener("load", renderQuestion, false);
+	</script>
+</head>
+<body lang="en">
+<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+	<script type='text/javascript'>
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+<!-- start of header webpage -->
+	
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<h1>Healthy family</h1>
+			</div>
+		</div>
+		<div class="container">
+		<div class="row content no-padding" >
+			
+<!-- start of slider webpage -->
+		<div class="carousel slide" id="mySlider" data-ride="carousel">
+			<!-- wrapper section -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="img/family-banner.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption">
+						<h3>First</h3>
+						<p>The first slider</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/head.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption animated slideInUp">
+						<h3>Second</h3>
+						<p>The second slider</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/happy-family1.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption">
+						<h3>Third</h3>
+						<p>The third slider</p>
+						</div>
+				</div>
+
+				<div class="item">
+					<img src="img/maxresdefault.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption">
+						<h3>Forth</h3>
+						<p>The forth slider</p>
+						</div>
+				</div>
+
+				<div class="item">
+					<img src="img/footimg.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption">
+						<h3>Fifth</h3>
+						<p>The fifth slider</p>
+						</div>
+				</div>
+			</div>
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-slide-to="0" data-target="#mySlider" class="active"></li>
+				<li data-slide-to="1" data-target="#mySlider"></li>
+				<li data-slide-to="2" data-target="#mySlider"></li>
+				<li data-slide-to="3" data-target="#mySlider"></li>
+				<li data-slide-to="4" data-target="#mySlider"></li>
+			</ol>
+			<!-- left and right controls -->
+			<a href="#mySlider" class="left carousel-control"  data-slide="prev" role="button">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a href="#mySlider" class="right carousel-control"  data-slide="next" role="button">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+<!-- end of slider webpage -->
+
+<!-- start of navigationbar -->
+	<nav class="navbar navbar-static-top no-margin">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-target="#myNav" data-toggle="collapse">
+					<span class="glyphicon glyphicon-align-justify"
+					style="color:white; font-size: 30px;" title="Tap to links"></span>
+				</button>
+				
+			</div>
+			<div class="collapse navbar-collapse" id="myNav">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="dropdown">
+			        <a class="dropdown-toggle drop" data-toggle="dropdown" href="Test.html">Test
+			        <span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			         <li><a href="ftest.html">Test for Father</a></li>
+			          <li><a href="mtest.html">Test for Mother</a></li>
+			          <li><a href="btest.html">Test for Son</a></li>
+			          <li><a href="dtest.html">Test for Dughter</a></li>  
+			        </ul>
+	      			</li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+<!-- end of navigationbar -->	
+			<div class="container">
+		<div class="row back">
+			
+					<div class="row">
+						<div class="col-md-12 f" >
+							<h2 id="test-status"></h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12 s" id="test">
+							
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12 key">
+							
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12 submit">
+							
+						</div>
+					</div>
+				</div>
+			</div>	
+		<!-- start of footer webpage -->
+	<div class="sitebar-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 address">
+					<h3>
+						Contact Address
+					</h3>
+					<address>
+						Afghanistan,<br>
+						Herat,<br>
+						code to inspire at Cimtra street
+					</address>
+				</div>
+<div class="col-md-2 ul">
+				<div class="social-header">
+			<ul>
+				<li><a href="https://www.facebook.com/" class="facebook" title="contact with facebook" target="_blank"></a></li>
+				<li><a href="https://twitter.com/" class="twitter" title="follow by twitter" target="_blank"></a></li>
+				<li><a href="https://www.youtube.com" class="youtupe" target="_blank" title="youtube"></a></li>
+			</ul>
+			</div>
+
+			</div>
+
+					<div class="col-md-3 ul">
+						<b><ul style="direction:rtl; list-style-type:none;">
+						<div class="item item-icon-right">
+						<li><a href="#" title="About us"><img src="img/aboutus.png" id="img-a">
+						About us</a></li>
+						</div>
+						<li><a href="#" title="survey about other people,who use form this website information"><img src="img/good.jpg" id="img-c">
+						survey</a></li>
+						<li><a href="#" title="Sources"><img src="img/phon.jpg" id="img-d">
+						Sources</a></li></ul></b>
+					</div>
+					
+				<div class="col-md-5 box" id="box1">
+					<img src="img/foot.jpg" class="img-responsive no-margin footimg">
+					<div class="caption">write comment here</div>
+				</div>
+
+				
+
+			</div>
+			<div class="bottom-footer">
+				<div class="col-md-7 address">
+				<p><small>copyright @CTI in 2016, Prepared by <a href="https://twitter.com/hayedehRasouly"
+				target="_blank">Hayedeh Rasouly</a>& 
+				<a href="https://twitter.com/boshrarasoly1"
+				target="_blank">Boshra Rasouly</a>& 
+				<a href="https://twitter.com/boshrarasoly1"
+				target="_blank">Boshra Rasouly</a>
+				</small></p>
+			</div>
+			</div>
+		</div>
+	</div>
+<!-- end of footer webpage -->
+
+				
+			</div>
+		</div>
+
+</body>
+</html>

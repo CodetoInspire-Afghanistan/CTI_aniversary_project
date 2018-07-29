@@ -1,0 +1,174 @@
+	
+		#a{
+			font-size:1em;
+			
+		}
+	
+		
+		.word{
+		position:absolute;
+		top:20%;
+		left:25%;
+		height:450px;
+		width:700px;
+			
+			font-family:'Comic Sans MS';
+			
+		
+		
+		
+		
+		}
+		
+		.word div{
+		margin-left:1px;
+		
+		}
+		#board{
+		position:absolute;
+		top:10%;
+		left:5%;
+		height:460px;
+		width:750px;
+		}
+		
+		.paragraf{
+		position:absolute;
+		top:60%;
+		left:25%;
+		height:auto;
+		width:auto;	
+		font-size:3em;
+		
+		}
+		.bubble{
+			box-shadow:0 0 30px silver;
+			background:radial-gradient(white, rgb(92,211,233));
+		}
+		#bubble1{
+			position:absolute;
+			left:27%;
+			top:61%;
+			height:8%;
+			width:5%;
+			background-color:red;
+			border-radius:100%;
+			animation:example 4s 1 alternate;
+		}
+		#bubble2{
+			position:absolute;
+			left:34%;
+			top:61%;
+			height:8%;
+			width:5%;
+			border-radius:100%;
+			background-color:red;
+			animation:example 4s 1 alternate;
+		}
+		#bubble3{
+			position:absolute;
+			left:41%;
+			top:61%;
+			height:8%;
+			width:5%;
+			background-color:red;
+			border-radius:100%;
+			animation:example 4s 1 alternate;
+		}
+			@keyframes example {
+			from {background-color: red;
+			top:60%;}
+			50% {background-color: yellow;
+			top:200px;
+			border-radius:100%;
+			}
+			100% {background-color: yellow;
+			top:60%;
+			border-radius:100%;
+			}
+		}
+		
+		.p{
+		float:left;
+		padding-right:80px;
+		
+		}
+		
+		.empty{
+		text-align:center;
+		padding-bottom:0px;
+	
+		
+		}
+		
+		
+	
+
+
+
+		#img{
+		position:absolute;
+		top:5%;
+		right:3%;	
+		height:45%;
+		width:27%;
+		}
+		
+		#letter1{
+		float:left;
+		font-size:3em;
+		margin-left:5%;
+		border-bottom:2px solid red;
+		height:30px;
+		width:30px;
+		
+			
+		}
+		#letter2{
+		float:left;
+		font-size:3em;
+		margin-left:5%;
+		}
+		
+		#letter3{
+		float:left;
+		font-size:3em;
+		margin-left:5%;
+		}
+		#letter4{
+		float:left;
+		font-size:3em;
+		margin-left:5%;
+		}
+		
+		#letter5{
+		float:left;
+		font-size:3em;
+		margin-left:5%;
+		}
+			#letter6{
+		float:left;
+		font-size:3em;
+		margin-left:5%;
+		}
+		
+						#letter7{
+		float:left;
+		font-size:3em;
+		margin-left:5%;
+		}
+		
+				#letter8{
+		float:left;
+		font-size:3em;
+		margin-left:5%;
+		}
+		
+		#letter9{
+		float:left;
+		font-size:3em;
+		margin-left:5%;
+		}
+		
+
+	

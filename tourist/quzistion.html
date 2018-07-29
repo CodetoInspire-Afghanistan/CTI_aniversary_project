@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<link rel="shortut icon" href="img/afg.jpg" type="img/jpg">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/Afghanistan.css">
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	.test{
+		background-color:rgba(224, 224, 235,0.5);
+		color:black; 
+		padding:5px;
+		font-family:"Cooper Black";
+		margin-bottom: 20%;
+	}
+    .answer{
+    	background-color:#006bb3;
+    	color:black;
+        padding-bottom:35%; 
+	} 
+	#answer{
+		
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+
+	}
+     .next{
+			  background:black;
+			  border-radius:10px;
+			  font-family: Arial;
+			  color: #ffffff;
+			  font-size: 18px;
+			  padding: 5px 10px 5px 10px;
+			  text-decoration: none;
+			}
+
+     .next:hover {
+			 background: gray;
+     		  text-decoration: none;
+            }
+
+     .submit{
+			  background:black;
+			  border-radius:10px;
+			  font-family: Arial;
+			  color: #ffffff;
+			  font-size:18px;
+			  padding: 5px 10px 5px 10px;
+			  text-decoration: none;
+			}
+
+     .submit:hover {
+			 background:gray;
+     		  text-decoration: none;
+            }
+            #img{
+            	height:300px;
+            }
+	</style>
+
+	
+	<script type="text/javascript">
+	    var comment = "";
+		var question, chA, chB, chC, chD,keyAnswer,   score=0, num=0, choices, answer;
+		var questions = [
+			["Where is located Budhas of Bamyan?", "Nangrhar", "herat " ,"bamian", "Laqman", "C"],
+			[" where is National Museum?", "logar", "kabul" ,"herat","Gazni", "B"],
+			["when was introduced Afghan curpit for worlden?" ,"1929", "1987","1967","1995", "C"],
+			["In your idea Amir cluse is Healing?", "Yes" ,"No" ,"Maybe","Idont know" ,"B"],
+			["Does you eating Manto until now?", "Yes", "No","Maybe","Idont know", "C"],
+			["when was the new currency introduced?", "1339", "1393","1234","1985", "B"],
+			["Do you like teast Haft-miva?", "Yes" , "No" , "Maybe","Idont know", "A"],
+			["Which map is not from Afghanistan?","", "", "", "" , "B"],
+			["Which flag is from Afghanistan?"  , "", "", "", "" , "A"],
+			["What is the name of Afghanistan?", "Andia" , "US","England", "Afghanistan" ,"D"]
+		];
+		function _(x){
+			return document.getElementById(x);
+		}
+		function renderQuestion(){
+			if (num >= questions.length) {
+				
+				_("test-status").innerHTML = "You can got " + score*2 + " of " + questions.length*2 + " Scores ";
+				_("test").innerHTML = " We are very happy becase you can pass the test and <br>Test Completed :)";
+				_("test").innerHTML += "<br>"+comment;
+				comment="";
+				num = 0;                               
+				score = 0;
+				return false;
+			}
+			answer = "";
+			if(num == 0){
+					document.getElementById("answer").style.backgroundImage = "url('img/bamian.jpg')";
+					document.getElementById("answer").style.borderRadius = "20px";
+			}
+			if(num == 1){
+					document.getElementById("answer").style.backgroundImage = "url('img/moziam.jpg')";
+			}
+			if(num == 2){
+					document.getElementById("answer").style.backgroundImage = "url('img/qalin.jpg')";
+			}
+			if(num == 3){
+					document.getElementById("answer").style.backgroundImage = "url('img/Amirclause.jpg')";
+			}
+			if(num == 4){
+					document.getElementById("answer").style.backgroundImage = "url('img/manto.jpg')";
+			}
+			if(num == 5){
+					document.getElementById("answer").style.backgroundImage = "url('img/currency.jpg')";
+			}
+			if(num == 6){
+					document.getElementById("answer").style.backgroundImage = "url('img/haftmiva.jpg')";
+			}
+			if(num == 7){
+					document.getElementById("answer").style.display = "none";
+			}
+			if(num == 8){
+					document.getElementById("answer").style.display = "none";
+			}
+			if(num == 9){
+					document.getElementById("answer").style.backgroundImage = "url('img/b.jpg')";
+			}
+			_("test-status").innerHTML = "Question" + (num+1) + " of " + questions.length;
+			question = questions[num][0];
+			chA = questions[num][1];
+			chB = questions[num][2];
+			chC = questions[num][3];
+			chD = questions[num][4];
+
+			_("test").innerHTML = "<h3>"+ question + "</h3>";
+			if (num == 7) {
+				_("test").innerHTML += "<input type='radio' name='choices' value='A'><img src='img/afghan.jpg' style='widht:150px; height:150px; border-radius:10px;' id='img'>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'><img src='img/iranmap.jpg' style='widht:155px; height:150px;  border-radius:10px;'><br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'><img src='img/map1.jpg' style='widht:150px; height:150px; border-radius:10px; '>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'><img src='img/map2.jpg' style='widht:170px; height:150px; border-radius:10px;'><br>"
+			}
+			else if (num == 8) {
+				_("test").innerHTML += "<input type='radio' name='choices' value='A'><img src='img/afg.jpg' style='widht:120px; height:150px; border-radius:15px;'>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'><img src='img/iran.jpg' style='widht:170px; height:150px; border-radius:15px;'><br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'><img src='img/Chinflag.jpg' style='widht:170px; height:150px; border-radius:15px;'>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'><img src='img/kanadaflag.jpg' style='widht:170px; height:150px; border-radius:15px;'><br>"
+			}
+			else{
+				_("test").innerHTML += "<input type='radio' name='choices' value='A'>"+chA + "<br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='B'>"+chB + "<br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='C'>"+chC + "<br>"
+				_("test").innerHTML += "<input type='radio' name='choices' value='D'>"+chD + "<br>"
+			}
+			
+			_("test").innerHTML += "<button onclick='checkAnswer()' class='next'>Next  </button>";
+
+		}
+		function checkAnswer(){
+			choices = document.getElementsByName("choices");
+			for (var i = 0; i < choices.length; i++) {
+				if(choices[i].checked){
+
+					answer = choices[i].value;
+				}
+			}
+			if (answer == questions[num][5]) {
+				score ++;
+			}
+			else{
+				if (num == 0) {
+					comment = "<br><br>Bamiyan Buddha statues in Bamiyan, Afghanistan made the great figures in a mountain. The building stands on the edge of the historic statues were carved rocky Bamiyan valley in the Hazarajat region. The geographical coordinates of the location of the statue of Kabul, about 230 kilometers (140 miles) to the northwest is. The two statues as tall as 53 meters and 35 meters, with a series of monuments in this place for a long time the major tourist attractions in Afghanistan";
+				}
+				else if (num == 1) {
+					comment +="<br><br> Museum Afghan national Treasure series of historical monuments and cultural heritage of Afghanistan. The musem consists of two floors in the Darulaman area in the southwestern city of Kabul.";
+				}
+				else if (num == 2) {
+					comment +="<br><br>The Afghan carpets were introduced to the world in 1967 Dvmvtks fair,the largest international exhibition of carpets and other types of carpets in Hanover , Germany. Among the more than 60 countries in Afghanistan this year's show won an Oscar this was fair. ";
+				}
+
+                else if (num == 3) {
+					comment +="<br><br> Band-e Amir lakes in the heights of the Hindu Kush mountains in Bamiyan set of six is said to have been separated by natural dams. The lake water is provided by the fountain. This area is Afghanistan's first national park";
+				}
+				else if (num == 4) {
+					comment +="<br><br> This is commonly eaten in northern West Mybashh Afghanistan and has good taste and the food is well known.";
+				}
+				else if (num == 5) {
+					comment +="<br><br> Afghanistan's new currency was introduced in 1358 during the reign of Amanullah Khan";
+				}
+				else if (num == 6) {
+					comment +="<br><br> Seven fruit is edible when a solar new year in Afghanistan, and materials to cater to this food we need like walnut , almond , raisin , service,sugar,pistachio,qlang and jostle.";
+				}
+			}
+			num++;
+			renderQuestion();
+		}
+		window.addEventListener("load", renderQuestion, false);
+	</script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+         <div class="page-header no-margin"  style="margin:0px;">
+          <h1 class="col-md-8 col-md-offset-2" id="h1" class="animated slideInDown">AFGHANISTAN TOURIST</h1>
+         </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+          <!-- navigation-->
+          <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button class="navbar-toggle" data-target="#myNav" data-toggle="collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">My Country AFGHANISTAN</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNav">
+                <ul class="nav navbar-nav">
+                <li ><a href="index.html">Provinces</a></li>
+                <li class="active"><a href="quzistion.html">Test</a></li>
+                  <li class="dropdown">
+			        <a class="dropdown-toggle" data-toggle="dropdown" href="#">provinces
+			        <span class="caret"></span></a>
+			        <ul class="dropdown-menu" style="background:rgba(0, 0, 0, 0.2); color:white;">
+			          <li><a style="color:white;" href="badakhshan.html">Badakhshan</a></li>
+			          <li><a style="color:white;" href="badqis.html">Badqis</a></li>
+			           <li><a style="color:white;" href="balkh.html">Balkh</a></li>
+			          <li><a style="color:white;" href="bamian.html">Bamian</a></li>
+			          <li><a style="color:white;" href="daykondi.html">Daykondi</a> </li>
+			          <li><a style="color:white;" href="faizabad.html">Faizabad</a></li>
+			          <li><a style="color:white;" href="fariab.html">Fariab</a></li>
+			          <li><a style="color:white;" href="frah.html">Frah</a></li>
+			          <li><a style="color:white;" href="helmand.html">Helmand</a></li>
+			          <li><a style="color:white;" href="Herat.html">Herat</a></li>
+			          <li><a style="color:white;" href="jowzjan.html">Jowzjan</a></li>
+			          <li><a style="color:white;" href="Kabul.html">kabul</a></li>
+			          <li><a style="color:white;" href="kapisa.html">Kapisa</a></li>
+			          <li><a style="color:white;" href="khost.html">Khost</a></li>
+			          <li><a style="color:white;" href="konar.html">konar</a></li>
+			          <li><a style="color:white;" href="laqman.html">Laqman</a></li>
+			          <li><a style="color:white;" href="logar.html">logar</a></li>
+			          <li><a style="color:white;" href="maidanwardak.html">maidanwardak</a></li>
+			          <li><a style="color:white;" href="mazar.html">mazar</a></li>
+			          <li><a style="color:white;" href="nangarhar.html">nangarhar</a></li>
+			          <li><a style="color:white;" href="nimroz.html">nimroz</a></li>
+			          <li><a style="color:white;" href="norestan.html">norestan</a></li>
+			          <li><a style="color:white;" href="orozgan.html">orozgan</a></li>
+			          <li><a style="color:white;" href="panjshir.html">panjshir</a></li>
+			          <li><a style="color:white;" href="paqman.html">paqman</a></li>
+			          <li><a style="color:white;" href="parwan.html">parwan</a></li>
+			          <li><a style="color:white;" href="qandhar.html">qandhar</a></li>
+			          <li><a style="color:white;" href="qazni.html">qazni</a></li>
+			          <li><a style="color:white;" href="qour.html"qour></a></li>
+			          <li><a style="color:white;" href="samangan.html">samangan</a></li>
+			          <li><a style="color:white;" href="sarpol.html">sarpol</a></li>
+			          <li><a style="color:white;" href="takhar.html">takhar</a></li>
+			          <li><a style="color:white;" href="zabul.html">zabul</a></li>
+			        </ul>
+			      </li>
+                <li ><a href="about.html"><span class="glyphicon glyphicon-user"></span>About</a></li> 
+                </ul>
+               
+              </div>
+              
+            </div>
+          </nav>
+      </div>
+    </div>
+    <div visible-md>
+      <br><br><br><br><br><br><br>
+    </div>
+
+    	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 test">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 id="test-status"></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 answer" id="answer"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-12" id="test">
+						</div>
+						<div class="col-md-12" id="test">
+							<span id="keyAnswer"></span>
+						</div>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+
+	  <div class="row footer">
+        <!-- bigining footer-->
+        <div class="row foote" style="bottom:0px;">
+          <div class="col-sm-4 col-sm-offset-3">
+            <h3 style="color:white;">Address</h3>
+              <p style="color:white;">Afganistan,Herat<br>
+              <a style="color:white;" href="https://www.CodeToInspire.org/">CodeToInspire</a>
+              </p>
+          </div>
+          <div class="col-sm-5">
+            <h3 style="color:white;">About Us</h3>
+              <p style="color:white;"> We are students in CodeToInspire,and we learn Coding...
+                <a style="color:white;" href="#">Read More</a>
+              </p>
+          </div>
+        </div>
+
+  </div>   
+  <!--close footer-->
+ </div>
+
+</body>
+
+</html>

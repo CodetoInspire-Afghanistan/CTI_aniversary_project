@@ -1,0 +1,41 @@
+.backi{
+	
+background-color:rgb(163,73,164);
+background-attachment: fixed;
+box-shadow: 5px 5px 70px black;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width:80%;
+      height: 50%;
+      margin: auto;
+  }
+  .navbar navbar-inverse{
+margin:30pc;
+
+  }
+
+.
+.li{
+
+color:rgb(18,23,220);
+border-right:2px solid white;
+
+}
+.img{
+
+
+  box-shadow: 5px 5px 40px rgb(240,231,183);
+}
+.check_content{
+	background-color:rgb(120,74,50); 
+	border-radius:50px 0px 50px 0px;
+	color:rgb(240,231,185);
+
+}
+.samira{
+
+
+  color: black;
+
+}

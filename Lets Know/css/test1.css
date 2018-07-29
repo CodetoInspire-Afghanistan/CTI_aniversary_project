@@ -1,0 +1,74 @@
+.back{
+background-image: url("../image/brown.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 50px 0px 50px 0px;
+box-shadow: 3px 4px 50px black;
+}
+.i{
+
+border-radius: 0px 100px 0px 100px;
+box-shadow: 3px 4px 40px black;
+margin-top: 30px;
+}
+.btn{
+
+
+border-radius: 5px 5px 5px 5px;
+background-color:rgb(225,178,136);
+color:#A0522D;
+font-weight: bold;
+width:150px;
+
+}
+.btn:hover{
+
+color:white;
+
+}
+.btn-next{
+
+
+
+background-color:rgb(130,22,0);
+color:white;
+margin-bottom: 60px;
+
+}
+.h{
+
+color: #A0522D;
+text-shadow:2px 3px 15px black;
+
+}
+.con{
+	font-size:80px;
+	font-family:"Blackadder ITC" ;
+	color:;
+	text-align: center;
+
+}
+.h:hover{
+
+color:white;
+font-family: Brush Script Std;
+text-shadow:2px 3px 15px black;
+
+}
+.score{
+border:2px solid black;
+border-radius: 100%;
+text-align: center;
+padding-top: 2%;
+background-color: #CC9966;
+box-shadow: 3px 4px 40px black;
+height: 100px;
+width:100px;
+font-size: 30px;
+color: #A0522D;
+}
+#p_footer{
+background-color:#A0522D;
+color:rgb(225,178,136);
+font-weight: bold;
+}

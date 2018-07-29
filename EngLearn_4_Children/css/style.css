@@ -1,0 +1,162 @@
+	
+
+				body{
+				background-image:url(../gamePic/bac.jpeg);
+				height:100%;
+				width:100%:
+			}
+						#countdown{
+			position:absolute;
+			right:5%;
+			bottom:1%;
+			
+			}
+			body{
+			font-family:'Comic Sans MS';
+			}
+			#anim{
+			position:absolute;
+			bottom:0px;
+			left:20%;
+			animation:example 60s 1 alternate;
+		}
+		@keyframes example {
+			from {bottom:0px; opacity:1;}
+			50% {bottom:50%; opacity:1;
+			}
+			100% {top:-10px; opacity:0;
+			
+			}
+		}
+			
+			#h1 {
+				text-shadow: 2px 2px 5px #95b7b7;
+				text-align:center;
+				padding-top:3px;
+				}
+			#pic1{
+				position:absolute;
+				top:10%;
+				left:76%;
+				height:150px;
+				width:150px;
+				
+			
+			}
+			#pic2{
+				position:absolute;
+				top:10%;
+				left:10%;
+				
+				height:150px;
+				width:150px;
+				
+			
+			}
+			#pic3{
+				position:absolute;
+				top:10%;
+				left:42%;
+				
+				height:150px;
+				width:150px;
+				
+			}
+			
+			#inter{
+				
+				position:absolute;
+				left:10%;
+				top:50%;
+				border-radius:4px;
+				height:200px;
+				width:200px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			
+			}
+			#part1{
+				position:absolute;
+				left:10%;
+				top:3%;
+				
+				height:150px;
+				width:150px;
+			
+			}
+			
+			#inter2{
+				position:absolute;
+				left:42%;
+				top:50%;
+				border-radius:4px;
+				height:200px;
+				width:200px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			#part2{
+				position:absolute;
+				left:13%;
+				top:3%;
+				
+				height:150px;
+				width:150px;
+			
+			}
+			
+			#inter3{
+				position:absolute;
+				left:76%;
+				top:50%;
+				border-radius:4px;
+				height:200px;
+				width:200px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			
+			#part3{
+				position:absolute;
+				left:13%;
+				top:3%;
+				
+				height:150px;
+				width:150px;
+			
+			}
+			
+			.text{
+				position:absolute;
+				top:160px;
+				left:70px;
+				font-size:2em;
+			}
+			
+		.next{
+		position:absolute;
+		bottom:10%;
+		left:3%;
+		border-radius:20%;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #3dc21b;
+		box-shadow:inset 0px 1px 0px 0px #3dc21b;
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #11f505), color-stop(1, #f7faf5));
+		background:-moz-linear-gradient(top, #11f505 5%, #f7faf5 100%);
+		background:-webkit-linear-gradient(top, #11f505 5%, #f7faf5 100%);
+		background:-o-linear-gradient(top, #11f505 5%, #f7faf5 100%);
+		background:-ms-linear-gradient(top, #11f505 5%, #f7faf5 100%);
+		background:linear-gradient(to bottom, #11f505 5%, #f7faf5 100%);
+		height:40px;
+		width:80px;
+		}
+		
+
+.next:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f7faf5), color-stop(1, #11f505));
+	background:-moz-linear-gradient(top, #f7faf5 5%, #11f505 100%);
+	background:-webkit-linear-gradient(top, #f7faf5 5%, #11f505 100%);
+	background:-o-linear-gradient(top, #f7faf5 5%, #11f505 100%);
+	background:-ms-linear-gradient(top, #f7faf5 5%, #11f505 100%);
+	background:linear-gradient(to bottom, #f7faf5 5%, #11f505 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7faf5', endColorstr='#11f505',GradientType=0);
+	background-color:#f7faf5;
+}
+
+

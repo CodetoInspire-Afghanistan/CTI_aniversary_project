@@ -1,0 +1,144 @@
+body{
+    background:url(../img/black.jpg);
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+    overflow-x:hidden;
+	overflow-y:scroll;
+}
+#h1{font-family:Vijaya;
+  font-size:80px;
+  color: yellow;
+  margin-left: 19%;
+  text-shadow: 20px 20px 20px white;
+}
+
+
+.img-responsive{
+  height:20px;
+  width: 20px;
+  margin-top: -56px;
+}
+.page-header{
+  background:url(../img/cmii.jpg);
+  border-radius: 10px;
+  height:160px;
+  
+}
+
+/* start map*/
+.element {
+  width: 260px;
+  height: 200px;
+  box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
+  border: 1px solid rgba(127,255,255,0.25);
+  text-align: center;
+  cursor: pointer;
+  -ms-transform: scale(2, 3); /* IE 9 */
+    -webkit-transform: scale(2, 3); /* Safari */
+    transform: scale(2, 2);
+}
+
+.element:hover {
+  box-shadow: 0px 0px 12px rgba(0,255,255,0.75);
+  border: 1px solid rgba(127,255,255,0.75);
+  transform: scale(2, 2);
+}
+
+.element .number {
+  font-size: 70px;
+  color: transparent;
+}
+
+.element .symbol {
+  font-size: 80px;
+  font-weight: bold;
+  color: transparent;
+   
+  padding: 1px;
+  text-shadow: 0 0 10px rgba(0,255,255,0.95);
+}
+
+
+.element .details {
+  font-size: 60px;
+  color: rgba(127,255,255,0.75);
+}
+
+/* end map*/
+      .lightbox{
+      	margin-top:30%;
+      	background-color: lightblue;
+      	height: 450px;
+      	width: 90%;
+      }
+
+     h4{
+  color:red; 
+    font-family: "Imprint MT Shadow";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 35em;
+  -webkit-animation: type 5s steps(60, end); 
+}
+
+
+h4:nth-child(2){
+ -webkit-animation: type2 2s steps(60, end);
+}
+
+
+
+ 
+
+@-webkit-keyframes type{ 
+  from { width: 0; } 
+} 
+
+@-webkit-keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@-webkit-keyframes blink{
+  to{opacity: .0;}
+}
+
+/* style for light box */
+    .vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+}
+
+/* end of lightbox*/
+  
+
+        #mySlider{
+        	border: 5px solid lightblue;
+        	box-shadow: 2px 3px ;
+        	width: 90%;
+        }
+ h2{
+	 font-size:15px;
+ }
+
+
+ 

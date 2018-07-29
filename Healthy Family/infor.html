@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Personality Test</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/info.css">
+		<link rel="shortcut icon" type="image/png" href="img/about.png">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+					<script type="text/javascript">
+
+
+
+		var question, chA, chB, chC, chD, chE, score=0, num=0, choices, answer;
+		var questions = [
+			["<h5>1:I<span style='text-transform: lowercase;'> do what I think is expected <br>of me, rather than what I believe<br> to be 'right'</span>.</h5>",
+			 "Not at All",
+			 "Rarely", "Sometimes", "Often", "A", "B","C", "D"],
+			["<h5>2:I<span style='text-transform: lowercase;'> handle new situations with relative comfort <br>and ease.</span></h5>",
+			 "Not at All",
+			 "Rarely", "Sometimes", "Often", "A", "B","C", "D"],
+			["<h5>3:I<span style='text-transform: lowercase;'> feel positive and energized about life</span>.</h5>",
+			 "Not at All",
+			 "Rarely", "Sometimes", "Often", "A", "B","C", "D"],
+			["<h5>4:If<span style='text-transform: lowercase;'> something looks difficult, I avoid doing it.</span></h5>",
+			  "Not at All",
+			 "Rarely", "Sometimes", "Often", "A", "B","C", "D"],
+			["<h5>5:I<span style='text-transform: lowercase;'> keep trying, even after others have given up</span>.</h5>",
+			"Not at All",
+			 "Rarely", "Sometimes", "Often", "A", "B","C", "D"],
+			
+
+		];
+		function _(x){
+			return document.getElementById(x);
+		}
+		
+		function renderQuestion(){
+			if (num >= questions.length) {
+				
+				_("Quas").innerHTML = "You got " + score + " of 50 Scores";
+				_("input").innerHTML = "Test Completed";
+				num = 0;
+				score = 0;
+				return false;
+			}
+			_("Quas").innerHTML = "Very<span style='text-transform: lowercase;'> interesting personality test.<br> By answering a few questions just your <br>character test and become aware of <br>your inner secrets.Do not doubt this test .. This is <br>the latest and most standard personality test that<br> is going on these days in Europe <br>among psychologists. Responses is not<br> difficult at all.<br> Just a little to see for yourself.<br> A pen and paper beside your hand, which <br>you can check points that have been <br>collected. Will you?</span>"
+			question = questions[num][0];
+				chA =questions[num][1];
+				chB = questions[num][2];
+				chC = questions[num][3];
+				chD = questions[num][4];
+			
+			
+/*
+			_("input").innerHTML = "<h3>"+ question + "</h3>";
+
+					_("input").innerHTML += "<input type='radio' name='choices' value='A'>"+chA + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='B'>"+chB + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='C'>"+chC + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='D'>"+chD + "<br>";
+					*/		
+			
+			 
+			 _("q1").innerHTML = "<button style='padding:0px 80px; background-color:transparent; border:none; outline:none;' onclick='checkAnswer1()'><h4>Question:1</h4></button>";
+			 _("q2").innerHTML = "<button style='padding:0px 80px; background-color:transparent; border:none; outline:none;' onclick='checkAnswer2()'><h4>Question:2</h4></button>";
+			 _("q3").innerHTML = "<button style='padding:0px 80px; background-color:transparent; border:none; outline:none;' onclick='checkAnswer3()'><h4>Question:3</h4></button>";
+			 _("q4").innerHTML = "<button style='padding:0px 80px; background-color:transparent; border:none; outline:none;' onclick='checkAnswer4()'><h4>Question:4</h4></button>";
+			 _("q5").innerHTML = "<button style='padding:0px 90px 40px 90px; background-color:transparent; border:none; outline:none; font-size:50px;'onclick='checkAnswer5()'><h4>Question:5</h4></button>";
+
+		}
+		function checkAnswer1(){
+			_("Quas").innerHTML = "";
+			question = questions[0][0];
+				chA =questions[0][1];
+				chB = questions[0][2];
+				chC = questions[0][3];
+				chD = questions[0][4];
+			_("input").innerHTML = "<h3>"+ question + "</h3>";
+
+					_("input").innerHTML += "<input type='radio' name='choices' value='A'>"+chA + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='B'>"+chB + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='C'>"+chC + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='D'>"+chD + "<br>";
+					_("input").innerHTML += "<input type='image' style='height:80px; width:80px; outline:none;' src='img/za.png' onclick='checkAnswer()'>";
+
+		}
+		function checkAnswer2(){
+			_("Quas").innerHTML = "";
+			question = questions[1][0];
+				chA =questions[1][1];
+				chB = questions[1][2];
+				chC = questions[1][3];
+				chD = questions[1][4];
+			_("input").innerHTML = "<h3>"+ question + "</h3>";
+
+					_("input").innerHTML += "<input type='radio' name='choices' value='A'>"+chA + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='B'>"+chB + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='C'>"+chC + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='D'>"+chD + "<br>";
+					_("input").innerHTML += "<input type='image' style='height:80px; width:80px;  outline:none;' src='img/za.png' onclick='checkAnswer()'>";
+
+		}
+		function checkAnswer3(){
+			_("Quas").innerHTML = "";
+			question = questions[2][0];
+				chA =questions[2][1];
+				chB = questions[2][2];
+				chC = questions[2][3];
+				chD = questions[2][4];
+			_("input").innerHTML = "<h3>"+ question + "</h3>";
+
+					_("input").innerHTML += "<input type='radio' name='choices' value='A'>"+chA + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='B'>"+chB + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='C'>"+chC + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='D'>"+chD + "<br>";
+					_("input").innerHTML += "<input type='image' style='height:80px; width:80px;  outline:none;' src='img/za.png' onclick='checkAnswer()'>";
+
+		}
+		function checkAnswer4(){
+			_("Quas").innerHTML = "";
+			question = questions[3][0];
+				chA =questions[3][1];
+				chB = questions[3][2];
+				chC = questions[3][3];
+				chD = questions[3][4];
+			_("input").innerHTML = "<h3>"+ question + "</h3>";
+
+					_("input").innerHTML += "<input type='radio' name='choices' value='A'>"+chA + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='B'>"+chB + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='C'>"+chC + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='D'>"+chD + "<br>";
+					_("input").innerHTML += "<input type='image' style='height:80px; width:80px;  outline:none;' src='img/za.png' onclick='checkAnswer()'>";
+
+		}
+		function checkAnswer5(){
+			_("Quas").innerHTML = "";
+			question = questions[4][0];
+				chA =questions[4][1];
+				chB = questions[4][2];
+				chC = questions[4][3];
+				chD = questions[4][4];
+			_("input").innerHTML = "<h3>"+ question + "</h3>";
+
+					_("input").innerHTML += "<input type='radio' name='choices' value='A'>"+chA + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='B'>"+chB + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='C'>"+chC + "<br>";
+					_("input").innerHTML += "<input type='radio' name='choices' value='D'>"+chD + "<br>";
+					_("input").innerHTML += "<input type='image' style='height:80px; width:80px;  outline:none;' src='img/za.png' onclick='checkAnswer()'>";
+
+		}
+
+		function checkAnswer(){
+			choices = document.getElementsByName("choices");
+			for (var i = 0; i < choices.length; i++) {
+				if(choices[i].checked){
+
+					answer = choices[i].value;
+				}
+			}
+			
+			if (answer == questions[num][5]) {
+				score +=10;
+				_("input").innerHTML =
+				"<h4>.you take 10 of 10:</h4>At<span style='text-transform: lowercase;'> the time of serious need,<br>but your friends can Shnasnd.<br>az as a humorous person enjoys telling <br>jokes Bryd.gahy mischief Knyd.<br>maylyd familiar with new and <br>interesting people <br>in your life who never laugh Shvyd<br>.ba , comfortable life. in Nystyd.<br>dyd positive things are looking good<br> with every wind Blrzyd.<br>grm not Hstyd.<br>bydy, loving, faithful, and are socially and <br>each of these traits can be good reasons for you<br> unlimited .anrzhy you, but your motivation is low.</span><br>";
+			}
+			else if(answer == questions[num][6]){
+				score +=7;
+				_("input").innerHTML = "<h4>you take 8 of 10</h4>This<span style='text-transform: lowercase;'> means that you have a rose you like,<br> but many beauties Daryd.hs Hstyd.<br>kmy razor wit, but you enjoy hearing jokes Bryd.<br>ahtmala middle children of families <br>around you Bashnd.khvngrm Hstyd.<br>mrdm like many intimate Hstyd.<br>dvstan and it gives you confidence.</span><br>";
+			}
+			else if(answer == questions[num][7]){
+				score +=3;
+				_("input").innerHTML = "<h4>you take 3 of 10</h4>This<span style='text-transform: lowercase;'> means that you Hstyd.<br>mrdm white lilies you for Pshtkartan,<br> John and giving your heart and your <br>success on your mind focused and you probably <br>appreciate a certain Knnd.<br>ahdaf first sibling hardly express Hstyd.ahsastan do</span>.<br>";
+			}
+			else if(answer == questions[num][8]){
+				score +=3;
+				_("input").innerHTML = ":( you take 0 of 10<br> listen to this advice:<br>give<br>Be<span style='text-transform: lowercase;'> Good To Your Family<br>Try To Be Supportive And Encouraging!<br>Never Scream Or Shout At Anyone.<br>Never Ever Break Any Promise</span>";
+			}
+			
+		}
+		window.addEventListener("load", renderQuestion, false);
+	</script>
+</head>
+<body lang="en">
+<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+	<script type='text/javascript'>
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+<!-- start of header webpage -->
+	
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<h1>Healthy family</h1>
+			</div>
+		</div>
+		<div class="container">
+		<div class="row content no-padding" >
+			
+<!-- start of slider webpage -->
+		<div class="carousel slide" id="mySlider" data-ride="carousel">
+			<!-- wrapper section -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="img/family-banner.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption animated slideInUp">
+						<h3>Enjoy your time with your family</h3>
+						<p>If your family hates each other, try to put them in a situation where giving and receiving help is important</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/head.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption animated slideInUp">
+						<h3>Love your children</h3>
+						<p>Have a good behavior with your childen when they are child or adult</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/happy-family1.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption animated slideInUp">
+						<h3>Laugh is against sadness</h3>
+						<p>Compromise is the most valuable tool you have</p>
+						</div>
+				</div>
+
+				<div class="item">
+					<img src="img/maxresdefault.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption animated slideInUp">
+						<h3>Go sometimes with your family outside</h3>
+						<p>Always learn to forgive when you get into a fight with your parents. Just tell them sorry, kiss them, hug them, and make the know how much you love them</p>
+						</div>
+				</div>
+
+				<div class="item">
+					<img src="img/footimg.jpg" style="width:100%; height:500px; ">
+					<div class="carousel-caption animated slideInUp">
+						<h3>Be synpathetic of each other </h3>
+						<p>Do not get upset when your mum/dad is telling you something and you think they are shouting at you because they are trying to teach you something importan</p>
+						</div>
+				</div>
+			</div>
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-slide-to="0" data-target="#mySlider" class="active"></li>
+				<li data-slide-to="1" data-target="#mySlider"></li>
+				<li data-slide-to="2" data-target="#mySlider"></li>
+				<li data-slide-to="3" data-target="#mySlider"></li>
+				<li data-slide-to="4" data-target="#mySlider"></li>
+			</ol>
+			<!-- left and right controls -->
+			<a href="#mySlider" class="left carousel-control"  data-slide="prev" role="button">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a href="#mySlider" class="right carousel-control"  data-slide="next" role="button">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+<!-- end of slider webpage -->
+
+<!-- start of navigationbar -->
+	<nav class="navbar navbar-static-top no-margin">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-target="#myNav" data-toggle="collapse">
+					<span class="glyphicon glyphicon-align-justify"
+					style="color:white; font-size: 30px;" title="Tap to links"></span>
+				</button>
+				
+			</div>
+			<div class="collapse navbar-collapse" id="myNav">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="dropdown">
+			        <a class="dropdown-toggle drop" data-toggle="dropdown" href="Test.html">Test
+			        <span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			        <li><a href="father test.html">Test for Father</a></li>
+			          <li><a href="mother test.html">Test for Mother</a></li>
+			          <li><a href="boy test.html">Test for Son</a></li>
+			          <li><a href="girl test.html">Test for Dughter</a></li> 
+			        </ul>
+	      			</li>
+	      			<li class="active"><a href="infor.html">Personality Test</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+<!-- end of navigationbar -->
+		
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2 col-sm-offset-1 ">
+				<div class="col-sm-12 active" style="
+				background-image:url('img/aa (3).png');
+				background-repeat:no-repeat;
+				background-size:100% 100%; padding:90px 190px 60px 80px;">
+				<h4>Personality</h4></div>
+				<div id="q1" class="col-sm-12 ques" style="
+				background-image:url('img/aa (1).png');
+				background-repeat:no-repeat;
+				background-size:100% 100%; padding:0px 250px 35px 20px">
+				<!-- <button id="q1"><h4>Quastion:1</h4></button> -->
+				</div>
+				<div id="q2" class="col-sm-12" style="
+				background-image:url('img/aa (1).png');
+				background-repeat:no-repeat;
+				background-size:100% 100%; padding:0px 250px 35px 20px">
+				</div>
+			
+				<div id="q3" class="col-sm-12" style="
+				background-image:url('img/aa (1).png');
+				background-repeat:no-repeat;
+				background-size:100% 100%; padding:0px 250px 35px 20px"> 
+				</div>
+				<div id="q4" class="col-sm-12" style="
+				background-image:url('img/aa (1).png');
+				background-repeat:no-repeat;
+				background-size:100% 100%; padding:0px 250px 35px 20px">
+				</div>
+				<div id="q5" class="col-sm-12" style="
+				background-image:url('img/aa (2).png');
+				background-repeat:no-repeat;
+				background-size:100% 100%; padding:0px 250px 35px 20px">
+				</div>
+			
+				
+			</div>
+			
+			<div class="col-sm-6 col-sm-offset-2" info><br><br><br>
+			<div col-sm-12 style="
+				background-image:url('img/node.png');
+				background-repeat:no-repeat;
+				height:744px; width:800px; padding:120px;">
+
+					<div><p id="Quas"></p>
+					<img src="img/tic.png" style="height:60px; width:60px;">
+					</div>
+					<div id="input">
+					</div>
+			</div>
+			</div>
+
+
+		</div>
+	</div>
+
+		<!-- start of footer webpage -->
+	<div class="sitebar-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 address">
+					<h3>
+						Contact Address
+					</h3>
+					<address>
+						Afghanistan,<br>
+						Herat,<br>
+						Code To Inspire
+					</address>
+				</div>
+<div class="col-md-2 ul">
+				<div class="social-header">
+			<ul>
+				<li><a href="https://www.facebook.com/" class="facebook" title="contact with facebook" target="_blank"></a></li>
+				<li><a href="https://twitter.com/" class="twitter" title="follow by twitter" target="_blank"></a></li>
+				<li><a href="https://www.youtube.com" class="youtupe" target="_blank" title="youtube"></a></li>
+			</ul>
+			</div>
+
+			</div>
+
+					<div class="col-md-3 ul">
+						<b><ul style="direction:rtl; list-style-type:none;">
+						<div class="item item-icon-right">
+						<li><a href="about.html" title="About us"><img src="img/aboutus.png" id="img-a">
+						About us</a></li>
+						</div>
+						<li><a href="#" title="survey about other people,who used form this website information before and you can from their advices and experience in your own life"><img src="img/good.jpg" id="img-c">
+						survey</a></li>
+						<li><a href="#" title="this information colected from internet sources,Mr.Abdulbasir.Azizi,Hayedah.Rasouli"><img src="img/phon.jpg" id="img-d">
+						Sources</a></li></ul></b>
+					</div>
+					
+				<div class="col-md-5 box" id="box1">
+					<img src="img/foot.jpg" class="img-responsive no-margin footimg">
+				</div>
+
+				
+
+			</div>
+			<div class="bottom-footer">
+				<div class="col-md-7 address">
+				<p><small>copyright @CTI in 2016, Prepared by <a href="https://twitter.com/hayedehRasouly"
+				target="_blank">Hayedeh Rasouly</a>& 
+				<a href="https://twitter.com/boshrarasoly1"
+				target="_blank">Boshra Rasouly</a>&
+				<a href="https://twitter.com/morsal_sediqi"
+				target="_blank">Morsal Saddiqi</a>
+				</small></p>
+			</div>
+			</div>
+		</div>
+	</div>
+<!-- end of footer webpage -->
+
+				
+			</div>
+		</div>
+
+</body>
+</html>

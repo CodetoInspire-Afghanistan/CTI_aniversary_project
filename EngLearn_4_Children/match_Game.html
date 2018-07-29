@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+	<head>
+		<title>Game</title>
+		<link rel="icon" type="image/gif/png" href="images/baloon.png">
+		 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title></title>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<script src="js/jquery.countdown360.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+			<link rel="stylesheet" type="text/css" href="css/generalStyle.css"/>
+		<style type="text/css">
+
+			
+		
+
+			
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<a href="Index.html" class=""><img src="home/home1.png" height="80" width="80" id="home"></a>
+			<a href="games.html" ><img src="images/clear.png" height="50" width="50"  style="position:absolute; left:5%; top:17%;"id="home"></a>
+			<h1 id="h1">Match the images with its name</h1>
+			<div id="div1">
+				<div id="pic1">
+					<img id="img1" src="gamePic/a.png" draggable="true" ondragstart="drag(event)" height="150" width="150"    />
+				</div>
+				<div id="pic2">
+					<img id="img2" src="gamePic/b.png" draggable="true" ondragstart="drag(event)" height="150" width="150"   />
+				</div>
+				<div id="pic3">
+					<img id="img3" src="gamePic/c.png" draggable="true" ondragstart="drag(event)"   height="150" width="150" />
+				</div>
+				<div id="inter" class="in">
+					<div id="part1" ondrop="drop(event)" ondragover="allowDrop(event)" class="img1"></div>
+					<p class="text" id="ftext" >Apple</p>
+				</div>
+				<div id="inter2" class="in">
+					<div id="part2" ondrop="drop(event)" ondragover="allowDrop(event)" class="img2"></div>
+					<p class="text" id="stext">Ball</p>
+				</div>
+				<div id="inter3" class="in">
+					<div id="part3" ondrop="drop(event)" ondragover="allowDrop(event)" class="img3"></div>
+					<p class="text" id="ttext">Clock</p>
+				</div>
+				
+				<button id="next" disabled="false" class="next" >Level2</button>
+			</div>
+			
+			<div id="div2" hidden>
+				<div id="pic1">
+					<img id="img1" src="gamePic/d.png" draggable="true" ondragstart="drag(event)" height="150" width="150"    />
+				</div>
+				<div id="pic2">
+					<img id="img2" src="gamePic/e.png" draggable="true" ondragstart="drag(event)" height="150" width="150"   />
+				</div>
+				<div id="pic3">
+					<img id="img3" src="gamePic/f.png" draggable="true" ondragstart="drag(event)"   height="150" width="150"  />
+				</div>
+				<div id="inter" class="in">
+					<div id="part1" ondrop="drop(event)" ondragover="allowDrop(event)" class="img1"></div>
+					<p class="text" id="ftext" >Donkey</p>
+				</div>
+				<div id="inter2" class="in">
+					<div id="part2" ondrop="drop(event)" ondragover="allowDrop(event)" class="img2"></div>
+					<p class="text" id="stext">Elephant</p>
+				</div>
+				<div id="inter3" class="in">
+					<div id="part3" ondrop="drop(event)" ondragover="allowDrop(event)" class="img3"></div>
+					<p class="text" id="ttext">Fish</p>
+				</div>
+					<button id="next2" disabled="false" class="next" >Level3</button>
+			</div>
+			<div id="div3" hidden>
+				<div id="pic1">
+					<img id="img1" src="gamePic/g.png" draggable="true" ondragstart="drag(event)" height="150" width="150"    />
+				</div>
+				<div id="pic2">
+					<img id="img2" src="gamePic/h.png" draggable="true" ondragstart="drag(event)" height="150" width="150"   />
+				</div>
+				<div id="pic3">
+					<img id="img3" src="gamePic/i.png" draggable="true" ondragstart="drag(event)"   height="150" width="150"  />
+				</div>
+				<div id="inter" class="in">
+					<div id="part1" ondrop="drop(event)" ondragover="allowDrop(event)" class="img1"></div>
+					<p class="text" id="ftext" >Girl</p>
+				</div>
+				<div id="inter2" class="in">
+					<div id="part2" ondrop="drop(event)" ondragover="allowDrop(event)" class="img2"></div>
+					<p class="text" id="stext">Hen</p>
+				</div>
+				<div id="inter3" class="in">
+					<div id="part3" ondrop="drop(event)" ondragover="allowDrop(event)" class="img3"></div>
+					<p class="text" id="ttext">Ice cream</p>
+				</div>
+					<button id="next3" disabled="false" class="next" >Level4</button>
+			</div>
+			<div id="div4" hidden>
+				<div id="pic1">
+					<img id="img1" src="gamePic/j.png" draggable="true" ondragstart="drag(event)" height="150" width="150"    />
+				</div>
+				<div id="pic2">
+					<img id="img2" src="gamePic/k.png" draggable="true" ondragstart="drag(event)" height="150" width="150"   />
+				</div>
+				<div id="pic3">
+					<img id="img3" src="gamePic/l.png" draggable="true" ondragstart="drag(event)"   height="150" width="150"  />
+				</div>
+				<div id="inter" class="in">
+					<div id="part1" ondrop="drop(event)" ondragover="allowDrop(event)" class="img1"></div>
+					<p class="text" id="ftext" >Jug</p>
+				</div>
+				<div id="inter2" class="in">
+					<div id="part2" ondrop="drop(event)" ondragover="allowDrop(event)" class="img2"></div>
+					<p class="text" id="stext">Kid</p>
+				</div>
+				<div id="inter3" class="in">
+					<div id="part3" ondrop="drop(event)" ondragover="allowDrop(event)" class="img3"></div>
+					<p class="text" id="ttext">Lemon</p>
+				</div>
+					<button id="next4" disabled="false" class="next" >Level5</button>
+			</div>
+			<div id="div5" hidden>
+				<div id="pic1">
+					<img id="img1" src="gamePic/m.png" draggable="true" ondragstart="drag(event)" height="150" width="150"    />
+				</div>
+				<div id="pic2">
+					<img id="img2" src="gamePic/n.png" draggable="true" ondragstart="drag(event)" height="150" width="150"   />
+				</div>
+				<div id="pic3">
+					<img id="img3" src="gamePic/o.png" draggable="true" ondragstart="drag(event)"   height="150" width="150"  />
+				</div>
+				<div id="inter" class="in">
+					<div id="part1" ondrop="drop(event)" ondragover="allowDrop(event)" class="img1"></div>
+					<p class="text" id="ftext" >Mouse</p>
+				</div>
+				<div id="inter2" class="in">
+					<div id="part2" ondrop="drop(event)" ondragover="allowDrop(event)" class="img2"></div>
+					<p class="text" id="stext">Nest</p>
+				</div>
+				<div id="inter3" class="in">
+					<div id="part3" ondrop="drop(event)" ondragover="allowDrop(event)" class="img3"></div>
+					<p class="text" id="ttext">Orange</p>
+				</div>
+					<button id="next5" disabled="false" class="next" >Level6</button>
+			</div>
+			<div id="div6" hidden>
+				<div id="pic1">
+					<img id="img1" src="gamePic/p.png" draggable="true" ondragstart="drag(event)" height="150" width="150"    />
+				</div>
+				<div id="pic2">
+					<img id="img2" src="gamePic/q.png" draggable="true" ondragstart="drag(event)" height="150" width="150"   />
+				</div>
+				<div id="pic3">
+					<img id="img3" src="gamePic/r.png" draggable="true" ondragstart="drag(event)"   height="150" width="150"  />
+				</div>
+				<div id="inter" class="in">
+					<div id="part1" ondrop="drop(event)" ondragover="allowDrop(event)" class="img1"></div>
+					<p class="text" id="ftext" >Pilot</p>
+				</div>
+				<div id="inter2" class="in">
+					<div id="part2" ondrop="drop(event)" ondragover="allowDrop(event)" class="img2"></div>
+					<p class="text" id="stext">Queen</p>
+				</div>
+				<div id="inter3" class="in">
+					<div id="part3" ondrop="drop(event)" ondragover="allowDrop(event)" class="img3"></div>
+					<p class="text" id="ttext">Radio</p>
+				</div>
+					<button id="next6" disabled="false" class="next" >Level7</button>
+			</div>
+			<div id="div7" hidden>
+				<div id="pic1">
+					<img id="img1" src="gamePic/s.png" draggable="true" ondragstart="drag(event)" height="150" width="150"    />
+				</div>
+				<div id="pic2">
+					<img id="img2" src="gamePic/t.png" draggable="true" ondragstart="drag(event)" height="150" width="150"   />
+				</div>
+				<div id="pic3">
+					<img id="img3" src="gamePic/u.png" draggable="true" ondragstart="drag(event)"   height="150" width="150"  />
+				</div>
+				<div id="inter" class="in">
+					<div id="part1" ondrop="drop(event)" ondragover="allowDrop(event)" class="img1"></div>
+					<p class="text" id="ftext" >Sun</p>
+				</div>
+				<div id="inter2" class="in">
+					<div id="part2" ondrop="drop(event)" ondragover="allowDrop(event)" class="img2"></div>
+					<p class="text" id="stext">Telephone</p>
+				</div>
+				<div id="inter3" class="in">
+					<div id="part3" ondrop="drop(event)" ondragover="allowDrop(event)" class="img3"></div>
+					<p class="text" id="ttext">Umbrella</p>
+				</div>
+				<button id="next7" disabled="false" class="next" >Level8</button>
+			</div>
+			<div id="div8" hidden>
+				<div id="pic1">
+					<img id="img1" src="gamePic/v.png" draggable="true" ondragstart="drag(event)" height="150" width="150"    />
+				</div>
+				<div id="pic2">
+					<img id="img2"  src="gamePic/x.png" draggable="true" ondragstart="drag(event)" height="150" width="150"   />
+				</div>
+				<div id="pic3">
+					<img id="img3" src="gamePic/w.png" draggable="true" ondragstart="drag(event)"   height="150" width="150"  />
+				</div>
+				<div id="inter" class="in">
+					<div id="part1" ondrop="drop(event)" ondragover="allowDrop(event)" class="img1"></div>
+					<p class="text" id="ftext" >Vilon</p>
+				</div>
+				<div id="inter2" class="in">
+					<div id="part2" ondrop="drop(event)" ondragover="allowDrop(event)" class="img3"></div>
+					<p class="text" id="stext">Wall</p>
+				</div>
+				<div id="inter3" class="in">
+					<div id="part3" ondrop="drop(event)" ondragover="allowDrop(event)" class="img2"></div>
+					<p class="text" id="ttext">X-ray</p>
+				</div>
+					<button id="next8" disabled="false" class="next" >Level9</button>
+			</div>
+			<p class="text" id="p1"></p>
+			<div id="div9" hidden>
+				<div id="pic3">
+					<img id="img2" src="gamePic/y.png" draggable="true" ondragstart="drag(event)" height="150" width="150"    />
+				</div>
+				<div id="pic2">
+					<img id="img1" src="gamePic/z.png" draggable="true" ondragstart="drag(event)" height="150" width="150"   />
+				</div>
+				
+				<div id="inter" class="in">
+					<div id="part1" ondrop="drop(event)" ondragover="allowDrop(event)" class="img2"></div>
+					<p class="text" id="ftext" >Yoyo</p>
+				</div>
+				<div id="inter2" class="in">
+					<div id="part2" ondrop="drop(event)" ondragover="allowDrop(event)" class="img1"></div>
+					<p class="text" id="stext">Zebra</p>
+				</div>
+
+				<button id="final" disabled="false" class="next" >finished</button>
+			</div>
+			<div id="finest" hidden  >
+				<img src="cracker/crack4.gif" height="200" width="300"> 		
+				<img src="cracker/crack3.gif" height="200" width="300"> 
+				<img src="cracker/crack5.gif" height="200" width="300"> 
+				<img src="images/84.gif" height="200" width="300" id="anim"> 
+				
+				
+				
+			</div>
+	
+		</div>
+					<div id="countdown"></div>
+		<script type="text/javascript" charset="utf-8">
+			function on(){
+				window.location='match_game.html';
+			}
+		 	var countdown =  $("#countdown").countdown360({
+       	 	radius      : 60,
+         	seconds     : 70,
+         	fontColor   : 'rgb(103,203,6)',
+         	autostart   : false,
+         	onComplete  : function () { alert('Try again') 
+			on();
+			}
+			
+		   });
+			countdown.start();
+			console.log('countdown360 ',countdown);
+		 	$(document).on("click","button",function(e){
+		 		e.preventDefault();
+		 	
+		 	});
+		  </script>
+		<script type="text/javascript" src="bootstrap/js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.js"></script>
+		<script type="text/javascript" src="js/mainjs.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+						
+			function allowDrop(ev) {
+			    ev.preventDefault();
+			}
+
+			function drag(ev) {
+			    ev.dataTransfer.setData("text", ev.target.id);
+			}
+
+			function drop(ev) {
+			    
+			    var data = ev.dataTransfer.getData("text");
+			    if(ev.target.className == data){
+			    ev.target.appendChild(document.getElementById(data));
+				document.getElementsByClassName("next")[0].disabled=false;
+				var aud3 = new Audio();
+				aud3.src = 'sounds/yes.mp3';
+				aud3.play();
+		
+
+			}
+			}
+			var aud1 = new Audio();
+			aud1.src='sounds/clash.mp3';
+				$(document).ready(function(){
+		$("#final").click(function(){
+		
+		$("#div9").remove();
+		$("#h1").remove();
+		$("#finest").show();
+		aud1.play();
+		});
+		});
+
+		</script>
+		
+						
+
+		
+	</body>
+</html>

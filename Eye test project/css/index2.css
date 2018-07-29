@@ -1,0 +1,127 @@
+body{
+  background-color: #333;
+  
+}
+
+
+
+#page {
+  margin-left:10px;
+  position: absolute;
+  
+  text-align: center;
+  left: -1px;
+  top: 50px;
+  color: #222;
+
+ 
+}
+
+.box-wrapper {
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+  position:absolute;
+  left:1000px;
+  top:180px;
+   
+  
+ 
+  
+  
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+  position:absolute;
+  left:100px;
+  top:160px;
+  
+
+}
+.box p {
+  padding: 40px 0;
+}
+.box div {
+  outline: 1px solid #999;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.98;
+  box-shadow: inset 0px 0px 100px #555;
+}
+
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+  background-color: bule;
+}
+.right {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+  background-color: rgb(0,189,234);
+}
+.left {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+  background-color: rgb(0,189,234);
+}
+.top {
+  transform: rotateX(-90deg) translateY(-100px);
+  transform-origin: top center;
+  background-color: white;
+}
+.bottom {
+  transform: rotateX(90deg) translateY(100px);
+  transform-origin: bottom center;
+  background-color: white;
+}
+.front {
+  transform: translateZ(100px);
+  background-color: bule;
+  
+}
+
+
+@keyframes spin {
+  from { transform: rotateY(0); }
+  to { transform: rotateY(360deg); }
+}
+
+.box, .shadow {
+  animation: spin 15s infinite linear;
+}
+
+.left p { color: #27a05c; }
+.right p { color: #27a05c; }
+.front p { color: #27a05c; }
+.back p { color: #27a05c; }
+
+
+.shadow {
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+}
+a{
+  text-decoration:none;
+}
+.shadow div{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 2px;
+  opacity: 0.98;
+  box-shadow: 0px 0px 100px #000;
+  transform: rotateX(90deg) translateY(100px);
+  transform-origin: bottom center;
+}
+h1{
+  position:absolute
+  top:10%;
+  right:10%;
+  left:10%;
+  bottom:50%
+  
+  
+}

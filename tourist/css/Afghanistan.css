@@ -1,0 +1,204 @@
+
+body{
+background-image: url(../img/sa.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+
+}
+
+#h1{
+  font-family:Vijaya;
+  font-size:80px;
+  color: yellow;
+  text-shadow: 20px 20px 20px white;
+}
+
+
+.img-responsive{
+  height:20px;
+  width: 20px;
+  margin-top: -56px;
+}
+
+.page-header{
+  background:url(../img/cmii.jpg);
+  border-radius: 10px;
+  height:160px;
+}
+#p1{
+
+}
+#p2{
+   
+
+}
+#p3{
+ 
+}
+#p4{
+    
+
+
+}
+.panel-heading{
+    background:linear-gradient(black,grey,black);
+}
+   .panel-body{
+    background:linear-gradient(black,grey,black);
+    border:10px solid black;
+
+
+    }
+    .panel-footer{
+        background:linear-gradient(black,grey,black);
+        border:10px solid black;
+
+    }
+
+
+
+.f {
+    background-color: lightblue;
+    border: 1px solid black;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {padding-left: 50px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {padding-left: 50px;}
+}
+
+
+
+
+
+
+#myDIV {
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 2s infinite;
+    color:black;
+    font-family:Vijaya;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {text-shadow: 10px 20px 30px blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px blue;}
+
+}
+.footer{
+ background-image: url('../img/footer.jpg');
+ background-size:contain;
+ padding-top:50px;
+ padding-bottom: 40px;
+  
+}
+
+.footer li{
+    text-decoration:none;
+    margin:0;
+    padding:0;
+    list-style:none;
+} 
+ 
+.footer a{
+    font-family:Vijaya;
+    font-size:20px;
+}
+.social-footer ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+        
+}
+.social-footer ul li{
+    display:inline-block;
+     width:30px;
+     border-radius:30px; 
+}
+.social-footer ul li a{
+    color:transparent;
+    display:block;
+} 
+ 
+.social-footer ul li a.facebook{
+    background-image:url(../img/f.jpg);
+    background-repeat:no-repeat;
+    background-size:30px 30px;
+    border-radius:50%;
+} 
+.social-footer ul li a.twitter{
+    background-image:url(../img/twiit.jpg);
+    background-repeat:no-repeat;
+    background-size:30px 30px;
+    border-radius:50%;
+}  
+
+
+
+#footer-r{
+   border-radius: 50%; 
+   border:3px solid grey;
+   height: 160px;
+   width: 160px;
+
+
+}
+p{
+    color:black;
+    font-family:Vijaya;
+    font-size:14px;
+}
+
+
+ 
+ 
+.footer{
+  margin-top:5%;
+  color:white;
+  font-family:"Monotype Corsiva";
+  font-size:20px;
+}
+
+.footer li{
+    text-decoration:none;
+    margin:0;
+    padding:0;
+    list-style:none;
+} 
+ 
+.footer a{
+    font-family:Vijaya;
+    font-size:20px;
+}
+.social-footer ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+        
+}
+.social-footer ul li{
+    display:inline-block;
+     width:30px;
+     border-radius:30px; 
+}
+.social-footer ul li a{
+    color:transparent;
+    display:block;
+} 
+ 
+ 
+
+
+

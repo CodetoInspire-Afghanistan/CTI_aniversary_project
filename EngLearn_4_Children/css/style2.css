@@ -1,0 +1,634 @@
+
+		a{
+			text-decoration:none;
+			color:black;
+		}
+		#head{
+			position:absolute;
+			left:40%;
+			
+		}
+		p ,h2 ,h1 {
+			font-family:'Comic Sans MS';
+		}
+		.head{
+			
+			float:left;
+			font-size:3em;
+		}
+
+			
+			
+			
+			#a{
+				position:absolute;
+				top:1%;
+				right:3%;
+				float:right;
+				
+			
+			}
+			#for{
+				
+				
+				font-size:5em;
+				color:rgba(105,203,4,1);
+			}
+			
+.button{
+	
+	
+	float:left;
+	margin-left:20px;
+	box-shadow:0 0 30px #ebf9f9;
+	background:radial-gradient(#ebf9f9, #88dddd);
+}
+
+#button1{
+			position:absolute;
+			left:5%;
+			top:15%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#0000ff;
+
+		}
+		
+		#button2{
+			position:absolute;
+			left:10%;
+			top:15%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#ff0066;
+
+		}
+		
+		#button3{
+			position:absolute;
+			left:15%;
+			top:15%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#ff0000;
+
+		}
+		#button4{
+			position:absolute;
+			left:20%;
+			top:15%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#ffff00;
+
+		}
+		
+		#button5{
+			position:absolute;
+			left:25%;
+			top:15%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#ff8000;
+
+		}
+		
+		#button6{
+			position:absolute;
+			left:30%;
+			top:15%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example 4s 1 alternate;
+			animation-iteration-count: 20;
+
+		}
+		
+		#button7{
+			position:absolute;
+			left:35%;
+			top:15%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#0080ff;
+
+		}
+		
+				#button8{
+			position:absolute;
+			left:5%;
+			top:25%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example2 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#ff0040;
+
+		}
+				
+				#button9{
+			position:absolute;
+			left:10%;
+			top:25%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example2 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#ffbf00;
+
+		}
+				
+				#button10{
+			position:absolute;
+			left:15%;
+			top:25%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example2 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#ff0000;
+
+		}
+						#button11{
+			position:absolute;
+			left:20%;
+			top:25%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example2 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:990000;
+
+		}
+								#button12{
+			position:absolute;
+			left:25%;
+			top:25%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example2 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:00FF00;
+
+		}
+		
+									#button13{
+			position:absolute;
+			left:30%;
+			top:25%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example2 4s 1 alternate;
+			animation-iteration-count: 20;
+
+		}
+			#button14{
+			position:absolute;
+			left:35%;
+			top:25%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example2 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#990000;
+
+		}
+		
+				#button15{
+			position:absolute;
+			left:5%;
+			top:35%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example3 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:FF3300;
+
+		}
+		
+			#button16{
+			position:absolute;
+			left:10%;
+			top:35%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example3 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#ff00bf;
+
+		}
+		
+					#button17{
+			position:absolute;
+			left:15%;
+			top:35%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example3 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#cc3333;
+
+		}
+		
+							#button18{
+			position:absolute;
+			left:20%;
+			top:35%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example3 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#ffbf00;
+
+		}
+								#button19{
+			position:absolute;
+			left:25%;
+			top:35%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example3 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#cc3300;
+
+		}
+		
+								#button20{
+			position:absolute;
+			left:30%;
+			top:35%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example3 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#FF00FF;
+
+		}
+		
+									#button21{
+			position:absolute;
+			left:35%;
+			top:35%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example3 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:	#cc33cc;
+
+		}
+										#button22{
+			position:absolute;
+			left:10%;
+			top:45%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example4 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#006666;
+
+		}
+		
+											#button23{
+			position:absolute;
+			left:15%;
+			top:45%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example4 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#cc33cc;
+
+		}
+		
+												#button24{
+			position:absolute;
+			left:20%;
+			top:45%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example4 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#000099;
+
+		}
+		
+														#button25{
+			position:absolute;
+			left:25%;
+			top:45%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example4 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#cc0099;
+
+		}
+		
+														#button26{
+			position:absolute;
+			left:30%;
+			top:45%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example4 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#000099;
+
+		}
+				#button27{
+			position:absolute;
+			right:25%;
+			top:20%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example5 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#cc3333;
+
+		}
+		
+		#button28{
+			position:absolute;
+			right:20%;
+			top:20%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example5 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#006666;
+
+		}
+		
+		#button29{
+			position:absolute;
+			right:15%;
+			top:20%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example5 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#000099;
+
+		}
+		#button30{
+			position:absolute;
+			right:10%;
+			top:20%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example5 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#990000;
+
+		}
+		
+		#button31{
+			position:absolute;
+			right:5%;
+			top:20%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example5 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#cc3333;
+
+		}
+		
+		#button32{
+			position:absolute;
+			right:25%;
+			top:30%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example6 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#ff0000;
+
+
+		}
+		
+		#button33{
+			position:absolute;
+			right:20%;
+			top:30%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example6 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:00FF00;
+
+		}
+		
+				#button34{
+			position:absolute;
+			right:15%;
+			top:30%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example6 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:	#cc33cc;
+
+		}
+				
+				#button35{
+			position:absolute;
+			right:10%;
+			top:30%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example6 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#ff0040;
+
+		}
+				
+				#button36{
+			position:absolute;
+			right:5%;
+			top:30%;
+			height:7%;
+			width:4%;
+			background-color:#ebf9f9;
+			border-radius:100%;
+			animation:example6 4s 1 alternate;
+			animation-iteration-count: 20;
+			color:#ff0040;
+
+
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+
+		@keyframes example {
+			from {background-color: #ebf9f9; top:15%;}
+			50% {background-color: 3399FF;
+			top:20%;
+			border-radius:100%;
+			}
+			100% {background-color: #ebf9f9;
+			top:15%;
+			border-radius:100%;
+			}
+		}
+		
+		@keyframes example2 {
+			from {background-color: #ebf9f9; top:25%;}
+			50% {background-color: 3399FF;
+			top:30%;
+			border-radius:100%;
+			}
+			100% {background-color: #ebf9f9;
+			top:25%;
+			border-radius:100%;
+			}
+		}
+		
+		@keyframes example3 {
+			from {background-color: #ebf9f9; top:35%;}
+			50% {background-color: 3399FF;
+			top:40%;
+			border-radius:100%;
+			}
+			100% {background-color: #ebf9f9;
+			top:35%;
+			border-radius:100%;
+			}
+		}
+		
+		@keyframes example4 {
+			from {background-color: #ebf9f9; top:45%;}
+			50% {background-color: 3399FF;
+			top:50%;
+			border-radius:100%;
+			}
+			100% {background-color: #ebf9f9;
+			top:45%;
+			border-radius:100%;
+			}
+		}
+		
+		
+		@keyframes example5 {
+			from {background-color: #ebf9f9; top:20%;}
+			50% {background-color: 3399FF;
+			top:25%;
+			border-radius:100%;
+			}
+			100% {background-color: #ebf9f9;
+			top:20%;
+			border-radius:100%;
+			}
+		}
+		
+		@keyframes example6 {
+			from {background-color: #ebf9f9; top:30%;}
+			50% {background-color: 3399FF;
+			top:35%;
+			border-radius:100%;
+			}
+			100% {background-color: #ebf9f9;
+			top:30%;
+			border-radius:100%;
+			}
+		}
+		

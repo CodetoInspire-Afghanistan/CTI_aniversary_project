@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<title>Log in</title>
+	<link rel="icon" type="image/gif/png" href="images/baloon.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" type="text/css"href="css/generalStyle.css">
+		<link rel="stylesheet" type="text/css"href="css/form.css">
+		<style type="text/css">
+			body{
+				font-family:'Comic Sans MS';
+			}
+				
+		</style>
+	</head>
+	<body>
+	
+	
+<div id="container">
+		<a href="Index.html" class=""><img src="home/home1.png" height="80" width="80" id="home"></a>
+		<h1 align="center" style="color:rgb(50,150,150);"><..Join To Us.!></h1>
+		<form method="post" action="index.html" name="myform" onsubmit="return validate()" id="form">
+		<div id="name1"	>
+			<label for="name">First Name</label>
+			<input id="name"class="div1" type="text" placeholder="Username" name="username">
+				<div  class="error_msg" id="name_error"></div>
+		</div>
+		<div id="last">
+			<label for="lname">Last Name</label>
+			<input id="lname" class="div1" type="text" placeholder="Last name" name="Lastname">
+		</div>
+		<div id="mail">
+			<label for="email">Your Mail</label>
+			<input id="email" class="div1"type="text" placeholder="Email" name="email">
+				<div  class="error_msg" id="email_error"></div>
+		</div>
+		<div id="pws">
+			<label for="pas">Password</label>
+			<input id="pas" class="div1"type="password" placeholder="Password" name="pwd">
+		</div>
+		<div id="conf">
+			<label for="con">Confirm</label>
+			<input id="con" class="div1"type="password" placeholder="Password Confirmation" name="pwd_confirm">
+				<div class="error_msg" id="pwd_error"></div>
+		</div>
+			
+			
+			
+			
+		<button  class="text2" type="submit" value="Register me" >Register</button>
+
+			</div>
+		</form>
+	</div>
+
+	</body>
+</html>
+<script type="text/javascript">
+	// accessing input object
+		var username=document.myform.username;
+		var email=document.myform.email;
+		var pwd=document.myform.pwd;
+		var pwd_confirm=document.myform.pwd_confirm;
+
+	// accessing div elements
+		var name_error=document.getElementById("name_error");
+		var email_error=document.getElementById("email_error");
+		var pwd_error=document.getElementById("pwd_error");
+	//	adding event handler
+	username.addEventListener("blur", nameVerify, true);
+
+function nameVerify () {
+	// body...
+	if(username.value != ""){
+		username.style.border="";
+		name_error.textContent="";
+		return true;
+	}
+}
+function validate () {
+	// body...
+	if(username.value == ""){
+		name_error.textContent="Username is required!";
+		username.style.border="1px solid red";
+		username.focus();
+		return false;
+
+	}
+	if(email.value == ""){
+		email_error.textContent="Email is required!";
+		email.style.border="1px solid red";
+		email.focus();
+		return false;
+
+	}
+	if(pwd.value == ""){
+		pwd_error.textContent="Password is required!";
+		pwd.style.border="1px solid red";
+		pwd.focus();
+		return false;
+
+	}
+	if(pwd.value != pwd_confirm.value){
+		pwd_error.textContent="Does not match!";
+		pwd_confirm.style.border="1px solid  red";
+		pwd_confirm.focus();
+		return false;
+	}
+}
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+

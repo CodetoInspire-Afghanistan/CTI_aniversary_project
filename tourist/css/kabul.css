@@ -1,0 +1,287 @@
+body{
+    background:url(../img/sa.jpg);
+	
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+    overflow-x:hidden;
+	overflow-y:scroll;
+}
+#h5{
+    font-family:Vijaya;
+    color: yellow;
+    font-size:40px;
+    text-shadow: 10px 10px 2px yellow;
+
+}
+#img{
+                border-radius:10%;
+				animation: aksAni 5s linear infinite;
+				}
+
+				@keyframes aksAni{
+					100%{transform: rotateY(360deg)};
+				}
+
+
+}
+P{
+font-family:Vijaya;
+font-size: 20px;
+color: black;
+}
+
+#h1{font-family:Vijaya;
+  font-size:80px;
+  color: yellow;
+  margin-left: 19%;
+  text-shadow: 20px 20px 20px white;
+
+  
+
+}
+
+.img-responsive{
+  height:20px;
+  width: 20px;
+  margin-top: -56px;
+}
+.page-header{
+  background:url(../img/cmii.jpg);
+  border-radius: 10px;
+  height:160px;
+  
+}
+
+#param1{
+     background-color:rgba(219,219,220,0.5);
+     margin-top:10%;
+     margin-left:4%;
+     border:1px solid black;
+     width: 30%;
+     height:400px;
+     border-radius:4px;
+    
+
+}
+#param2{
+     background-color:rgba(219,219,250,0.5);
+     margin-top:10%;
+     margin-left:0.1%;
+     border:1px solid black;
+     width: 30%;
+     height:400px;
+     border-radius:4px;
+     
+    
+    
+}
+  #param3{
+     background-color:rgba(219,219,220,0.5);
+     margin-top:10%;
+     margin-left:0.1%;
+     border:1px solid black;
+     width: 30%;
+     height:400px;
+     border-radius:4px;
+    
+}
+
+      .lightbox{
+      	margin-top:30%;
+      	background-color: yellow;
+      	height: 450px;
+      	width: 90%;
+      }
+
+        #mySlider{
+        	border:12px solid black;
+        	box-shadow: 4px 3px 2px 4px yellow ;
+        	width: 52%;
+        	border-radius:30px;
+        	margin-left: 24%;
+        	margin-top:17px;
+
+        }
+
+
+ 
+h2{
+	 color:black;
+	 font-family:"Monotype Corsiva";
+	 
+}
+
+#cti{
+	border-radius: 50%;
+	color: red;
+}
+ 
+
+@media screen and (max-width: 300px){
+    #param1{
+     width: 90%;
+     height:90%;
+     
+    }
+}
+@media screen and (max-width: 300px){
+    #img{
+     width: 30%;
+     height:10%;
+     background: black;
+     margin-top:-31%;
+     margin-left: 70%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #param1{
+        width: 85%;
+     height:450px;
+    }
+}
+@media screen and (max-width: 800px){
+    #param1{
+        width: 85%;
+     height:300px;
+    }
+}
+
+
+
+@media screen and (max-width: 300px){
+    #param2{
+     width: 90%;
+     height:90%;
+     
+    }
+}
+@media screen and (max-width: 300px){
+    #img{
+     width: 30%;
+     height:10%;
+     margin-top:-31%;
+     margin-left: 70%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #param2{
+        width: 85%;
+     height:450px;
+    }
+}
+@media screen and (max-width: 800px){
+    #param2{
+        width: 85%;
+     height:300px;
+    }
+}
+
+
+
+@media screen and (max-width: 300px){
+    #param3{
+     width: 90%;
+     height:90%;
+     
+    }
+}
+@media screen and (max-width: 300px){
+    #img{
+     width: 30%;
+     height:10%;
+     margin-top:-31%;
+     margin-left: 70%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #param3{
+        width: 85%;
+     height:450px;
+    }
+}
+@media screen and (max-width: 800px){
+    #param3{
+        width: 85%;
+     height:300px;
+    }
+}
+
+
+
+.footer{
+  margin-top:10%;
+  background-image: url('../img/footer.jpg');
+  color:white;
+  font-family:"Monotype Corsiva";
+  font-size:20px;
+}
+}
+
+
+#color{
+	color:white;
+}
+
+.footer li{
+	text-decoration:none;
+	margin:0;
+	padding:0;
+	list-style:none;
+} 
+ 
+.footer a{
+	font-family:Vijaya;
+	font-size:20px;
+}
+.social-footer ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+		
+}
+.social-footer ul li{
+	display:inline-block;
+     width:30px;
+     border-radius:30px; 
+}
+.social-footer ul li a{
+	color:transparent;
+	display:block;
+} 
+ 
+.social-footer ul li a.facebook{
+	background-image:url(../img/f.jpg);
+	background-repeat:no-repeat;
+	background-size:30px 30px;
+	border-radius:50%;
+	height:30px;
+} 
+.social-footer ul li a.twitter{
+	background-image:url(../img/twitt.jpg);
+	background-repeat:no-repeat;
+	background-size:30px 30px;
+	border-radius:50%;
+	height:30px;
+}  
+
+
+
+#imag{
+	border-radius:50%;
+	padding:1px;
+	margin-left:40px;
+	height:150px;
+	width:150px;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	animation:myfirstanimation 6s linear infinite;
+	-webkit-animation:myfirstanimation 6s linear infinite;
+	}
+	@-webkit-keyframes myfirstanimation{
+	from{background:red;-webkit-transform:rotate(45deg);}
+	to{background:blue;-webkit-transform:rotate(315deg);}
+	}
+}

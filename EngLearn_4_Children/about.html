@@ -1,0 +1,119 @@
+<html>
+<head>
+	<title>About us</title>
+	<link rel="icon" type="image/gif/png" href="images/baloon.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	 <link rel="stylesheet" type="text/css" href="css/generalStyle.css"/>
+	 <style>
+	body{
+		
+		overflow-x: hidden;
+		
+	}
+		
+
+		
+.slider{
+	width: 640px; /*Same as width of the large image*/
+	position: relative;
+	/*Instead of height we will use padding*/
+	padding-top: 320px; /*That helps bring the labels down*/
+	
+	margin: 100px auto;
+	
+	/*Lets add a shadow*/
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+
+/*Last thing remaining is to add transitions*/
+.slider>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+	/*Lets add some spacing for the thumbnails*/
+	margin: 18px 0 0 18px;
+	border: 3px solid #999;
+	
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	
+	/*Default style = low opacity*/
+	opacity: 0.6;
+}
+
+.slider label img{
+	display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+/*Clicking on any thumbnail now should activate the image related to it*/
+
+/*We are done :)*/
+		
+	 </style>
+</head>
+<body>
+	<a href="Index.html" class=""><img src="home/home1.png" height="80" width="80"  id="home" ></a>
+<div class="slider">
+	<input type="radio" name="slide_switch" id="id1"checked="checked"/>
+	<label for="id1">
+		<img src="images/code.jpg" width="100"/>
+	</label>
+	<img src="images/we.png" height="320px" width="640px"/>
+	
+	<!--Lets show the second image by default on page load-->
+	<input type="radio" name="slide_switch" id="id2" />
+	<label for="id2">
+		<img src="images/Narges.jpg" width="100"/>
+	</label>
+	<img src="images/narges.png" height="320px" width="640px"/>
+	
+	<input type="radio" name="slide_switch" id="id3"/>
+	<label for="id3">
+		<img src="images/nilo.jpg" width="100"/>
+	</label>
+	<img src="images/niloufar.png" height="320px" width="640px"/>
+	
+	<input type="radio" name="slide_switch" id="id4"/>
+	<label for="id4">
+		<img src="images/nosaiba.jpg" width="100"/>
+	</label>
+	<img src="images/nosaiba.png" height="320px" width="640px"/>
+	
+	<input type="radio" name="slide_switch" id="id5"/>
+	<label for="id5">
+		<img src="images/homaira.jpg" width="100"/>
+	</label>
+	<img src="images/homaira.png" height="320px" width="640px"/>
+</div>
+
+			
+</body>
+</html>

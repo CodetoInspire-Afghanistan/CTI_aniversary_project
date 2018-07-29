@@ -1,0 +1,90 @@
+.foot{
+	height:50px;
+	width:50px;
+	float:left;
+	transition-property:height, width, font-size, color, background;
+transition-duration: 1s;
+ transition-timing-fanction:linear;
+transition-delay:0.2s;
+border:5px solid white;
+border-style:outset;
+}
+#fo1{
+	position:fixed;
+	top:360px;
+	right:30px;
+	margin-left:10px;
+	margin-right:20px;
+	
+	
+}
+#fo2{
+	position:fixed;
+	bottom:0;
+	right:160px;
+	margin-right:180px;
+	
+}
+#fo3{
+	position:fixed;
+	bottom:10px;
+	margin-right:40%;
+
+	
+}
+#fo4{
+	position:fixed;
+	bottom:10px;
+	right:160px;
+	margin-right:40%;
+	
+}
+.foot:hover{
+height:70px;
+width:100px;
+font-size:1em;
+color:black;
+background:;
+z-index:1;
+}
+
+footer{
+	
+	clear: both;
+	position:relative;
+	top:20px;
+	left:50px;
+}
+.color{
+color:#00ffff;
+opacity:0.7;
+}
+#ourteam{
+	text-align:center;
+	font-family:Arabic Typesetting;
+	font-size:30px;
+	line-height:15px;
+padding-top:0.4%;
+}
+#bustan{
+	text-align:center;
+	font-family:Arabic Typesetting;
+	font-size:30px;
+	line-height:15px;
+padding-top:0.4%;
+	
+}
+#morsal{
+	text-align:center;
+	font-family:Arabic Typesetting;
+	font-size:30px;
+	line-height:15px;
+	padding-top:0.4%;
+}
+#shabana{
+	text-align:center;
+	font-family:Arabic Typesetting;
+	font-size:30px;
+	line-height:15px;
+	padding-top:0.4%;
+}

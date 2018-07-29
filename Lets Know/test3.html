@@ -1,0 +1,327 @@
+<html>
+<head>
+  <link rel="Shortcut Icon" href="image/VVV.jpg"/>
+  <title>famous people</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/hover.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+        <link rel="stylesheet" type="text/css" href="css/test1.css">
+  </head>
+
+  <body>
+     <div class="container backi">
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Let's Know</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="test1.html">First Game</a></li>
+          <li><a href="test3.html">Second Game</a></li>
+          
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+      <div class="row" style="height:500px;width:900px;margin-left:10%;">
+       <div class="col-lg-12 back"><br>
+        <div class="col-lg-8 col-md-offset-2 first" id="first">
+          <center>
+          <img src="image/Galileo Galilei.jpg" height="300" width="300" class="i"><br><br>
+          <h1 class="h">who is he?</h1><br>
+          <input type="button" value="Archimedes" class="btn default btn hvr-grow-shadow" id="a">
+          <img src="image/red.png" id="fulse" height="30px" width="30px" hidden><br><br>
+         <input type="button" value="Galileo Galilei" class="btn default btn hvr-grow-shadow" id="correct">
+            <img src="image/2.jpg" id="tick" height="30px" width="30px" hidden>
+          <br><br>
+          <input type="button" value="Aristotle" class="btn default btn hvr-grow-shadow" id="c" >
+           <img src="image/red.png" id="fulse1" height="30px" width="30px" hidden><br><br>
+          <p id="info" style="color:#A0522D; font-weight:bold;" hidden>B is correct<br>
+             Born: February 15, 1564, Pisa, Italy<br>
+        Died: January 8, 1642, Arcetri<br>
+        Education: University of Pisa (1581–1585)<br>
+        Discovered: Callisto, Europa, Ganymede, Rings of Saturn, Io<br>
+          </p>
+          <button class="btn-lg btn-next" id="btn_first">Next</button>
+        </center>
+       
+        </div>
+          <!--second div-->
+ <div class="col-lg-8 col-md-offset-2" id="second" hidden>
+          <center>
+         <img src="image/Ada Lovelace.jpg"  height="300" width="300" class="i"><br><br>
+          <h1 class="h">who is she?</h1><br>
+          <input type="button" value="Ada Lovelace"  class="btn default hvr-grow-shadow" id="s_correct">
+          <img src="image/2.jpg" id="tick1" height="30px" width="30px" hidden>
+          <br><br>
+          <input type="button" value="Marie Curie"  class="btn default hvr-grow-shadow" id="s_b">
+           <img src="image/red.png" id="fulse2" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Antoine Lavoisier" class="btn default hvr-grow-shadow" id="s_c" >
+          <img src="image/red.png" id="fulse3" height="30px" width="30px" hidden><br><br>
+          <p id="info2"  style="color:#A0522D; font-weight:bold;"hidden>A is correct<br>
+             Born: December 10, 1815, London, United Kingdom<br>
+        Died: November 27, 1852, Marylebone, United Kingdom<br>
+        Full name: Augusta Ada King<br>
+        Education: University of London<br>
+        Children: Anne Blunt, 15th Baroness Wentworth, More<br>
+        Parents: George Gordon Byron, Anne Isabella Byron, Baroness Byron<br> 
+             
+          </p>
+          <button class="btn-lg btn-next" id="btn_second">Next</button>
+        </center>
+    
+        </div>
+      
+        
+        <!--thrid-->
+ 
+          <div class="col-lg-8 col-md-offset-2 " id="thrid" hidden>
+          <center>
+          <img src="image/Albert_Einstein.jpg"  height="300" width="300" class="i"><br><br>
+          <h1 class="h">who is he?</h1><br>
+          <input type="button" value="Paul Dirac"  class="btn default hvr-grow-shadow" id="t_a">
+          <img src="image/red.png" id="fulse5" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Alfred Wegener"  class="btn default hvr-grow-shadow" id="t_b">
+          <img src="image/red.png" id="fulse4" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Albert_Einstein" class="btn default hvr-grow-shadow" id="t_correct" >
+          <img src="image/2.jpg" id="tick2" height="30px" width="30px" hidden>
+          <br><br>
+          <p id="info3" style="color:#A0522D; font-weight:bold;" hidden>C is correct<br>
+    Born: March 14, 1879, Ulm, Germany<br>
+    Died: April 18, 1955, Princeton, New Jersey, United States<br>
+    Education: University of Zurich (1905), More<br>
+    Children: Eduard Einstein, Lieserl Einstein, Hans Albert Einstein<br>
+    Spouse: Elsa Einstein (m. 1919–1936), Mileva Marić (m. 1903–1919)<br>
+      </p>
+          <button class="btn-lg btn-next" id="btn_thrid">Next</button>
+        </center>
+        </div>
+          <!--fifth div-->
+         <div class="col-lg-8 col-md-offset-2 " id="froth" hidden>
+
+          <center>
+
+          <img src="image/Max_Planck.jpg"  height="300" width="300" class="i"><br><br>
+          <h1 class="h">who is he?</h1><br>
+          <input type="button" value="Max_Planck"  class="btn default hvr-grow-shadow" id="f_correct">
+          <img src="image/2.jpg" id="tick3" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Guglielmo Marconi"  class="btn default hvr-grow-shadow" id="f_b">
+          <img src="image/red.png" id="fulse6" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Ernest Rutherford" class="btn default hvr-grow-shadow" id="f_c" >
+           <img src="image/red.png" id="fulse7" height="30px" width="30px" hidden><br><br>
+          <p id="info4" style="color:#A0522D; font-weight:bold;" hidden>A is correct<br>
+    Born: April 23, 1858, Kiel, Germany<br>
+    Died: October 4, 1947, Göttingen, Germany<br>
+    Awards: Nobel Prize in Physics, Max Planck Medal, Copley Medal, More<br>
+    Education: Ludwig Maximilian University of Munich, Humboldt University of Berlin<br>
+      
+      </p>
+          <button class="btn-lg btn-next" id="btn_froth">Next</button>
+        </center>
+        </div> 
+          <!--fifth-->
+            <div class="col-lg-8 col-md-offset-2" id="fifth" hidden>
+      
+          <center>
+
+          <img src="image/Marie Curie.jpg"  height="300" width="300" class="i"><br><br>
+           <h1 class="h">who is she?</h1><br>
+          <input type="button" value="Marie Curie"  class="btn default hvr-grow-shadow" id="fi_correct">
+          <img src="image/2.jpg" id="tick4" height="30px" width="30px" hidden> <br><br>
+          <input type="button" value="Antoine Lavoisier"  class="btn default hvr-grow-shadow" id="fi_b">
+          <img src="image/red.png" id="fulse8" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Ada Lovelace" class="btn default hvr-grow-shadow" id="fi_c" >
+          <img src="image/red.png" id="fulse9" height="30px" width="30px" hidden><br><br>
+          <p id="info5" style="color:#A0522D; font-weight:bold;" hidden>A is correct<br>
+      Born: November 7, 1867, Warsaw, Poland<br>
+      Died: July 4, 1934, Sancellemoz, Passy, Haute-Savoie, France<br>
+      Spouse: Pierre Curie (m. 1895–1906)<br>
+      Discovered: Radium, Polonium<br>
+      Siblings: Bronisława Skłodowska, Helena Skłodowska, Józef Skłodowski, Zofia Skłodowska<br>
+      
+      </p>
+          <button class="btn-lg btn-next" id="btn_fifth">Next</button>
+        </center>
+        </div> 
+        <!--sexth-->
+       <div class="col-lg-8 col-md-offset-2 " id="sixth" hidden>
+          <center>
+          <img src="image/william-harvey.jpg"  height="300" width="300" class="i"><br><br>
+          <h1 class="h">who is he?</h1><br>
+          <input type="button" value="Guglielmo Marconi"  class="btn default hvr-grow-shadow" id="si_a">
+          <img src="image/red.png" id="fulse10" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="william-harvey"  class="btn default hvr-grow-shadow" id="si_correct">
+          <img src="image/2.jpg" id="tick5" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Plato" class="btn default hvr-grow-shadow" id="si_c" >
+          <img src="image/red.png" id="fulse11" height="30px" width="30px" hidden><br><br>
+          <p id="info6" style="color:#A0522D; font-weight:bold;" hidden>B is correct<br>
+      
+      Born: April 1, 1578, Folkestone, United Kingdom<br>
+      Died: June 3, 1657, Roehampton, London, United Kingdom<br>
+      Siblings: Eliab Harvey, Daniel Harvey<br>
+      Education: University of Cambridge, Gonville and Caius College, Cambridge, University of Padua<br>
+      </p>
+          <button class="btn-lg btn-next" id="btn_sixth">Next</button>
+        </center>
+        </div>
+
+           <!--seventh-->
+           
+       <div class="col-lg-8 col-md-offset-2 " id="seventh" hidden>
+
+          <center>
+            
+          <img src="image/Blaise_pascal.jpg"  height="300" width="300" class="i"><br><br>
+           <h1 class="h">who is he?</h1><br>
+          <input type="button" value="Guglielmo Marconi"  class="btn default hvr-grow-shadow" id="sa_a">
+          <img src="image/red.png" id="fulse12" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Rene Descartes"  class="btn default hvr-grow-shadow" id="sa_b">
+           <img src="image/red.png" id="fulse13" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Blaise_pascal" class="btn default hvr-grow-shadow" id="sa_correct" >
+           <img src="image/2.jpg" id="tick6" height="30px" width="30px" hidden><br><br>
+          <p id="info7" style="color:#A0522D; font-weight:bold;"  hidden>C is correct<br>
+      Born: June 19, 1623, Clermont-Ferrand, France<br>
+      Died: August 19, 1662, Paris, France<br>
+      Influenced: William James, Alexis de Tocqueville,<br>
+      Parents: Antoinette Begon, Étienne Pascal<br>
+      
+      
+      </p>
+          <button class="btn-lg btn-next" id="btn_seventh">Next</button>
+        </center>
+        </div>
+
+
+          <!--eight-->
+
+          <div class="col-lg-8 col-md-offset-2 " id="eight" hidden>
+
+          <center>
+            
+          <img src="image/Charles Darwin.jpg"  height="300" width="300" class="i"><br><br>
+           <h1 class="h">who is he?</h1><br>
+          <input type="button" value="Charles Darwin"  class="btn default hvr-grow-shadow" id="e_correct">
+          <img src="image/2.jpg" id="tick7" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Humphry Davy"  class="btn default hvr-grow-shadow" id="e_b">
+          <img src="image/red.png" id="fulse14" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Alfred Wegener" class="btn default hvr-grow-shadow" id="e_c" >
+          <img src="image/red.png" id="fulse15" height="30px" width="30px" hidden><br><br>
+          <p id="info8" style="color:#A0522D; font-weight:bold;" hidden>A is correct<br>
+    Born: February 12, 1809, The Mount, Shrewsbury, United Kingdom<br>
+    Died: April 19, 1882, Downe, United Kingdom<br>
+    Nationality: British<br>
+    Buried: April 26, 1882, Westminster Abbey, London, United Kingdom<br>
+    Spouse: Emma Darwin (m. 1839–1882)<br>
+    Children: Anne Darwin, George Darwin, Francis Darwin<br>
+      
+      
+      
+      </p>
+          <button class="btn-lg btn-next" id="btn_eight">Next</button>
+        </center>
+        </div>
+
+		  
+          <!--ninth-->
+           <div class="col-lg-8 col-md-offset-2" id="ninth" hidden>
+          <center>
+
+          <img src="image/Louis Pasteur.PNG.jpg"  height="300" width="300" class="i"><br><br>
+           <h1 class="h">who is he?</h1><br>
+          <input type="button" value="umphry Davy"  class="btn default hvr-grow-shadow" id="n_a">
+          <img src="image/red.png" id="fulse16" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Robert Boyle"  class="btn default hvr-grow-shadow" id="n_b">
+          <img src="image/red.png" id="fulse17" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Louis Pasteur" class="btn default hvr-grow-shadow" id="n_correct" >
+          <img src="image/2.jpg" id="tick8" height="30px" width="30px" hidden><br><br>
+          <p id="info9" style="color:#A0522D; font-weight:bold;" hidden>C is correct<br>
+      Born: December 27, 1822, Dole, France<br>
+      Died: September 28, 1895, Marnes-la-Coquette, France<br>
+      Spouse: Marie Pasteur (m. 1849–1895)<br>
+      Siblings: Emilie Pasteur, Jean Denis Pasteur, Josephine Pasteur, Virginie Pasteur<br>
+      Education: École Normale Supérieure (1847), École Normale Supérieure (1843–1845)<br>
+      
+      </p>
+          <button class="btn-lg btn-next" id="btn_ninth">Next</button>
+        </center>
+        </div>
+        <!--tenth-->
+         <div class="col-lg-8 col-md-offset-2" id="tenth" hidden>
+          <center>
+      
+          <img src="image/William Thomson.jpg"  height="300" width="300" class="i"><br><br>
+           <h1 class="h">who is he?</h1><br>
+          <input type="button" value="Louis Pasteur"  class="btn default hvr-grow-shadow" id="b_a">
+          <img src="image/red.png" id="fulse18" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="William Thomson"  class="btn default hvr-grow-shadow" id="b_correct">
+          <img src="image/2.jpg" id="tick9" height="30px" width="30px" hidden><br><br>
+          <input type="button" value="Francis Bacon" class="btn default hvr-grow-shadow" id="b_c" >
+          <img src="image/red.png" id="fulse19" height="30px" width="30px" hidden><br><br>
+          
+          <p id="info10" style="color:#A0522D; font-weight:bold;" hidden>B is correct<br>
+      Born: June 26, 1824, Belfast, United Kingdom<br>
+      Died: December 17, 1907, Largs, United Kingdom<br>
+      Full name: William Thomson<br>
+      Awards: Royal Medal, Copley Medal, Bakerian Lecture, <br>
+      Education: Peterhouse, Cambridge (1841–1845), University of Glasgow, Royal Belfast Academical Institution<br>
+      Influenced by: Michael Faraday, Nicolas Léonard Sadi Carnot<br>
+      
+      
+      
+      
+      </p>
+          <button class="btn-lg btn-next" id="btn_tenth">Next</button>
+        </center>
+
+</div>
+       
+        <div class="col-lg-10 " id="happy" hidden><br><br><br>
+  <h1 style="font-size:30px;" class="con">WOW!</h1>
+  <h1 class="con">Congrats</h1><br>
+           <center><img src="image/clapp.gif"  height="300" width="300"></center><br><br><br><br><br><br><br><br>
+           
+      </div>
+      <div class="col-lg-10 " id="notbad" hidden><br><br><br>
+        <h1 class="con">congrats!</h1>
+          <center><img src="image/notbad.gif"  height="300" width="300"></center><br><br><br><br><br><br><br><br>
+          
+           
+      </div>
+       <div class="col-lg-10 " id="sad" hidden><br><br><br>
+          <h1 class="con">Try More</h1><br><br><br>
+           <center><img src="image/yes.gif"  height="300" width="300"></center><br><br><br><br><br><br><br><br>
+      </div><br><br><br>
+         <div class="col-lg-1 score" id="score">score</div>
+         </div>
+      </div> 
+         <div class="row">
+        <div class="col-md-12 "><br><br><br><br><br>
+           <center>
+           
+          <a href="https://www.facebook.com/CodeToInspire/?fref=ts" target="_blank"> <img src="image/facebook2.png" id="img" height="60" width="60" style="border-radius:100px 100px 100px 100px;"></a>
+           <a href="https://www.linkedin.com/company/9297164?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A9297164%2Cidx%3A2-1-2%2CtarId%3A1477559712210%2Ctas%3Acode%20to%20ins" target="_blank"><img src="image/linkedin.png" id="img" height="60" width="60" style="border-radius:100px 100px 100px 100px;"></a>
+           <a href="https://twitter.com/CodeToInspire" target="_blank"><img src="image/c.png" id="img" height="60" width="60" style="border-radius:100px 100px 100px 100px;"></a>
+          </center><br>
+           <center><p  id="p1_footer">This project is for childern who have 10-15 years old.</p></center>
+        </div>
+        </div>
+      </div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/test1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+#letter{
+	transform:rotate(20deg);
+	margin-right: -3%;
+	height:500px ;
+	width: 400px;
+}
+#code{
+	position: relative;
+	bottom: 400px;
+	transform:rotate(20deg);
+	height: 300px;
+	width: 200px;
+	z-index:0.8;
+}
