@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+ <html class="no-js"> 
+    <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>BB</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" /> 
+        <link rel="stylesheet" href="jss/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+
+      
+         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+         
+    <!-- skin -->
+    <link rel="stylesheet" href="skin/default.css">
+        <style>
+        body{
+          overflow: hidden;
+        }
+           .gallary{
+
+           position: relative;
+           left:40px;
+           } 
+           .gallary:hover{
+
+          border:2px solid rgb(236,0,140);
+           } 
+           .modal  {
+    /*   display: block;*/
+    padding-right: 0px;
+    background-color: silver; 
+    }
+   
+    .modal-dialog {
+            top: 20%;
+                width: 100%;
+    position: absolute;
+        }
+        .modal-content {
+                border-radius: 0px;
+                border: none;
+    top: 40%;
+            }
+            .modal-body {
+                    background-color: silver;
+    color: white;
+                }
+                .side-p{
+    color:rgb(236,0,140);
+    border-bottom: 1px solid rgb(236,0,140);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  
+}
+        </style>
+    </head>
+     <body>
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" height="100px" width="100px">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    
+      <div class="modal-body">
+    <center><img src="img/xsm.jpg" height="400px;" width="400px"><br><br>
+    <button style="background-color-white; color:rgb(236,0,140)">edit</button>
+    <button  style="background-color-white; color:rgb(236,0,140)">delet</button>
+    <button   style="background-color-white; color:rgb(236,0,140)">close</button>
+
+  </center>
+
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <section id="header" class="appear"></section>
+        <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(236,0,140,1);" data-300="line-height:60px; height:60px; background-color:rgba(219,103,104,1);">
+             <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="fa fa-bars color-white"></span>
+                    </button>
+                     <h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px; color:white; font-family: 'Copperplate Gothic Bold';color:white;"><img src="img/logbb.png" style="height:60px;width:60px;" >Banu Bazar          
+                    </a></h1>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+                        <li title="home" ><a href="index.html" >Home<img src="img/7.png" height="30px" width="30px"></a>
+                        </li>
+                        <li><a href="about.html">About<img src="img/6.png" height="30px" width="30px"></a></li>
+                        <li><a href="artist.html">Artist<img src="img/ss.png" height="30px" width="30px"></a></li>
+                         <li data-toggle="modal" data-target="#myModal2"><a href="index.html">log out<img src="img/sign.png" height="30px" width="30px"></a></li>
+                    </ul>
+
+                    
+                </div><!--/.navbar-collapse -->
+            </div>
+
+        </div>
+       
+
+<div class="container"><br><br><br>
+    <div class="row"> 
+        <div class="col-sm-2 col-sm-offset-1 ">
+              <a href=""><p class="side-p1" ><img src="img/9.png" height="40px" width="40px">Sidebars </p></a>
+              <p   class="side-p" id="my3" >Home </p><br>
+              <p class="side-p" id="my2" >My Profile </p><br>
+            <p class="side-p"id="my">My Gallary </p> 
+        </div> 
+        <div  class="col-sm-3 n" ><br><br><br><br><br><br>
+          <h2 class="nn">Profile Image</h2>
+          <img class="nn" src="img/samira1.jpg" height="250px" width="250px">
+            
+        </div>
+        <div  class="col-sm-3 n"><br><br><br><br><br><br>
+          <h2 class="nn">Edit Profile</h2><br>
+          <form>
+          Change Your Name<input type="text" ><br><br>
+          Change Photo<input type="file"><br><br>
+          
+         
+          <button type="submit" > Submit</button>
+          <button type="reset"> Reset</button>
+          </form>
+          
+            
+        </div>
+
+        <div  class="col-sm-3 n"><br><br><br><br><br><br>
+          <h2 class="nn">List Of Last Work</h2>
+        
+
+          <img src="img/xsm.jpg" height="70px" width="70px" class="gallary" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
+           <img src="img/xsm1.jpg" height="70px" width="70px" class="gallary" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
+          <img src="img/xsm7.jpg" height="70px" width="70px" class="gallary" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" >
+          <img src="img/xsm6.jpg" height="70px" width="70px" class="gallary" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" >
+          <img src="img/xsm9.jpg" height="70px" width="70px" class="gallary" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" >
+          <img src="img/xsm1.jpg" height="70px" width="70px" class="gallary" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" >
+          <img src="img/xsmm.jpg" height="70px" width="70px" class="gallary"type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" >
+          <img src="img/xsm3.jpg" height="70px" width="70px" class="gallary"  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" >
+          <img src="img/xsm8.jpg" height="70px" width="70px" class="gallary" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" >
+         
+        </div>
+<div class="col-sm-9" >
+      <div style=" height:430px; width:700px;" id="my1">
+        <img src="img/xsm.jpg" height="150px" width="150px" class="gallary" >
+        <img src="img/xsm1.jpg" height="150px" width="150px" class="gallary" >
+        <img src="img/xsm2.jpg" height="150px" width="150px" class="gallary" >
+        <img src="img/xsm3.jpg" height="150px" width="150px" class="gallary">
+        <img src="img/xsm4.jpg" height="150px" width="150px" class="gallary">
+        <img src="img/xsm5.jpg" height="150px" width="150px" class="gallary" >
+        <img src="img/xsm6.jpg" height="150px" width="150px" class="gallary" >
+        <img src="img/xsm7.jpg" height="150px" width="150px" class="gallary" >
+        <img src="img/xsm8.jpg" height="150px" width="150px" class="gallary" >
+        <img src="img/xsm9.jpg" height="150px" width="150px" class="gallary" >
+        <img src="img/xsm10.jpg" height="150px" width="150px" class="gallary" >
+        <img src="img/xsmm.jpg" height="150px" width="150px" class="gallary" >
+        
+       </div>
+    </div>
+    <div class="col-sm-3 home">
+      <div style=" height:430px; width:700px;" id="content"><br><br>
+         <img class="nn" src="img/samira1.jpg" height="250px" width="250px" style="margin-left:40px"><br><br>
+         <h1 style=" color:black; margin-left:40px" >Samira Ansari</h1>
+       </div>
+    </div>
+    <div class="col-sm-3 col-sm-offset-1 home" ><br><br><br><br>
+       Upload New Work<input type="text" ><br><br><center>
+       Price<input type="text" ><br><br>
+        <button type="submit" > Submit</button>
+          <button type="reset" > Reset</button></center>
+    </div>
+    <div class="col-sm-2 home" >
+      
+    </div>
+  </div>
+  
+</div>
+  <section id="footer" class="section footer">
+        <div class="container">
+            <div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
+                <div class="col-sm-12 align-center">
+                    <ul class="social-network social-circle"><br><br>
+                        <li><a target="_blank" href="https://www.facebook.com/CodeToInspire/?fref=ts" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/CodeToInspire" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/search/results/index/?keywords=code%20to%20inspire&origin=GLOBAL_SEARCH_HEADER" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li><br>
+                    </ul>               
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+    
+   
+
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/jquery.js"></script>
+        
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://maps.google.com/maps/api/jss?sensor=true"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/skrollr.min.js"></script>       
+        <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+        <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/main.js"></script>
+        <script src="contactform/contactform.js"></script>
+        <script>
+        $(document).ready(function() { 
+          $("#my1").css("display", "none"); 
+
+          $(".n").css("display", "none");
+
+           $("#my").click(function(){
+          $(".n").css("display", "none");
+          $(".home").css("display", "none");
+           $("#content").css("display", "none");
+          $("#my1").css("display", "block");
+           });
+           $("#my2").click(function(){
+          $("#my1").css("display", "none");
+          $(".home").css("display", "none");
+          $(".n").css("display", "block");
+           $("#content").css("display", "none");
+
+           });
+           $("#my3").click(function(){
+          $("#my1").css("display", "none");
+          $(".n").css("display", "none");
+          $(".home").css("display", "block");
+           $("#content").css("display", "block");
+
+           });
+         });  
+        </script>
+    </body>
+</html>

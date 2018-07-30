@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+ <html class="no-js"> 
+    <head>
+		
+        <meta charset="utf-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>BB</title>
+        <meta name="description" content="">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />  
+        <link rel="stylesheet" href="jss/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+    <!-- skin -->
+        <link rel="stylesheet" href="skin/default.css">
+		<!-- skin -->
+		<link rel="stylesheet" href="skin/default.css">
+
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css"> 
+        <style>
+        body{
+
+            background-color: gray;
+        }
+          ul {
+    position: absolute;
+    top: 300px; left: 600px; /*for example purposes only*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    position: absolute;
+    -webkit-transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    transition: all 2s linear;
+}
+.i{
+
+    border: 2px solid rgb(236,0,140);
+    border-radius: 100px;
+    
+}
+.i1:hover{
+
+   transform:scale(0.9);
+    
+}
+.i:hover{
+
+    border: 2px solid rgb(236,0,140);
+    border-radius: 100px;
+    transform:scale(0.9);
+   
+}
+        </style>
+    </head>
+     <body>
+      <center>
+        <div class="container">
+        <ul>
+    <li><a href="index.html"><img src="img/logbb.png" height="180px" width="180px" class="i1"></a></li>
+    <li><a href="index.html"><img src="img/xhome.jpg" height="150px" width="150px" class="i"></a></li>
+    <li><a href="khayat.html"><img src="img/xmo.jpg" height="150px" width="150px" class="i"></a></li>
+    <li><a href="web.html"><img src="img/xweb.jpg" height="150px" width="150px" class="i"></a></li>
+    <li><a href="about.html"><img src="img/xabout.jpg" height="150px" width="150px" class="i"></a></li>
+   <li><a href="artist.html"><img src="img/xvisit.jpg" height="150px" width="150px" class="i"></a></li>
+    <li><a href="mora.html"><img src="img/xmor.jpg" height="150px" width="150px" class="i"></a></li>
+    <li><a href="mobile app.html"><img src="img/xmb.jpg" height="150px" width="150px" class="i"></a></li>
+    <li><a href="superwite.html"><img src="img/xwel.jpg" height="150px" width="150px" class="i"></a></li>
+</ul>
+</div>
+</center>
+     </body>
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://maps.google.com/maps/api/jss?sensor=true"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/skrollr.min.js"></script>       
+        <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+        <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/main.js"></script>
+        <script src="contactform/contactform.js"></script>
+         <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
+      <script type="text/javascript">
+         $(document).ready(function  () {
+           var type = 1, //circle type - 1 whole, 0.5 half, 0.25 quarter
+    radius = '12em', //distance from center
+    start = -90, //shift start from 0
+    $elements = $('li:not(:first-child)'),
+    numberOfElements = (type === 1) ?  $elements.length : $elements.length - 1, //adj for even distro of elements when not full circle
+    slice = 360 * type / numberOfElements;
+
+$elements.each(function(i) {
+    var $self = $(this),
+        rotate = slice * i + start,
+        rotateReverse = rotate * -1;
+    
+    $self.css({
+        'transform': 'rotate(' + rotate + 'deg) translate(' + radius + ') rotate(' + rotateReverse + 'deg)'
+    });
+});
+         })
+          
+      </script> 
+        
+    </body>
+</html>

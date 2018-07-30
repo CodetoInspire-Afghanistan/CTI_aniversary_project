@@ -1,0 +1,171 @@
+.info{
+
+	height:300px;
+	width: 300px;
+	background-color: silver;
+	box-shadow: 2px 2px 20px rgb(64,0,64);
+	border-radius: 50px 0px 50px 0px;
+	border:2px solid black;
+}
+.hov{
+      
+    opacity:4.0;
+filter:alpha(opacity=90); 
+   
+  
+}
+ .hov:hover
+{
+	 opacity:0.4;
+filter:alpha(opacity=50); 
+
+} 
+.parallax {
+    /* The image used */
+    background-image: url("../img/fef.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+      
+.par1{
+	text-align: center;
+	text-shadow: 2px 2px 20px rgb(64,0,64);
+	color:rgb(64,0,64);
+}
+.bb{
+	height:50px;
+	width: 100px;
+	background-color: silver;
+	color: rgb(64,0,64);
+	text-shadow:2px 3px 20px;
+	box-shadow: 2px 2px 20px rgb(64,0,64);
+	border-radius: 50px 0px;
+	border:2px solid black;
+
+}
+.c {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  padding-right:20px;
+  height: 300px;
+  
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgb(64,0,64);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.c:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.con{
+
+
+  height: 450px;
+  box-shadow: 2px 2px 30px rgb(64,0,64);
+  width:400px;
+  color:white;
+  background-color: rgb(64,0,64);
+  overflow: scroll;
+}
+#text:hover{
+
+  border-color: rgb(64,0,64);
+}
+#click{
+
+  height: 40px;
+  width:60px;
+  background-color: white;
+  color:rgb(64,0,64);
+}
+.gry {
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+      .gry:hover{
+
+
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+      } 
+      .doolar{
+
+  border:5px solid rgb(85,0,85);
+  box-shadow: 2px 3px 20px rgb(85,0,85);
+  border-radius: 100px;
+  height: 50px;
+  width:50px;
+  webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+    webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+.dolar{
+
+  border:5px solid purple;
+  border-radius: 100px;
+  height: 50px;
+  width:50px;
+}
+.btn{
+
+  background-color: rgb(192,192,192);
+  height: 40px;
+   width:90px;
+   box-shadow: 2px 3px 20px rgb(147,0,147);
+}
+.title{
+
+color: rgb(91,40,91);
+}
+.bttn{
+  color:rgb(91,40,91);
+  height: 40px;
+   width:100px;
+   box-shadow: 2px 3px 20px rgb(91,40,91);
+  margin-left: 20px;
+
+}
+.donate{
+
+background-color: rgb(91,40,91);
+color:white;
+  height: 40px;
+   width:100px;
+   box-shadow: 2px 3px 40px rgb(192,192,192);
+
+}

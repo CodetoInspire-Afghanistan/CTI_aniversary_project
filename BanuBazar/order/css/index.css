@@ -1,0 +1,139 @@
+#myCarousel{
+
+    height: 250px;
+    width:100%;
+}
+.bt{
+
+height: 30px;
+width:80px;
+border-radius: 100%;
+background-color: white;
+
+}
+.side-p{
+    color:black;
+    font-weight: bold;
+    text-align: center;
+}
+.side-p1{
+	margin-top: 20px;
+    margin-bottom: 25px;
+    text-align:center;
+    font-size: 25px;
+    color:rgb(219,103,104);
+    text-shadow:0px 0px 0.7px black;
+    font-family: 'Algerian';
+}
+.side-p1:hover{
+    text-decoration: underline;
+}
+.side-p:hover{
+	color:rgb(219,103,104);
+    text-decoration: underline;
+}
+.content{
+width:780px;
+border-radius: 50px 0px;
+box-shadow: 0px 0px 8px rgb(219,103,104); 
+
+}
+.par{
+
+ color:black;
+ font-size: 15px;
+ font-weight: bold;
+ padding: 12px;
+}
+.side{
+padding-bottom:15px; 
+padding-left: 2px;
+border-radius:50px 0px; 
+border: 2px solid rgb(219,103,104);
+border-bottom: none;
+border-right: none;
+border-top: none;
+}
+body{
+    background: rgb(249,249,249);
+
+ font-family: 'MV Boli';
+
+}
+.c{
+border-radius:50px 0px;
+    height: 200px;
+    width:250px;
+
+box-shadow: 0px 0px 10px rgb(219,103,104); 
+}
+.panel-heading{
+	height:90px; width: 250px;
+border-radius:50px 0px;
+}
+.panel-body{
+
+	height: 90px; width:250px;
+}
+#accordion{ 
+    width: 250px;
+}
+
+input{
+width: 100%;
+background: white;
+color: rgb(219,103,104);
+padding: 5px;
+border: 1px solid rgb(219,103,104);
+border-right: none;
+border-top: none;
+border-left: none;
+}
+h2{
+ font-family: 'MV Boli';
+ color:rgb(219,103,104); 
+}
+h3{
+ font-family: 'MV Boli';
+ color:rgb(219,103,104); 
+}
+
+.h2{
+ font-family: 'MV Boli';
+
+}
+
+.social{
+	text-align: center;
+    background: white
+}
+
+.line{
+box-shadow: 0px 0px 10px rgb(219,103,104);
+padding: 35px;
+border-radius: 50px 0px;
+}
+
+
+.center{
+    color: black;
+}
+input:focus{
+border: 2px solid  rgb(219,103,104);
+    color:  rgb(219,103,104);
+border-right: none;
+border-left: none;
+border-top: none;
+}
+
+.art{
+width: 100%;
+background: black;
+color: rgb(219,103,104);
+padding: 5px;
+border: 1px solid white;
+}
+.art:focus{
+    border: 2px solid  rgb(219,103,104);
+    color: white;
+}

@@ -1,0 +1,150 @@
+#myCarousel{
+
+    height: 350px;
+    width:100%;
+}
+.li{
+    color: black;
+}
+.bt{
+
+height: 30px;
+width:80px;
+border-radius: 100%;
+background-color: white;
+
+}
+.side-p{
+    color:black;
+    font-weight: italic;
+    text-align: center;
+     outline:none;
+     border-bottom: 2px solid rgba(219,4,101,1);
+}
+.side-p1{
+	margin-top: 20px;
+    margin-bottom: 25px;
+    text-align:center;
+    font-size: 25px;
+    font-family: 'Copperplate Gothic Bold';
+    color:rgba(219,4,101,1);
+     outline:none;
+}
+.side3{
+    border-bottom: none
+}
+.side-p1:hover{
+    text-decoration: underline;
+     outline:none;
+}
+.side-p:hover{
+	color:rgba(219,4,101,1);
+    text-decoration: underline;
+     outline:none;
+}
+.content{
+width:780px;
+border-radius: 50px 0px;
+background: silver; 
+border: 2px solid rgba(219,4,101,1);
+border-bottom: none;
+border-right: none;
+
+}
+.par{
+
+ color:black;
+ font-size: 15px;
+ padding: 12px;
+}
+.side{
+padding-bottom:15px; 
+padding-left: 2px;
+border-radius:50px 0px; 
+
+}
+body{
+    background: rgba(249,249,249);
+ font-family:  'Copperplate Gothic Bold';
+ outline:none;
+
+}
+.c{
+border-radius:50px 0px;
+    height: 200px;
+    width:250px;
+box-shadow: 0px 0px 10px rgba(219,4,101,1) 
+}
+.panel-heading{
+	height:90px; width: 250px;
+border-radius:50px 0px;
+}
+.panel-body{
+
+	height: 90px; width:250px;
+}
+#accordion{ 
+    width: 250px;
+}
+
+input{
+width: 100%;
+background: white;
+color: rgb(219,103,104);
+padding: 5px;
+border: 1px solid rgba(219,4,101,1);
+border-right: none;
+border-top: none;
+border-left: none;
+}
+h2{
+ font-family: 'Copperplate Gothic Bold';
+ color:rgba(219,4,101,1);
+}
+h3{
+ font-family: 'Copperplate Gothic Bold';
+ color:rgba(219,4,101,1); 
+}
+
+.h2{
+ font-family: 'Copperplate Gothic Bold';
+
+}
+
+.social{
+	text-align: center;
+    background: white
+}
+
+.line{
+padding: 35px;
+border-radius: 50px 0px;
+background: silver; 
+border: 2px solid rgba(219,4,101,1);
+border-bottom: none;
+border-right: none;
+}
+
+
+.center{
+    color: black;
+}
+input:focus{
+border: 2px solid  rgb(219,103,104);
+    color:  rgb(219,103,104);
+border-right: none;
+border-left: none;
+border-top: none;
+}
+
+.art{
+width: 100%;
+background: black;
+color: rgb(219,103,104);
+padding: 5px;
+border: 1px solid white;
+}
+.art:focus{
+    border: 2px solid  rgb(219,103,104);
+    color: white;
+}

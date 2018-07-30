@@ -1,0 +1,74 @@
+#myCarousel{
+
+    height: 350px;
+    width:100%;
+}
+.bt{
+
+height: 30px;
+width:80px;
+border-radius: 100%;
+background-color: white;
+
+}
+.side3{
+    border-bottom: none;
+}
+
+
+.side-p{
+    color:black;
+    font-weight: italic;
+    text-align: center;
+     border-bottom: 2px solid rgba(219,4,101,1);
+}
+.side-p1{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align:center;
+    font-size: 25px;
+    color:rgba(219,4,101,1);
+    font-family: 'Copperplate Gothic Bold';
+}
+.side-p1:hover{
+    text-decoration: underline;
+}
+.side-p:hover{
+    color:rgba(219,4,101,1);
+    text-decoration: underline;
+}
+body{
+    background: rgb(249,249,249);
+ font-family:  'Copperplate Gothic Bold';
+
+}
+.side{
+padding-bottom:15px; 
+padding-left: 2px;
+border-radius:50px 0px; 
+}
+.im2{
+	border-radius:100px;
+	height: 200px;
+	width: 200px;
+	opacity:4.0;
+     transition: transform 0.5s;
+    -webkit-transition: transform 0.5s; /* Safari 3.1 to 6.0 */
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+             transform:scale(1);
+        }
+.im2:hover{
+	opacity:1;
+
+        	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+             transform:scale(0.9);
+}
+.par{
+font-family: 'Copperplate Gothic Bold';
+ color:black;
+ font-size: 15px;
+ font-weight: italic;
+ padding: 12px;
+}

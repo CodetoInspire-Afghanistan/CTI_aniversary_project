@@ -1,0 +1,169 @@
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+
+
+ .affix {
+      top: 0;
+      width: 100%;
+      z-index: 1;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  .color{
+
+  	background-color: black;
+  }
+  .mohtava{
+
+  	box-shadow: 2px 3px 20px rgb(64,0,64);
+  }
+  
+  
+  .div-img{
+
+    border:2px solid rgb(91,40,91);
+    height: 300px;
+    width:300px;
+    
+
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+}
+#width {
+    width: 300px;
+    height: 200px;
+    -webkit-transition: width 2s linear 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s linear 1s;
+}
+
+#width:hover {
+    width: 350px;
+}
+
+ .navbar-collapse{
+
+
+  background-color: rgb(64,0,64);
+
+}
+.foot{
+
+  border:2px solid purple;
+  border-radius: 100px;
+  height: 200px;
+  width:200px;
+}
+.dolar{
+
+  border:5px solid purple;
+  border-radius: 100px;
+  height: 50px;
+  width:50px;
+}
+.hov{
+      
+    opacity:4.0;
+filter:alpha(opacity=90); 
+     
+  
+}
+ .hov:hover
+{
+
+ opacity:0.4;
+filter:alpha(opacity=50); 
+}  
+
+      
+.para{
+  color:purple;
+  font-weight: bold;
+}
+.foott{
+
+ 
+  border-radius: 100px;
+  height: 50px;
+  width:50px;
+}
+.add{
+
+
+height: 100;
+width:200;
+box-shadow:2px 3px 20px black;
+
+}
+.doolar{
+
+  border:5px solid rgb(85,0,85);
+  box-shadow: 2px 3px 20px rgb(85,0,85);
+  border-radius: 100px;
+  height: 50px;
+  width:50px;
+  webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+    webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+.btn{
+
+  background-color: rgb(192,192,192);
+  height: 40px;
+   width:90px;
+   box-shadow: 2px 3px 20px rgb(147,0,147);
+}
+.title{
+
+color: rgb(91,40,91);
+}
+.bttn{
+  color:rgb(91,40,91);
+  height: 40px;
+   width:100px;
+   box-shadow: 2px 3px 20px rgb(91,40,91);
+  margin-left: 20px;
+
+}
+.donate{
+
+background-color: rgb(91,40,91);
+color:white;
+  height: 40px;
+   width:100px;
+   box-shadow: 2px 3px 40px rgb(192,192,192);
+
+}
+.test + .tooltip > .tooltip-inner {
+      background-color: silver; 
+      color: rgb(64,0,64); 
+      border: 1px solid rgb(64,0,64);
+      padding: 15px;
+      font-size: 20px;
+  }
+  /* Tooltip on top */
+  .test + .tooltip.top > .tooltip-arrow {
+      border-top: 5px solid rgb(64,0,64);
+  }
+  /* Tooltip on bottom */
+  .test + .tooltip.bottom > .tooltip-arrow {
+      border-bottom: 5px solid rgb(64,0,64);
+  }
+  /* Tooltip on left */
+  .test + .tooltip.left > .tooltip-arrow {
+      border-left: 5px solid rgb(64,0,64);
+  
+}
+.gry {
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+      .gry:hover{
+
+
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+      } 
